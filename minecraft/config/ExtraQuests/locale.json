@@ -1,0 +1,5 @@
+{
+  "reload": "&e(!) Configs have been reloaded.",
+  "addKeyValue": "&e(!) You have added a key %key% value %value% to the player %player%.",
+  "playerNotFound": "&c(!) Player %player% not found."
+}

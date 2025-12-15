@@ -1,0 +1,712 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hv"
+	group: "69182E6812501CC2"
+	icon: "gtceu:advanced_integrated_circuit"
+	id: "05F5710847C0AFAB"
+	images: [{
+		height: 2.0d
+		image: "kubejs:item/markers/hv"
+		rotation: 0.0d
+		width: 2.0d
+		x: 0.0d
+		y: -5.5d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3B5C29E5710DA34D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "77D8F86775649C43"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["264F2035FF0F5CA3"]
+			icon: "gtceu:hydrochloric_acid_bucket"
+			id: "294CE964BCB536E6"
+			rewards: [{
+				id: "26BB54C7C4EC3DF7"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "675AF3DC2051C9BA"
+				type: "checkmark"
+			}]
+			title: "塩酸"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "264F2035FF0F5CA3"
+			rewards: [{
+				id: "6921EEE4A54A19AD"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2913DB7C07F6CE45"
+				item: "gtceu:rock_salt_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["294CE964BCB536E6"]
+			icon: "gtceu:iron_iii_chloride_bucket"
+			id: "2C22269117E266D1"
+			rewards: [{
+				id: "10E1308464443923"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5150545968F57139"
+				type: "checkmark"
+			}]
+			title: "塩化鉄 (III)"
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2C22269117E266D1"
+				"404A2208CD4E0254"
+			]
+			id: "3567734CEA30E279"
+			rewards: [{
+				id: "16F77BF5C4AD031C"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D12614F57BC17D8"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2FA52B08E1443C7A"]
+			id: "404A2208CD4E0254"
+			rewards: [{
+				id: "5C993F1F2A6F8E23"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D2BB0A1EA240AE6"
+				item: "gtceu:plastic_circuit_board"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B11CC75842D5673"]
+			icon: "gtceu:sulfuric_acid_bucket"
+			id: "2FA52B08E1443C7A"
+			rewards: [{
+				id: "19C6A61D51C5791A"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CDF08A5275CF65E"
+				title: "硫酸"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["70107818C4DE555B"]
+			icon: "gtceu:sulfur_trioxide_bucket"
+			id: "4B11CC75842D5673"
+			rewards: [{
+				id: "5ED3CF90DA3F6FCA"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FEA74A2A57F61E8"
+				type: "checkmark"
+			}]
+			title: "三酸化硫黄"
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["112A29FDB6CC4A64"]
+			icon: "gtceu:sulfur_dioxide_bucket"
+			id: "70107818C4DE555B"
+			rewards: [{
+				id: "20EF3D8B7FD4740C"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "412E854B054A0093"
+				type: "checkmark"
+			}]
+			title: "二酸化硫黄"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			id: "112A29FDB6CC4A64"
+			rewards: [{
+				id: "2D25261989721EFF"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "41B1591951353DAF"
+				item: { Count: 2, id: "gtceu:sulfur_dust" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3567734CEA30E279"
+				"6D302E5A85AE44E5"
+				"5465802290B25969"
+			]
+			id: "537928979C7486A5"
+			rewards: [{
+				id: "14A9E817549B3B8D"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "56639B2AF1A4A4A6"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"537928979C7486A5"
+				"7515A810CD0D56E0"
+				"245817CAB1741064"
+				"39C1ABA2745AFC81"
+			]
+			id: "6E50C5362DE66093"
+			rewards: [{
+				id: "52079E95D8DCEE86"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5516B748D474DA04"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6A4345A10CCB6A59"
+				"114E0EECD9A00167"
+				"6E50C5362DE66093"
+			]
+			id: "59307A4C3713CCEA"
+			rewards: [
+				{
+					count: 3
+					id: "0E7BACE799D0FBF1"
+					item: "kubejs:gt_coin"
+					type: "item"
+				}
+				{
+					id: "7D3BB3821AAACA9E"
+					item: "kubejs:chapter_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "3866E0B8534CF89A"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3B5C29E5710DA34D"
+				"0AA788130E8A0A07"
+				"569B97C37B96514E"
+			]
+			id: "250E8174125A019A"
+			rewards: [{
+				id: "109D6314894F5195"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32784E5DBC4C159B"
+				item: "gtceu:hv_emitter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["250E8174125A019A"]
+			id: "30E1D617E257931F"
+			rewards: [{
+				id: "04480D5918514383"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3D6EA9710AB87FC9"
+				item: "gtceu:hv_electric_motor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			id: "0AA788130E8A0A07"
+			rewards: [{
+				id: "5A5016C451B57990"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "46A65BC475F52121"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3B5C29E5710DA34D"]
+			id: "569B97C37B96514E"
+			rewards: [{
+				id: "3742786F47C905F2"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78979724B46CCA6A"
+				item: "gtceu:chromium_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3B5C29E5710DA34D"]
+			id: "7515A810CD0D56E0"
+			rewards: [{
+				id: "5D2382499F0BB23D"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C143E371B6A1DF8"
+				item: "gtceu:cbbcvsg_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["463C567EF156A7C7"]
+			icon: "gtceu:cleanroom"
+			id: "6A4345A10CCB6A59"
+			rewards: [{
+				count: 3
+				id: "3400300C3418FBFF"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6C4E00B86A66858C"
+					item: "gtceu:cleanroom"
+					type: "item"
+				}
+				{
+					id: "47F4FB893EDC6CD4"
+					item: "gtceu:lv_fluid_passthrough_hatch"
+					type: "item"
+				}
+				{
+					id: "265363269A619E69"
+					item: "gtceu:lv_item_passthrough_hatch"
+					type: "item"
+				}
+				{
+					id: "76ED133DC749494E"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "215D0E3C3230A8AB"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1DA6019389A68D67"
+					item: "gtceu:filter_casing"
+					type: "item"
+				}
+				{
+					count: 73L
+					id: "4240C8ACEAFF89BF"
+					item: { Count: 75, id: "gtceu:plascrete" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "474037C511D8A0FA"
+					item: { Count: 6, id: "gtceu:cleanroom_glass" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["128C14AEDA35460F"]
+			id: "463C567EF156A7C7"
+			rewards: [{
+				id: "69A441E724CC7293"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "79040DFDD94C1ACE"
+				item: "gtceu:plascrete"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			id: "128C14AEDA35460F"
+			rewards: [{
+				id: "43E4DCE8739BB5AF"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "600AC5842C4BE451"
+				item: "gtceu:concrete_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6A4345A10CCB6A59"
+				"0A11924B62E8EA43"
+				"090260510FDF75AD"
+			]
+			id: "6F10590BD3C44A94"
+			rewards: [{
+				id: "79EEED94B26AA379"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "6DF25A1869E6D80A"
+				item: "kubejs:fission_casing"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			id: "775371807B3C89AF"
+			tasks: [{
+				id: "3D9DDFEAE9C3D845"
+				item: "gtceu:hv_mixer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"775371807B3C89AF"
+				"6A04BBBFA94BE00D"
+			]
+			id: "0A11924B62E8EA43"
+			rewards: [{
+				id: "7038353F245B1F53"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "387B5E37F496A0CC"
+				item: "gtceu:nyalloy_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"6F10590BD3C44A94"
+				"10C596BEFB21C6F6"
+				"41223E323431B703"
+				"1994C6AA4E6C4E71"
+			]
+			id: "3968B9EF2711A611"
+			rewards: [{
+				count: 3
+				id: "58997A86C95AE1D9"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5802B18CB144F0D6"
+				item: "gtceu:fission_reactor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			id: "6A04BBBFA94BE00D"
+			rewards: [{
+				id: "03D2EEA2FCA358A6"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "49130D87B4541C27"
+				item: "gtceu:nyaonium_gem"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3968B9EF2711A611"]
+			id: "114E0EECD9A00167"
+			rewards: [{
+				id: "3A3F482626003A32"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06B0DFF353C1EF0D"
+				item: "kubejs:fission_sandwich"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "10C596BEFB21C6F6"
+			tasks: [{
+				id: "7BD8E3E2A81A0363"
+				item: "kubejs:fission_cell"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			id: "41223E323431B703"
+			tasks: [{
+				id: "5FD4CE03CE6B7DEB"
+				item: "kubejs:fission_rod"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			id: "245817CAB1741064"
+			tasks: [{
+				id: "6263A005291626B7"
+				item: "gtceu:lpic_chip"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3FE80CF19F15FFBE"]
+			id: "39C1ABA2745AFC81"
+			rewards: [{
+				id: "77B0C3B6C33BD396"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "09C2C0FD0712F444"
+				item: { Count: 4, id: "gtceu:inductor" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "3FE80CF19F15FFBE"
+			tasks: [{
+				id: "59B17F4D118D21A5"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6EFFB83A95DC9B3C"
+				"61E3C3D07B5C8BAE"
+			]
+			icon: "gtceu:fission_fuel_bucket"
+			id: "1994C6AA4E6C4E71"
+			rewards: [{
+				id: "576CB0AB0263BD50"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2564FE08B1624ED8"
+				type: "checkmark"
+			}]
+			title: "核分裂燃料"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			id: "090260510FDF75AD"
+			tasks: [{
+				id: "2764FADFFEF26249"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3FE80CF19F15FFBE"]
+			id: "6D302E5A85AE44E5"
+			tasks: [
+				{
+					count: 4L
+					id: "51A56FC836FB990F"
+					item: "gtceu:transistor"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7099E055F095AED1"
+					item: { Count: 4, id: "gtceu:capacitor" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6BF3B23CB9042E82"]
+			id: "4B7976B6CB2AECC3"
+			optional: true
+			rewards: [{
+				id: "649B23BCEA78A651"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "68C368C8F4C33F61"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["569B97C37B96514E"]
+			id: "6BF3B23CB9042E82"
+			optional: true
+			rewards: [{
+				id: "6F4AC63205319E17"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70D6593B097B3E4A"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			icon: "gtceu:uranium_hexafluoride_bucket"
+			id: "6EFFB83A95DC9B3C"
+			tasks: [{
+				id: "66EECC389005F27C"
+				type: "checkmark"
+			}]
+			title: "六フッ化ウラン"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			id: "61E3C3D07B5C8BAE"
+			tasks: [{
+				id: "27E6B2B230E40D6B"
+				item: "gtceu:hv_distillery"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			id: "5465802290B25969"
+			tasks: [{
+				id: "0D05CE43439C4000"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+	]
+	title: "HV時代"
+}

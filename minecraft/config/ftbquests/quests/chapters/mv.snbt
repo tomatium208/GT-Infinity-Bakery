@@ -1,0 +1,579 @@
+{
+	autofocus_id: "51363E2D21A5B4FD"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mv"
+	group: "69182E6812501CC2"
+	icon: "gtceu:good_electronic_circuit"
+	id: "6FCBEC24EFF8C469"
+	images: [{
+		height: 2.0d
+		image: "kubejs:item/markers/mv"
+		rotation: 0.0d
+		width: 2.0d
+		x: 1.5d
+		y: -3.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5E10C1726FB0961B"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "3548D3423ED23406"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "5D54DDECBA1C0AA5"
+			tasks: [{
+				id: "4989E460DC5BA7CC"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "2DF80595F0EF54ED"
+			tasks: [{
+				id: "429587C0CE738A57"
+				item: "gtceu:mv_chemical_reactor"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4AFA67E64A042152"
+				"0BF1B81BC26B7FD7"
+				"454105ABDB8D6617"
+			]
+			id: "384D4BA041928559"
+			rewards: [{
+				id: "4BD5A413B2E90059"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "74E1039F3093FFF9"
+				item: "kubejs:sandwich"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2DF80595F0EF54ED"
+				"043D060DC98C9CAA"
+				"35AABE01131CAEE4"
+			]
+			id: "4AFA67E64A042152"
+			rewards: [{
+				id: "5C6795B4621D2524"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D8C3CA27B65C910"
+				item: "kubejs:lettuce"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5E10C1726FB0961B"]
+			id: "043D060DC98C9CAA"
+			rewards: [{
+				id: "11FEDCEE1074713B"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "653CC0F87469238B"
+				item: "gtceu:silicon_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5D54DDECBA1C0AA5"
+				"1DD5B37011C6C495"
+			]
+			id: "2AE4E3110D0F728B"
+			rewards: [{
+				id: "334156890C002EF5"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "5B81FDEFED4B2290"
+				item: { Count: 16, id: "gtceu:silicon_wafer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "598B8F3FEB81879D"
+			tasks: [{
+				id: "5C407581B9FEDFFD"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"384D4BA041928559"
+				"418D429F1B339888"
+			]
+			id: "0AAC090307C6ECE6"
+			rewards: [{
+				id: "0EF0902D12962A7C"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "374C74BB44737A5E"
+				item: "kubejs:engraved_sandwich"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "07EC631084F978C2"
+			tasks: [{
+				id: "49DD601940497CCB"
+				item: "gtceu:ilc_chip"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"07EC631084F978C2"
+				"33075AAC10C2CA8E"
+				"229566EFF2D4ADA8"
+			]
+			id: "48D1809C83626477"
+			rewards: [{
+				id: "4E6457EF6F6BDF23"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52F63EDF075D01F6"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"48D1809C83626477"
+				"0AAC090307C6ECE6"
+				"718A5C2588A9B1CE"
+			]
+			id: "0AB31D8ECB2A0BCC"
+			rewards: [{
+				id: "147AE53B0754042A"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C895CCC79959567"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0AB31D8ECB2A0BCC"
+				"7CAFB135392C7C44"
+				"05AB85520997BF7F"
+			]
+			id: "3278C3CF89CF81CD"
+			rewards: [
+				{
+					count: 3
+					id: "3C214528B309BC7F"
+					item: "kubejs:gt_coin"
+					type: "item"
+				}
+				{
+					id: "4B3945093F4095CD"
+					item: "kubejs:chapter_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "6097F790903DF69C"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["598B8F3FEB81879D"]
+			id: "33075AAC10C2CA8E"
+			rewards: [{
+				id: "188BF52F337F458B"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70661B00E0D7A131"
+				item: "gtceu:red_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["043D060DC98C9CAA"]
+			id: "1DD5B37011C6C495"
+			rewards: [{
+				id: "2EB8F8F3FA63980C"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "208D9E19C6CF7935"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"33075AAC10C2CA8E"
+				"6FFC0063B0A66019"
+			]
+			id: "0BF1B81BC26B7FD7"
+			rewards: [{
+				id: "50D82C3BD129D60F"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D5B22E8D9381062"
+				item: "kubejs:tomato"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5E10C1726FB0961B"]
+			hide_dependency_lines: true
+			id: "229566EFF2D4ADA8"
+			tasks: [{
+				id: "31DA6AAA7CADFFAC"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "718A5C2588A9B1CE"
+			tasks: [{
+				id: "7FB77CBFBFE4A570"
+				item: "gtceu:ram_chip"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E4F47DD783D015F"]
+			id: "7CAFB135392C7C44"
+			rewards: [{
+				id: "46388910724D6D08"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "512BA21EDB7A1A8B"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			id: "5A4B7030C757DD6B"
+			tasks: [{
+				id: "3BEA348617678035"
+				item: "gtceu:mv_distillery"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2C3B34A914DF069B"
+				"5E10C1726FB0961B"
+				"20555605017BF6DF"
+			]
+			id: "242C2C17B80C8C1A"
+			rewards: [{
+				id: "38B60485A1372093"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0043C29B9EE77C40"
+				item: "gtceu:mv_emitter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			id: "2C3B34A914DF069B"
+			rewards: [{
+				id: "046B54B83BF8487C"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "577BC803CC96BA84"
+				item: "gtceu:flawless_emerald_gem"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["242C2C17B80C8C1A"]
+			id: "357B1797EE43C86B"
+			rewards: [{
+				id: "72D7EBD6B6CD9518"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "68B71E25C1D23365"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			icon: "gtceu:pyrolyse_oven"
+			id: "132CD04F9EFD01B3"
+			rewards: [{
+				count: 3
+				id: "03375A045B987495"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3719FF18734426B4"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "454105ABDB8D6617"
+			tasks: [{
+				id: "15C4C707310B6662"
+				item: "gtceu:mv_bakery"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7088B6242802C9EC"]
+			id: "418D429F1B339888"
+			rewards: [{
+				id: "0C6BED6E4DC82986"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4498F8ADB8D21A0E"
+				item: "kubejs:tasty_valine3g"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "7088B6242802C9EC"
+			tasks: [{
+				id: "0D72B2B37AAA679B"
+				item: "gtceu:mv_particle_accelerator"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "05AB85520997BF7F"
+			tasks: [{
+				id: "2CE8C47BFD87CBA3"
+				item: "gtceu:cpu_chip"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			id: "6FFC0063B0A66019"
+			tasks: [{
+				id: "5D0A9201C025EDB8"
+				item: "gtceu:mv_canner"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["132CD04F9EFD01B3"]
+			icon: "gtceu:wood_gas_bucket"
+			id: "2807D8423ADACBE9"
+			rewards: [{
+				id: "665A0A6F7EC898E7"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B246DAE72B4145C"
+				type: "checkmark"
+			}]
+			title: "木質ガス"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2807D8423ADACBE9"
+				"5A4B7030C757DD6B"
+			]
+			icon: "gtceu:ethylene_bucket"
+			id: "35AABE01131CAEE4"
+			rewards: [{
+				id: "0A5FCA28DF96E640"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "774865F24573E90E"
+				type: "checkmark"
+			}]
+			title: "エチレン"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["35AABE01131CAEE4"]
+			icon: "gtceu:polyethylene_bucket"
+			id: "2E4F47DD783D015F"
+			rewards: [{
+				id: "7AC0769B8DCF63B7"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "04AE2549E3C5ED52"
+				type: "checkmark"
+			}]
+			title: "液化ポリエチレン"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E10C1726FB0961B"]
+			id: "20555605017BF6DF"
+			rewards: [{
+				id: "415D9936B3BDD626"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "596D6428CEF77241"
+				item: "gtceu:electrum_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5E10C1726FB0961B"]
+			id: "057327B052E80C18"
+			optional: true
+			rewards: [{
+				id: "5C5A6F169A86B31B"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "388E0D472CDB9E4D"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["057327B052E80C18"]
+			id: "5A766C96E415C14E"
+			optional: true
+			rewards: [{
+				id: "222F11046732A8E4"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "6FDF97F4711CB9DE"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+	]
+	title: "MV時代"
+}

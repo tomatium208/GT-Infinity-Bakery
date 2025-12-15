@@ -1,0 +1,90 @@
+{
+    "gtceu.bakery": "Bakery",
+    "gtceu.sieving": "Sieving",
+    "gtceu.particle_collision": "Particle Collision",
+
+    "gtceu.fission": "Fission Reacting",
+
+    
+    "block.gtceu.primitive_bakery": "Primitive Bakery",
+    "block.gtceu.fission_reactor": "Fission Reactor",
+    
+    
+    "gtceu.jei.ore_vein.valine3g_vein": "Valine3g Vein",
+    "gtceu.jei.ore_vein.nyaonium_vein": "Nyaonium Vein",
+
+
+    "item.kubejs.cyber_processor.tooltip.0": "§7Can't run Minecraft :(",
+    "item.kubejs.cyber_processor.tooltip.1": "ZPM-Tier Circuit",
+    "item.kubejs.cyber_processor_assembly.tooltip.0": "§7Better than JavaScript",
+    "item.kubejs.cyber_processor_assembly.tooltip.1": "UV-Tier Circuit",
+    "item.kubejs.cyber_processor_computer.tooltip.0": "§7Made by Bakery©",
+    "item.kubejs.cyber_processor_computer.tooltip.1": "UHV-Tier Circuit",
+    "item.kubejs.cyber_processor_mainframe.tooltip.0": "§7I n f i n i t y  R e a c h e d",
+    "item.kubejs.cyber_processor_mainframe.tooltip.1": "UEV-Tier Circuit",
+
+    "item.kubejs.holocarbon_processor.tooltip.0": "§7High Quality",
+    "item.kubejs.holocarbon_processor.tooltip.1": "UV-Tier Circuit",
+    "item.kubejs.holocarbon_processor_assembly.tooltip.0": "§7High Quality",
+    "item.kubejs.holocarbon_processor_assembly.tooltip.1": "UHV-Tier Circuit",
+    "item.kubejs.holocarbon_processor_computer.tooltip.0": "§7High Quality",
+    "item.kubejs.holocarbon_processor_computer.tooltip.1": "UEV-Tier Circuit",
+    "item.kubejs.holocarbon_processor_mainframe.tooltip.0": "§7High Quality",
+    "item.kubejs.holocarbon_processor_mainframe.tooltip.1": "UIV-Tier Circuit",
+    
+    "item.kubejs.grid_processor.tooltip.0": "§7Watch out your back!",
+    "item.kubejs.grid_processor.tooltip.1": "§5UHV-Tier Circuit",
+    "item.kubejs.grid_processor_assembly.tooltip.0": "§7Watch out your back!",
+    "item.kubejs.grid_processor_assembly.tooltip.1": "§5UEV-Tier Circuit",
+    "item.kubejs.grid_processor_computer.tooltip.0": "§7Watch out your back!",
+    "item.kubejs.grid_processor_computer.tooltip.1": "§5UIV-Tier Circuit",
+    "item.kubejs.grid_processor_mainframe.tooltip.0": "§7Watch out your back!",
+    "item.kubejs.grid_processor_mainframe.tooltip.1": "§5UXV-Tier Circuit",
+
+    "item.kubejs.coreunit_processor.tooltip.0": "§7To space...",
+    "item.kubejs.coreunit_processor.tooltip.1": "§cUEV-Tier Circuit",
+    "item.kubejs.coreunit_processor_assembly.tooltip.0": "§7To space...",
+    "item.kubejs.coreunit_processor_assembly.tooltip.1": "§cUIV-Tier Circuit",
+    "item.kubejs.coreunit_processor_computer.tooltip.0": "§7To space...",
+    "item.kubejs.coreunit_processor_computer.tooltip.1": "§cUXV-Tier Circuit",
+    "item.kubejs.coreunit_processor_mainframe.tooltip.0": "§7To space...",
+    "item.kubejs.coreunit_processor_mainframe.tooltip.1": "§cOpV-Tier Circuit",
+
+    "item.kubejs.ender_processor.tooltip.0": "§7Beyond Greg",
+    "item.kubejs.ender_processor.tooltip.1": "§2UIV-Tier Circuit",
+    "item.kubejs.ender_processor_assembly.tooltip.0": "§7Beyond Greg",
+    "item.kubejs.ender_processor_assembly.tooltip.1": "§2UXV-Tier Circuit",
+    "item.kubejs.ender_processor_computer.tooltip.0": "§7Beyond Greg",
+    "item.kubejs.ender_processor_computer.tooltip.1": "§2OpV-Tier Circuit",
+    "item.kubejs.ender_processor_mainframe.tooltip.0": "§7Beyond Greg",
+    "item.kubejs.ender_processor_mainframe.tooltip.1": "§2MAX-Tier Circuit",
+
+    "item.kubejs.computation_system.tooltip.0": "Improved Calculation",
+    "item.kubejs.particle_star.tooltip.0": "Improved Teleportation Technology",
+    
+
+    "material.gtceu.energy_drink": "Energy Drink",
+    "material.gtceu.tomato_sauce": "Tomato Sauce",
+    "material.gtceu.fission_fuel": "Fission Fuel",
+    "material.gtceu.nuclear_waste": "Nuclear Waste",
+
+    "material.gtceu.meta_null": "NULL",
+    "material.gtceu.valine3g": "Valine3g",
+    "material.gtceu.refined_valine3g": "Refined Valine3g",
+    "material.gtceu.sds": "Saltless Dried Soysouce",
+    "material.gtceu.tomatonium": "Tomatonium",
+    "material.gtceu.cbbcvsg": "CBBCVSG",
+    "material.gtceu.red": "R.E.D",
+    "material.gtceu.nyaonium": "Meownium",
+    "material.gtceu.nyalloy": "Meownium alloy",
+
+    "material.gtceu.valine": "Valine",
+    "material.gtceu.leucine": "Leucine",
+    "material.gtceu.isoleucine": "Isoleucine",
+    "material.gtceu.methionine": "Methionine",
+    "material.gtceu.lysine": "Lysine",
+    "material.gtceu.phenylalanine": "Phenylalanine",
+    "material.gtceu.tryptophan": "Tryptophan",
+    "material.gtceu.threonine": "Threonine",
+    "material.gtceu.histidine": "Histidine"
+}
