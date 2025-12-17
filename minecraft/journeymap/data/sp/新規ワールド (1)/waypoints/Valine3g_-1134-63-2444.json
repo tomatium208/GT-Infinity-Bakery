@@ -1,0 +1,23 @@
+{
+  "id": "Valine3g_-1134-63-2444",
+  "name": "Valine3g",
+  "displayId": "30235da9-b4c3-4aba-a03e-74578d899df0",
+  "icon": "journeymap:ui/img/waypoint-icon.png",
+  "colorizedIcon": "fake:color--8092534-waypoint-icon.png",
+  "x": -1134,
+  "y": 63,
+  "z": -2444,
+  "r": 132,
+  "g": 132,
+  "b": 138,
+  "enable": true,
+  "type": "Normal",
+  "origin": "gtceu",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "persistent": true,
+  "showDeviation": false,
+  "iconColor": -8092534,
+  "customIconColor": false
+}

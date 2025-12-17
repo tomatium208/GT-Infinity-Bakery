@@ -6,7 +6,12 @@
 	icon: "gtceu:micro_processor_computer"
 	id: "6308697F35A9F790"
 	order_index: 4
-	quest_links: [ ]
+	quest_links: [{
+		id: "413FECB82E1BCA4D"
+		linked_quest: "3AB2898F54E21788"
+		x: 6.0d
+		y: 12.0d
+	}]
 	quests: [
 		{
 			id: "0B5F3B89638F839C"
@@ -99,7 +104,7 @@
 				item: "kubejs:frozen_valine3g"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.0d
 			y: 8.0d
 		}
 		{
@@ -231,7 +236,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 10.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["203860854B92992E"]
@@ -268,7 +273,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -286,8 +291,8 @@
 				item: "gtceu:ruthenium_tetroxide_dust"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 8.5d
+			x: 5.0d
+			y: 8.0d
 		}
 		{
 			id: "2DBA54EB856B35FF"
@@ -296,8 +301,8 @@
 				item: "gtceu:ev_chemical_reactor"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 10.0d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			id: "6463040DFDCE05BA"
@@ -307,7 +312,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1F4507FD36E52247"]
@@ -322,7 +327,7 @@
 				item: "gtceu:ruthenium_dust"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: 7.0d
 		}
 		{
@@ -377,7 +382,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["216F4685E4D8B77C"]
@@ -402,8 +407,8 @@
 				item: "gtceu:ev_chemical_bath"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 10.0d
+			x: 7.0d
+			y: 12.0d
 		}
 		{
 			id: "50CDBF83F32BA7F4"
@@ -417,8 +422,8 @@
 				item: "gtceu:molybdenum_dust"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 7.0d
+			x: 8.0d
+			y: 6.5d
 		}
 		{
 			id: "318F185B5C9E799B"
@@ -443,7 +448,7 @@
 				item: "kubejs:boolean"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: 7.0d
 		}
 		{
@@ -462,7 +467,7 @@
 				item: "kubejs:int"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -2.0d
 			y: 6.0d
 		}
 		{
@@ -478,7 +483,7 @@
 				item: "kubejs:float"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.0d
 			y: 5.0d
 		}
 		{
@@ -497,7 +502,7 @@
 				item: "kubejs:long"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -2.0d
 			y: 3.5d
 		}
 		{
@@ -529,7 +534,7 @@
 				item: "kubejs:string"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: 3.5d
 		}
 		{
@@ -545,7 +550,7 @@
 				item: "kubejs:char"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: 5.0d
 		}
 		{
@@ -555,8 +560,8 @@
 				item: "gtceu:ev_bender"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 7.0d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -630,7 +635,6 @@
 				item: "kubejs:gt_coin"
 				type: "item"
 			}]
-			subtitle: "注意：炭化タンタルはRTMコイルでの作成です。"
 			tasks: [
 				{
 					id: "105D412E7FF5E425"
@@ -734,7 +738,7 @@
 				type: "checkmark"
 			}]
 			title: "ネザーの液体空気"
-			x: -3.5d
+			x: -3.0d
 			y: 3.5d
 		}
 		{
@@ -753,8 +757,8 @@
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			x: -4.424999999999997d
-			y: 5.2047619047618525d
+			x: -3.705357142857153d
+			y: 4.715476190476167d
 		}
 		{
 			id: "0454F13B9A440B21"
@@ -768,8 +772,220 @@
 				item: "gtceu:clean_machine_casing"
 				type: "item"
 			}]
-			x: -3.9011904761904717d
-			y: 6.471428571428525d
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2EF17083D99D996D"
+				"0B5F3B89638F839C"
+			]
+			id: "6CD0A96940BEA12F"
+			rewards: [{
+				id: "7B1C11E350FA2113"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "49FB10F7053C1E9D"
+				item: "gtceu:ev_emitter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0F9AFCACE1BF703E"
+				"4D5BADC94565A7BC"
+			]
+			id: "1EE15B5FAA452CE2"
+			rewards: [{
+				count: 3
+				id: "3AB4D557062FCDB4"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2BECB65FE333307F"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["277E286CFB96BAB5"]
+			id: "0F9AFCACE1BF703E"
+			rewards: [{
+				id: "7A29B90DFB467F6E"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D57E7C24B007516"
+				item: "gtceu:inert_machine_casing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["277E286CFB96BAB5"]
+			id: "4D5BADC94565A7BC"
+			rewards: [{
+				id: "6B7C4895DEACCA9B"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E3175CCE61A105C"
+				item: "gtceu:ptfe_pipe_casing"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1D4E5CE7322145F5"]
+			id: "277E286CFB96BAB5"
+			rewards: [{
+				id: "3A901DA5A78AB9EC"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66D0CE886E015E6B"
+				item: "gtceu:polybenzimidazole_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"676B66565169DF12"
+				"3AB2898F54E21788"
+			]
+			icon: "gtceu:tetrafluoroethylene_bucket"
+			id: "1D4E5CE7322145F5"
+			rewards: [{
+				id: "3F433B0C88972BA0"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "386E85A8DCD59B5F"
+				type: "checkmark"
+			}]
+			title: "テトラフルオロエチレン"
+			x: 5.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"0F4B5928C7072DB2"
+				"0BB6D3EFA6D1A14F"
+			]
+			icon: "gtceu:chloroform_bucket"
+			id: "676B66565169DF12"
+			rewards: [{
+				id: "4743248109184810"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A8816F2BF54C9DF"
+				type: "checkmark"
+			}]
+			title: "クロロホルム"
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			icon: "gtceu:methane_bucket"
+			id: "0BB6D3EFA6D1A14F"
+			rewards: [{
+				id: "75905C1584AB37C6"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "562AE2F7D6BE0FE1"
+				type: "checkmark"
+			}]
+			title: "メタン"
+			x: 4.5d
+			y: 13.0d
+		}
+		{
+			icon: "gtceu:chlorine_bucket"
+			id: "0F4B5928C7072DB2"
+			rewards: [{
+				id: "2F81700DCA8D2400"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "084BE8063A5CB844"
+				type: "checkmark"
+			}]
+			title: "塩素"
+			x: 3.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["1EE15B5FAA452CE2"]
+			icon: "gtceu:radon_bucket"
+			id: "6C2977BD3C6698E2"
+			rewards: [{
+				id: "49FF6F1FD4621CDA"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A648328E2F8688B"
+				type: "checkmark"
+			}]
+			title: "ラドン"
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6C2977BD3C6698E2"]
+			id: "2EF17083D99D996D"
+			rewards: [{
+				id: "33559A421E338507"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F06E019D51E5020"
+				item: "gtceu:quantum_eye"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6CD0A96940BEA12F"]
+			id: "38FE2DF655F873B7"
+			rewards: [{
+				id: "58C1352511C9CE1F"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "402C81281B6AE0FC"
+				item: "gtceu:ev_electric_motor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.0d
 		}
 	]
 	title: "EV時代"

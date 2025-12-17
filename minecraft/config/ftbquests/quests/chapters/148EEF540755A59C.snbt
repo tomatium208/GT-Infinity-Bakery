@@ -865,40 +865,52 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["395E20C3293B9F96"]
 			hide_until_deps_visible: false
 			icon: "kubejs:marker_lv"
 			id: "25C2BEB7705D1CD2"
 			shape: "hexagon"
+			tasks: [{
+				id: "5CEBAD6382325BDD"
+				type: "checkmark"
+			}]
 			title: "LV"
 			x: 4.5d
 			y: -2.5d
 		}
 		{
-			dependencies: ["568CE842A42D8733"]
 			icon: "kubejs:marker_mv"
 			id: "7C42B0E0B927FC13"
 			progression_mode: "linear"
 			shape: "hexagon"
+			tasks: [{
+				id: "06CAECDF5EBE5041"
+				type: "checkmark"
+			}]
 			title: "MV"
 			x: 4.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6FCBEC24EFF8C469"]
 			icon: "kubejs:marker_hv"
 			id: "78F15EBD460A4D02"
 			optional: true
 			shape: "hexagon"
+			tasks: [{
+				id: "6893A6DFCDA6284F"
+				type: "checkmark"
+			}]
 			title: "HV"
 			x: 4.5d
 			y: -0.5d
 		}
 		{
-			dependencies: ["05F5710847C0AFAB"]
 			icon: "kubejs:marker_ev"
 			id: "03729F77D86AFE66"
 			shape: "hexagon"
+			tasks: [{
+				id: "3F57A4575014AF09"
+				type: "checkmark"
+			}]
 			title: "EV"
 			x: 4.5d
 			y: 0.5d

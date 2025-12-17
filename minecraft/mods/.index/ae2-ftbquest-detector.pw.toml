@@ -1,0 +1,16 @@
+filename = 'ae2_ftbquest_detector-1.1-SNAPSHOT.jar'
+name = 'AE2-Ftbquest-Detector'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'e966d7f38f4891aa29f58afac777dd0e22f6c2cf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7180759
+project-id = 1377642

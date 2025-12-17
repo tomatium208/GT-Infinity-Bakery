@@ -1,0 +1,5 @@
+{
+  "ldlib": {
+    "connection": "kubejs:block/casings/explosion_proof/solid_ctm"
+  }
+}

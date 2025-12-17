@@ -1,0 +1,9 @@
+#Determines how fast the mining speed will be.
+#Note that Deepslate is mined at half the speed of Stone in Vanilla.
+#Range: 0.0 ~ 3.4028234663852886E38
+multiplier = 2.0
+#List of block IDs where this mod adjusts the mining speed.
+block_ids = ["minecraft:deepslate", "minecraft:cobbled_deepslate", "minecraft:polished_deepslate", "minecraft:infested_deepslate", "minecraft:deepslate_bricks", "minecraft:cracked_deepslate_bricks", "minecraft:deepslate_tiles", "minecraft:cracked_deepslate_tiles", "minecraft:chiseled_deepslate", "minecraft:cobbled_deepslate_wall", "minecraft:polished_deepslate_wall", "minecraft:deepslate_brick_wall", "minecraft:deepslate_tile_wall", "minecraft:cobbled_deepslate_stairs", "minecraft:polished_deepslate_stairs", "minecraft:deepslate_brick_stairs", "minecraft:deepslate_tile_stairs", "minecraft:cobbled_deepslate_slab", "minecraft:polished_deepslate_slab", "minecraft:deepslate_brick_slab", "minecraft:deepslate_tile_slab"]
+#List of Block Tags (not Item Tags) where this mod adjusts the mining speed.
+block_tags = ["forge:ores_in_ground/deepslate"]
+

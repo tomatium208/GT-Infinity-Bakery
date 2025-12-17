@@ -1,0 +1,17 @@
+{
+	id: "f8ad0578-f38b-4ef8-9ea3-4eaabe84f27a"
+	type: "player"
+	player_name: "shu3three"
+	ranks: {
+		f8ad0578-f38b-4ef8-9ea3-4eaabe84f27a: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "shu3three"
+		"ftbteams:description": ""
+		"ftbteams:color": "#65FF59"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}

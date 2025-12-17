@@ -1,0 +1,16 @@
+filename = 'gtmoldraw-2.0.3.jar'
+name = 'GregTech Molecule Drawings'
+side = 'client'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '24e461ca4eac2877458e125dc4c9eb678ad3c270'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7197440
+project-id = 1348330

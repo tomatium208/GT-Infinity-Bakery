@@ -27,12 +27,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .workableTieredHullModel('gtceu:block/machines/particle_accelerator')
         )
     
-    event.create('submitter', 'simple')
-        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
-        .definition((tier, builder) =>
-            builder
-                .recipeType('submit')
-                .workableTieredHullModel('gtceu:block/machines/submitter')
-        )
-    
 })

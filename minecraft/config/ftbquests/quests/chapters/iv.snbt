@@ -1,0 +1,118 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iv"
+	group: "69182E6812501CC2"
+	icon: "gtceu:nano_processor_computer"
+	id: "20FDC0569C674EE4"
+	order_index: 5
+	quest_links: [{
+		id: "19F17B4F1F0F31A1"
+		linked_quest: "0B2BAA7AF534605C"
+		x: -0.5d
+		y: -9.5d
+	}]
+	quests: [
+		{
+			id: "2AEED7614811B6A1"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4461690A97372711"
+				type: "checkmark"
+			}]
+			title: "IV時代に突入"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2AEED7614811B6A1"]
+			id: "68E2A3687DDCD760"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "6C68DC09B59E4966"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0B2BAA7AF534605C"]
+			id: "5CD25190A11C8D66"
+			tasks: [{
+				id: "4B41740F48964191"
+				item: "gtceu:rarest_metal_mixture_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"5CD25190A11C8D66"
+				"2AEED7614811B6A1"
+			]
+			id: "07B46BC20851917B"
+			rewards: [{
+				id: "0D8ACD5EBECD9B3E"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70D58B41D2CCA282"
+				item: "gtceu:iridium_metal_residue_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["07B46BC20851917B"]
+			id: "245DA44F596A8F27"
+			rewards: [{
+				id: "0702C1C954A1E266"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A5322BC355D7F64"
+				item: "gtceu:iridium_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["245DA44F596A8F27"]
+			id: "54BF01B887C90C3E"
+			rewards: [{
+				id: "327A12663D45E704"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "514E382328A205CA"
+				item: "gtceu:iv_emitter"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["54BF01B887C90C3E"]
+			id: "465023F9CA0003D4"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "79D1433414330164"
+				item: "gtceu:iv_electric_motor"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.0d
+		}
+	]
+	title: "IV時代"
+}

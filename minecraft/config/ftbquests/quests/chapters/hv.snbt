@@ -381,14 +381,12 @@
 					count: 73L
 					id: "4240C8ACEAFF89BF"
 					item: { Count: 75, id: "gtceu:plascrete" }
-					optional_task: true
 					type: "item"
 				}
 				{
 					count: 6L
 					id: "474037C511D8A0FA"
 					item: { Count: 6, id: "gtceu:cleanroom_glass" }
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -677,8 +675,14 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["3AB2898F54E21788"]
 			icon: "gtceu:uranium_hexafluoride_bucket"
 			id: "6EFFB83A95DC9B3C"
+			rewards: [{
+				id: "3568658F99E5A20C"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "66EECC389005F27C"
 				type: "checkmark"
@@ -706,6 +710,39 @@
 			}]
 			x: -3.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["0824721FA76E7B25"]
+			icon: "gtceu:hydrofluoric_acid_bucket"
+			id: "3AB2898F54E21788"
+			rewards: [{
+				id: "0A11F50E40F130F8"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E63406A195E7E6E"
+				type: "checkmark"
+			}]
+			title: "フッ化水素酸"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			icon: "gtceu:fluorine_bucket"
+			id: "0824721FA76E7B25"
+			rewards: [{
+				id: "417AEA77860B938B"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "13D3CA7E97005399"
+				type: "checkmark"
+			}]
+			title: "フッ素"
+			x: 5.0d
+			y: 0.0d
 		}
 	]
 	title: "HV時代"

@@ -1,0 +1,16 @@
+filename = 'vanillabackport-forge-1.20.1-1.1.5.1.jar'
+name = 'Vanilla Backport'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '77551f2c12f9ad1db0bcc4c2819e0914b0111326'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7227619
+project-id = 417430

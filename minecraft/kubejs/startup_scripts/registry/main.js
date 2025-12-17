@@ -1,3 +1,5 @@
+// Elementだよ
+
 GTCEuStartupEvents.registry("gtceu:element", event => {
 
     event.create("valine3g")
@@ -22,6 +24,8 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 
 })
 
+// IconSetだよ
+
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
 
     event.create('nyaonium')
@@ -34,6 +38,8 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
         .parent("dull")
 
 })
+
+// Materialだよ
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
@@ -177,6 +183,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(4000, "high", GTValues.VA[GTValues.EV])
         .flags(allMaterialFlag)
 
+    // アミノ酸だよ
+    
     const aminoAcids = [
         ["valine", ["5x carbon", "11x hydrogen", "1x nitrogen", "2x oxygen"], "0x0000ff"],
         ["leucine", ["6x carbon", "13x hydrogen", "1x nitrogen", "2x oxygen"], "0x774444"],
@@ -203,12 +211,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 StartupEvents.registry('block', event => {
 
-    // CASINGS
+    // CASING
 
-    event.create("omg_casing")
+    event.create("explosion_proof_machine_casing")
         .stoneSoundType()
-        .textureAll("kubejs:block/casings/omg/solid")
-
+        .textureAll("kubejs:block/casings/explosion_proof/solid")
 
     event.create("fission_casing")
         .stoneSoundType()

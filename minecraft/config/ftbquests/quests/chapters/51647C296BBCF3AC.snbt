@@ -137,7 +137,7 @@
 				item: "kubejs:ancient_toast"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.5d
 			y: 2.5d
 		}
 		{
@@ -147,7 +147,7 @@
 				item: "kubejs:energy_drink"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.5d
 			y: 1.5d
 		}
 		{

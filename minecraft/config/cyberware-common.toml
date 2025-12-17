@@ -1,0 +1,7 @@
+
+[Behavior]
+	#Whether players should keep their cyberware after death.
+	#True: Keep cyberware (Default).
+	#False: Lose all cyberware on death.
+	keepCyberwareOnDeath = true
+
