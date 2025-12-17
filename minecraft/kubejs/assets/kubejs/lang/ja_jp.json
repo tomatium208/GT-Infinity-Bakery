@@ -1,0 +1,145 @@
+{
+    "gtceu.bakery": "ベーカリー",
+    "gtceu.sieving": "ふるい",
+    "gtceu.particle_collision": "粒子衝突",
+    "gtceu.fission": "核分裂",
+
+
+    "block.gtceu.primitive_bakery": "原始的なベーカリー",
+    "block.gtceu.fission_reactor": "核分裂炉",
+    "block.gtceu.non_omnipotent_universe_forge": "§4§l非全能宇宙炉", 
+
+
+    "gtceu.jei.ore_vein.valine3g_vein": "バリン3g鉱脈",
+    "gtceu.jei.ore_vein.nyaonium_vein": "Nyaonium鉱脈",
+
+
+    "block.kubejs.explosion_proof_machine_casing": "対爆マシン外装",
+    "block.kubejs.fission_casing": "核分裂炉マシン外装",
+    "block.kubejs.fission_cell": "核分裂炉用燃料棒",
+    "block.kubejs.fission_rod": "核分裂炉用制御棒",
+    
+    
+    "item.kubejs.gt_coin": "GTコイン",
+    "item.kubejs.chapter_coin": "チャプターコイン",
+
+    "item.kubejs.computation_system": "コンピューテーション・システム",
+    "item.kubejs.particle_star": "パーティクルスター",
+    "item.kubejs.particle_shard": "パーティクルシャード",
+
+    "item.kubejs.pan": "フライパン",
+    "item.kubejs.energy_drink": "エナドリ",
+    "item.kubejs.tomato": "トマト",
+    "item.kubejs.sliced_tomato": "スライスしたトマト",
+    "item.kubejs.sliced_bread": "スライスしたパン",
+    "item.kubejs.toast": "トースト",
+    "item.kubejs.burnt_toast": "焦げパン",
+    "item.kubejs.ancient_toast": "古代のトースト",
+    "item.kubejs.lettuce": "レタス",
+    "item.kubejs.sliced_lettuce": "スライスしたレタス",
+    "item.kubejs.sandwich": "サンドイッチ",
+    "item.kubejs.engraved_sandwich": "刻印されたサンドイッチ",
+    "item.kubejs.tasty_valine3g": "おいしいバリン3g",
+    "item.kubejs.frozen_valine3g": "凍ったバリン3g",
+
+    "item.kubejs.cyber_processor": "電脳プロセッサー",
+    "item.kubejs.cyber_processor_assembly": "電脳演算処理装置",
+    "item.kubejs.cyber_processor_computer": "電脳処理コンピュータ",
+    "item.kubejs.cyber_processor_mainframe": "電脳処理メインフレーム",
+
+    "item.kubejs.holocarbon_processor": "ホロカーボン処理装置",
+    "item.kubejs.holocarbon_processor_assembly": "ホロカーボン演算処理装置",
+    "item.kubejs.holocarbon_processor_computer": "ホロカーボン処理コンピュータ",
+    "item.kubejs.holocarbon_processor_mainframe": "ホロカーボン処理メインフレーム",
+
+    "item.kubejs.grid_processor": "グリッドプロセッサー",
+    "item.kubejs.grid_processor_assembly": "グリッド演算処理装置",
+    "item.kubejs.grid_processor_computer": "グリッド処理コンピュータ",
+    "item.kubejs.grid_processor_mainframe": "グリッド処理メインフレーム",
+
+    "item.kubejs.coreunit_processor": "コアユニット処理装置",
+    "item.kubejs.coreunit_processor_assembly": "コアユニット演算処理装置",
+    "item.kubejs.coreunit_processor_computer": "コアユニット処理コンピュータ",
+    "item.kubejs.coreunit_processor_mainframe": "コアユニットメインフレーム",
+
+    "item.kubejs.ender_processor": "エンダープロセッサー",
+    "item.kubejs.ender_processor_assembly": "エンダー演算処理装置",
+    "item.kubejs.ender_processor_computer": "エンダー処理コンピュータ",
+    "item.kubejs.ender_processor_mainframe": "エンダー処理メインフレーム",
+
+    "item.kubejs.cyber_processor.tooltip.0": "§7歌でもひとつ歌いたいようなイイ気分",
+    "item.kubejs.cyber_processor.tooltip.1": "ZPM時代の回路",
+    "item.kubejs.cyber_processor_assembly.tooltip.0": "§7JavaScriptより良い",
+    "item.kubejs.cyber_processor_assembly.tooltip.1": "UV時代の回路",
+    "item.kubejs.cyber_processor_computer.tooltip.0": "§7ベーカリー©製",
+    "item.kubejs.cyber_processor_computer.tooltip.1": "UHV時代の回路",
+    "item.kubejs.cyber_processor_mainframe.tooltip.0": "§7シ ン ギ ュ ラ リ テ ィ に 到 達 し ま し た",
+    "item.kubejs.cyber_processor_mainframe.tooltip.1": "UEV時代の回路",
+
+    "item.kubejs.holocarbon_processor.tooltip.0": "§7高品質",
+    "item.kubejs.holocarbon_processor.tooltip.1": "§bUV時代の回路",
+    "item.kubejs.holocarbon_processor_assembly.tooltip.0": "§7最新の回路は青白く光るんだぜ？(被爆注意)",
+    "item.kubejs.holocarbon_processor_assembly.tooltip.1": "§bUHV時代の回路",
+    "item.kubejs.holocarbon_processor_computer.tooltip.0": "§7C#より速い",
+    "item.kubejs.holocarbon_processor_computer.tooltip.1": "§bUEV時代の回路",
+    "item.kubejs.holocarbon_processor_mainframe.tooltip.0": "§7なんと今なら核分裂機能もオプションで付けられます！",
+    "item.kubejs.holocarbon_processor_mainframe.tooltip.1": "§bUIV時代の回路",
+    
+    "item.kubejs.grid_processor.tooltip.0": "§7耐久性は問題ない。こんにゃくより硬いからな",
+    "item.kubejs.grid_processor.tooltip.1": "§5UHV時代の回路",
+    "item.kubejs.grid_processor_assembly.tooltip.0": "§7背後には気を付けよう。",
+    "item.kubejs.grid_processor_assembly.tooltip.1": "§5UEV時代の回路",
+    "item.kubejs.grid_processor_computer.tooltip.0": "§7これ核融合炉に突っ込んでみたらどうなるんだろう？",
+    "item.kubejs.grid_processor_computer.tooltip.1": "§5UIV時代の回路",
+    "item.kubejs.grid_processor_mainframe.tooltip.0": "§7とってもおいしい回路です。★★★★★",
+    "item.kubejs.grid_processor_mainframe.tooltip.1": "§5UXV時代の回路",
+
+    "item.kubejs.coreunit_processor.tooltip.0": "§7焦げパンよりも速く宇宙へ旅立つ",
+    "item.kubejs.coreunit_processor.tooltip.1": "§cUEV時代の回路",
+    "item.kubejs.coreunit_processor_assembly.tooltip.0": "§7Optifine入ってる？これ入ってないと動かないよ(大嘘)",
+    "item.kubejs.coreunit_processor_assembly.tooltip.1": "§cUIV時代の回路",
+    "item.kubejs.coreunit_processor_computer.tooltip.0": "§7反物質で包装",
+    "item.kubejs.coreunit_processor_computer.tooltip.1": "§cUXV時代の回路",
+    "item.kubejs.coreunit_processor_mainframe.tooltip.0": "§7バーベキューソースをこぼしても心配はない",
+    "item.kubejs.coreunit_processor_mainframe.tooltip.1": "§cOpV時代の回路",
+
+    "item.kubejs.ender_processor.tooltip.0": "§7Gregを超えて",
+    "item.kubejs.ender_processor.tooltip.1": "§2UIV時代の回路",
+    "item.kubejs.ender_processor_assembly.tooltip.0": "§7ﾓﾆﾓﾆ",
+    "item.kubejs.ender_processor_assembly.tooltip.1": "§2UXV時代の回路",
+    "item.kubejs.ender_processor_computer.tooltip.0": "§7新たなる地平線",
+    "item.kubejs.ender_processor_computer.tooltip.1": "§2OpV時代の回路",
+    "item.kubejs.ender_processor_mainframe.tooltip.0": "§7Stargateを作る必要はないってことだよね？",
+    "item.kubejs.ender_processor_mainframe.tooltip.1": "§2MAX時代の回路",
+
+    "item.kubejs.computation_system.tooltip.0": "基本的な計算システム。Optifineを粉々にするのには十分な性能がある。",
+    "item.kubejs.particle_star.tooltip.0": "改善したテレポート技術",
+    
+
+    "material.gtceu.energy_drink": "エナドリ",
+    "material.gtceu.tomato_sauce": "トマトソース",
+    "material.gtceu.fission_fuel": "核分裂燃料",
+    "material.gtceu.nuclear_waste": "核廃棄物",
+
+    "material.gtceu.meta_null": "NULL",
+    "material.gtceu.valine3g": "バリン3g",
+    "material.gtceu.refined_valine3g": "精製バリン3g",
+    "material.gtceu.sds": "無水無塩大豆塩水",
+    "material.gtceu.tomatonium": "トマトニウム",
+    "material.gtceu.magnetic_tomatonium": "磁化トマトニウム",
+    "material.gtceu.cbbcvsg": "CBBCVSG",
+    "material.gtceu.red": "R.E.D",
+    "material.gtceu.nyaonium": "Nyaonium",
+    "material.gtceu.nyalloy": "Nyalloy",
+    "material.gtceu.prismatic_nyaonium_alloy": "Prismatic Nyaonium合金",
+
+    "material.gtceu.valine": "バリン",
+    "material.gtceu.leucine": "ロイシン",
+    "material.gtceu.isoleucine": "イソロイシン",
+    "material.gtceu.methionine": "メチオニン",
+    "material.gtceu.lysine": "リシン",
+    "material.gtceu.phenylalanine": "フェニルアラニン",
+    "material.gtceu.tryptophan": "トリプトファン",
+    "material.gtceu.threonine": "トレオニン",
+    "material.gtceu.histidine": "ヒスチジン"
+}

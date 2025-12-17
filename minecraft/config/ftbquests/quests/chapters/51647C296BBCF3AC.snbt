@@ -1,0 +1,176 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "51647C296BBCF3AC"
+	group: "5096200C381E8783"
+	icon: "minecraft:pumpkin_pie"
+	id: "51647C296BBCF3AC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "79BD5BE7CC0E8738"
+			tasks: [{
+				id: "6E8D4FC7C0C7542A"
+				item: "kubejs:tomato"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["79BD5BE7CC0E8738"]
+			id: "30229177ADF298EC"
+			tasks: [{
+				id: "3FCEB9D096C0A1B6"
+				item: "kubejs:sliced_tomato"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			id: "1CF9E8EF940549A9"
+			tasks: [{
+				id: "294C24435F13D341"
+				item: "kubejs:lettuce"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1CF9E8EF940549A9"]
+			id: "299A7B33D0B5DC6F"
+			tasks: [{
+				id: "5119137D05326B75"
+				item: "kubejs:sliced_lettuce"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1E9D6F4DA392D2D2"]
+			id: "7A40D38FF754B3A1"
+			tasks: [{
+				id: "049C813E9A15C5C6"
+				item: "kubejs:sliced_bread"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A40D38FF754B3A1"]
+			id: "4ACF39ECFE98EF0A"
+			tasks: [{
+				id: "30C1778E3F776221"
+				item: "kubejs:toast"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			id: "1E9D6F4DA392D2D2"
+			tasks: [{
+				id: "0D711CD4B640CE4D"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4ACF39ECFE98EF0A"]
+			id: "29124EB520AEDEBC"
+			tasks: [{
+				id: "796ECD37945E5900"
+				item: "kubejs:burnt_toast"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4ACF39ECFE98EF0A"
+				"299A7B33D0B5DC6F"
+				"30229177ADF298EC"
+			]
+			id: "4CCC032E1108749B"
+			tasks: [{
+				id: "438AE073209120F7"
+				item: "kubejs:sandwich"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4CCC032E1108749B"]
+			id: "2CE799CBC1C8892B"
+			tasks: [{
+				id: "3164A66DB7687FD9"
+				item: "kubejs:engraved_sandwich"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B3816064E18FD30"]
+			id: "6DCAF72D44DEDF1F"
+			tasks: [{
+				id: "7C99AD39A3A2EE7A"
+				item: "kubejs:tasty_valine3g"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			id: "05AA75C3152FEB04"
+			tasks: [{
+				id: "0363C32DA28165B3"
+				item: "kubejs:ancient_toast"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			id: "7516CB678D374311"
+			tasks: [{
+				id: "1BF969653B4E8756"
+				item: "kubejs:energy_drink"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			id: "4B3816064E18FD30"
+			tasks: [{
+				id: "2F28E9E8F453D052"
+				item: "gtceu:valine3g_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4CCC032E1108749B"]
+			id: "09B7835EC69394D9"
+			tasks: [{
+				id: "5E84898BCA8EF2BC"
+				item: "kubejs:fission_sandwich"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	title: "食材"
+}

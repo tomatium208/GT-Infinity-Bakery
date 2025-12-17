@@ -1,0 +1,992 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ev"
+	group: "69182E6812501CC2"
+	icon: "gtceu:micro_processor_computer"
+	id: "6308697F35A9F790"
+	order_index: 4
+	quest_links: [{
+		id: "413FECB82E1BCA4D"
+		linked_quest: "3AB2898F54E21788"
+		x: 6.0d
+		y: 12.0d
+	}]
+	quests: [
+		{
+			id: "0B5F3B89638F839C"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "5CDC1830A699711C"
+				type: "checkmark"
+			}]
+			title: "EV時代に到達"
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"6AB840E995314296"
+				"101D7EFC4333B74A"
+			]
+			id: "1CB9DAAB22F27A31"
+			rewards: [
+				{
+					count: 3
+					id: "324B46C47E9A52D0"
+					item: "kubejs:gt_coin"
+					type: "item"
+				}
+				{
+					id: "3A5DED80382D0B21"
+					item: "kubejs:chapter_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "658B4AA90BF2725C"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"675442150497F905"
+				"0B5F3B89638F839C"
+			]
+			id: "0625E78D841B2410"
+			rewards: [{
+				count: 3
+				id: "5A923063879164BF"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "6BDBA4627DD5F6CE"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			id: "675442150497F905"
+			rewards: [{
+				id: "01250924D9F4C0F5"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "643EFA2EF5D0B826"
+				item: "gtceu:frostproof_machine_casing"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0625E78D841B2410"]
+			id: "68D5A584299C362A"
+			rewards: [{
+				id: "500E40CB70A454E3"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "46FE8CA6B17CEADB"
+				item: "kubejs:frozen_valine3g"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["71AB4DABC885B162"]
+			id: "7EA88905487C8822"
+			rewards: [{
+				id: "69689412068E6244"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "01C3C35458875103"
+				item: "gtceu:tomatonium_ingot"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0625E78D841B2410"]
+			id: "0BAEDCCD96A637EF"
+			rewards: [{
+				id: "0A43539B15C6060C"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D578BB7D8EC547F"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0BAEDCCD96A637EF"]
+			id: "358ADA5F43BCAED7"
+			rewards: [{
+				id: "6E0F947E128346D1"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26C4717F3B6E6F1F"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["358ADA5F43BCAED7"]
+			id: "2EE54239F023CC65"
+			optional: true
+			rewards: [{
+				id: "64CCE24108ECBFFE"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E226D9BC5A59970"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2EE54239F023CC65"]
+			id: "599205276FC9D365"
+			optional: true
+			rewards: [{
+				id: "1906BEEF7C24F313"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4DB15AFFC909641B"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["15565CB280E8338E"]
+			id: "118158A1E5BC8BEE"
+			rewards: [{
+				id: "738E441832254D8A"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B58C14BAB8CF2B7"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3FC75FCB0BE53290"]
+			id: "71AB4DABC885B162"
+			rewards: [{
+				id: "20E3DE051914A492"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25CE3557F73FAD19"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			id: "0B2BAA7AF534605C"
+			rewards: [{
+				id: "144C1A2B71E39712"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1ECA4C7A5BF26F7D"
+				item: "gtceu:platinum_group_sludge_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["203860854B92992E"]
+			icon: "gtceu:aqua_regia_bucket"
+			id: "71C2DDA2D9292B71"
+			rewards: [{
+				id: "463FF6F8A3EA7598"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "040ABA8847670087"
+				type: "checkmark"
+			}]
+			title: "王水"
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"0B2BAA7AF534605C"
+				"6463040DFDCE05BA"
+				"71C2DDA2D9292B71"
+			]
+			id: "4BD85789139A9B83"
+			rewards: [{
+				id: "57BC956B5D9A58D8"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C309E02C5E28F74"
+				item: "gtceu:inert_metal_mixture_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"4BD85789139A9B83"
+				"2DBA54EB856B35FF"
+			]
+			id: "1F4507FD36E52247"
+			rewards: [{
+				id: "10C3B4E5A21CE571"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4376A1351201CA85"
+				item: "gtceu:ruthenium_tetroxide_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			id: "2DBA54EB856B35FF"
+			tasks: [{
+				id: "0CEC2F349DAC7365"
+				item: "gtceu:ev_chemical_reactor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			id: "6463040DFDCE05BA"
+			tasks: [{
+				id: "6641A4C32DD98CC9"
+				item: "gtceu:hv_centrifuge"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1F4507FD36E52247"]
+			id: "4803713772BB7DAB"
+			rewards: [{
+				id: "175C05899EFF9669"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "04D6774F0F5BFC88"
+				item: "gtceu:ruthenium_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"4803713772BB7DAB"
+				"605ABD6115DEBFC0"
+				"50CDBF83F32BA7F4"
+				"318F185B5C9E799B"
+				"118158A1E5BC8BEE"
+			]
+			id: "3FC75FCB0BE53290"
+			rewards: [{
+				id: "082758642E2B2080"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5708E3809D68F56F"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			icon: "gtceu:nitric_acid_bucket"
+			id: "203860854B92992E"
+			rewards: [{
+				id: "0F204C19310E9134"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "30F0EDD891542F80"
+				type: "checkmark"
+			}]
+			title: "硝酸"
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2CFBAA31114589F6"]
+			id: "605ABD6115DEBFC0"
+			rewards: [{
+				id: "685772F46FA42083"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54B58644CB6E2082"
+				item: "gtceu:tungsten_dust"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["216F4685E4D8B77C"]
+			id: "2CFBAA31114589F6"
+			rewards: [{
+				id: "3F70B80AAE9D59DE"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C7690669574782D"
+				item: "gtceu:tungstic_acid_dust"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			id: "216F4685E4D8B77C"
+			tasks: [{
+				id: "2EE70EBB07D3B07B"
+				item: "gtceu:ev_chemical_bath"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 12.0d
+		}
+		{
+			id: "50CDBF83F32BA7F4"
+			rewards: [{
+				id: "4113B6E335744FE2"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5DF5C4256DE0F5F4"
+				item: "gtceu:molybdenum_dust"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			id: "318F185B5C9E799B"
+			tasks: [{
+				id: "65D06F62AC660C08"
+				item: "gtceu:ev_mixer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["68D5A584299C362A"]
+			id: "564FD8EE49E05A94"
+			rewards: [{
+				id: "49EFAF7B0DDC119C"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "306C8A27777005D4"
+				item: "kubejs:boolean"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"564FD8EE49E05A94"
+				"49494A0A94E64944"
+			]
+			id: "6BB7FCD0769BED91"
+			rewards: [{
+				id: "05E2471BC480B335"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "064A82C42F15C99A"
+				item: "kubejs:int"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6BB7FCD0769BED91"]
+			id: "3A29153D1D3247A7"
+			rewards: [{
+				id: "4D791B265DC0BBFA"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B937AB2A60D717D"
+				item: "kubejs:float"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3A29153D1D3247A7"
+				"5DDD86DEFF6FB523"
+			]
+			id: "17AD45B2010AB0F5"
+			rewards: [{
+				id: "635025D336EFD376"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "60E10E62DBDBFBB9"
+				item: "kubejs:long"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["17AD45B2010AB0F5"]
+			id: "2046726A25BDA901"
+			rewards: [{
+				id: "4A9AEE58775956F2"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "23E4ACD422AF70A9"
+				item: "kubejs:double"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["415B1765BC71B266"]
+			id: "58531A53281F0F1C"
+			rewards: [{
+				id: "20188D281D01B8CB"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E248A9E6E8E4EDE"
+				item: "kubejs:string"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6BB7FCD0769BED91"]
+			id: "415B1765BC71B266"
+			rewards: [{
+				id: "693CB34401F4F918"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "23B7D6B096146CFA"
+				item: "kubejs:char"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			id: "49494A0A94E64944"
+			tasks: [{
+				id: "573A8F3B13126172"
+				item: "gtceu:ev_bender"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2046726A25BDA901"
+				"58531A53281F0F1C"
+			]
+			id: "101D7EFC4333B74A"
+			rewards: [{
+				id: "795B9BB2516CD535"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "31E70ED3F4C74DC2"
+				item: "kubejs:computation_system"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["118158A1E5BC8BEE"]
+			id: "5C693C654C2E2625"
+			rewards: [{
+				id: "42C8F8BD59CF9892"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1D94CF998E92BF20"
+					item: "gtceu:titanium_carbide_ingot"
+					type: "item"
+				}
+				{
+					id: "3404DB4777517B24"
+					item: "gtceu:hsla_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "6CA6F01E67D14D6E"
+					item: "gtceu:tungsten_carbide_ingot"
+					type: "item"
+				}
+			]
+			title: "インゴットx3"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5C693C654C2E2625"]
+			id: "42FF2A03F5ADC1C0"
+			rewards: [{
+				id: "142C41A7821FFF6D"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14D1D7A3150F1F54"
+				item: "gtceu:high_temperature_smelting_casing"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["358ADA5F43BCAED7"]
+			id: "522E9476F8EC0185"
+			rewards: [{
+				id: "09A5BB3B0DD54863"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "105D412E7FF5E425"
+					item: "gtceu:molybdenum_disilicide_ingot"
+					type: "item"
+				}
+				{
+					id: "77AF4DC63BA092E4"
+					item: "gtceu:tantalum_carbide_ingot"
+					type: "item"
+				}
+			]
+			title: "インゴットx2"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["522E9476F8EC0185"]
+			id: "37CF728F1355ACD9"
+			rewards: [{
+				id: "7D8784A74C538562"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A10A42BB8072008"
+				item: "gtceu:heat_vent"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"42FF2A03F5ADC1C0"
+				"37CF728F1355ACD9"
+			]
+			id: "507E350481BA11C6"
+			rewards: [{
+				count: 3
+				id: "0FA15DCE1D80A228"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "10657EF81631F959"
+				item: "gtceu:alloy_blast_smelter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["358ADA5F43BCAED7"]
+			id: "15565CB280E8338E"
+			rewards: [{
+				id: "6AA5E584A878EC43"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14820DA49AD3678E"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"507E350481BA11C6"
+				"7EA88905487C8822"
+			]
+			id: "6AB840E995314296"
+			rewards: [{
+				id: "4C7AAECD7E5B0D46"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02C5CF8E00C7054C"
+				item: "gtceu:prismatic_nyaonium_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["05AED9ACB1C2E6DE"]
+			icon: "gtceu:liquid_nether_air_bucket"
+			id: "5DDD86DEFF6FB523"
+			rewards: [{
+				id: "1E2BD21518194BF8"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "191517861657C85E"
+				type: "checkmark"
+			}]
+			title: "ネザーの液体空気"
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0454F13B9A440B21"]
+			id: "05AED9ACB1C2E6DE"
+			rewards: [{
+				count: 3
+				id: "6C63573E5B3EB8CB"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "636D3F1A44BCE1A5"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			x: -3.705357142857153d
+			y: 4.715476190476167d
+		}
+		{
+			id: "0454F13B9A440B21"
+			rewards: [{
+				id: "08DF65CA6475ACF0"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4EF0909FD9BA4FF4"
+				item: "gtceu:clean_machine_casing"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2EF17083D99D996D"
+				"0B5F3B89638F839C"
+			]
+			id: "6CD0A96940BEA12F"
+			rewards: [{
+				id: "7B1C11E350FA2113"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "49FB10F7053C1E9D"
+				item: "gtceu:ev_emitter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0F9AFCACE1BF703E"
+				"4D5BADC94565A7BC"
+			]
+			id: "1EE15B5FAA452CE2"
+			rewards: [{
+				count: 3
+				id: "3AB4D557062FCDB4"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2BECB65FE333307F"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["277E286CFB96BAB5"]
+			id: "0F9AFCACE1BF703E"
+			rewards: [{
+				id: "7A29B90DFB467F6E"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D57E7C24B007516"
+				item: "gtceu:inert_machine_casing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["277E286CFB96BAB5"]
+			id: "4D5BADC94565A7BC"
+			rewards: [{
+				id: "6B7C4895DEACCA9B"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E3175CCE61A105C"
+				item: "gtceu:ptfe_pipe_casing"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1D4E5CE7322145F5"]
+			id: "277E286CFB96BAB5"
+			rewards: [{
+				id: "3A901DA5A78AB9EC"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66D0CE886E015E6B"
+				item: "gtceu:polybenzimidazole_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"676B66565169DF12"
+				"3AB2898F54E21788"
+			]
+			icon: "gtceu:tetrafluoroethylene_bucket"
+			id: "1D4E5CE7322145F5"
+			rewards: [{
+				id: "3F433B0C88972BA0"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "386E85A8DCD59B5F"
+				type: "checkmark"
+			}]
+			title: "テトラフルオロエチレン"
+			x: 5.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"0F4B5928C7072DB2"
+				"0BB6D3EFA6D1A14F"
+			]
+			icon: "gtceu:chloroform_bucket"
+			id: "676B66565169DF12"
+			rewards: [{
+				id: "4743248109184810"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A8816F2BF54C9DF"
+				type: "checkmark"
+			}]
+			title: "クロロホルム"
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			icon: "gtceu:methane_bucket"
+			id: "0BB6D3EFA6D1A14F"
+			rewards: [{
+				id: "75905C1584AB37C6"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "562AE2F7D6BE0FE1"
+				type: "checkmark"
+			}]
+			title: "メタン"
+			x: 4.5d
+			y: 13.0d
+		}
+		{
+			icon: "gtceu:chlorine_bucket"
+			id: "0F4B5928C7072DB2"
+			rewards: [{
+				id: "2F81700DCA8D2400"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "084BE8063A5CB844"
+				type: "checkmark"
+			}]
+			title: "塩素"
+			x: 3.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["1EE15B5FAA452CE2"]
+			icon: "gtceu:radon_bucket"
+			id: "6C2977BD3C6698E2"
+			rewards: [{
+				id: "49FF6F1FD4621CDA"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A648328E2F8688B"
+				type: "checkmark"
+			}]
+			title: "ラドン"
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6C2977BD3C6698E2"]
+			id: "2EF17083D99D996D"
+			rewards: [{
+				id: "33559A421E338507"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F06E019D51E5020"
+				item: "gtceu:quantum_eye"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6CD0A96940BEA12F"]
+			id: "38FE2DF655F873B7"
+			rewards: [{
+				id: "58C1352511C9CE1F"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "402C81281B6AE0FC"
+				item: "gtceu:ev_electric_motor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.0d
+		}
+	]
+	title: "EV時代"
+}

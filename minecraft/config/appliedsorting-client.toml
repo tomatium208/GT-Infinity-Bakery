@@ -1,0 +1,10 @@
+#Replaces the default sorting with the selected option
+#Allowed Values: INTERNAL_ID, RESOURCE_LOCATION, NAME, AMOUNT, MOD
+alternativeSort = "INTERNAL_ID"
+#Removes the default sort button from the ME terminal
+removeDefaultSortButton = true
+
+[resourceLocation]
+	#Sort Minecraft items first when sorting by resource location
+	minecraftFirst = true
+
