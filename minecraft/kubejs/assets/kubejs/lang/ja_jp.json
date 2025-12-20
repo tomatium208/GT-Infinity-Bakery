@@ -3,23 +3,28 @@
     "gtceu.sieving": "ふるい",
     "gtceu.particle_collision": "粒子衝突",
     "gtceu.fission": "核分裂",
+    "gtceu.dimensional_mining": "多次元採掘",
 
-
-    "block.gtceu.primitive_bakery": "初歩的なベーカリー",
+    "block.gtceu.primitive_bakery": "原始的なベーカリー",
     "block.gtceu.fission_reactor": "核分裂炉",
-    "block.gtceu.non_omnipotent_universe_forge": "§4§l非全能宇宙炉", 
+    "block.gtceu.non_omnipotent_universe_forge": "§4§l全能（じゃない）宇宙炉",
+    "block.gtceu.dimensional_miner": "§4§l多次元採掘機構",  
 
 
     "gtceu.jei.ore_vein.valine3g_vein": "バリン3g鉱脈",
     "gtceu.jei.ore_vein.nyaonium_vein": "Nyaonium鉱脈",
 
 
-    "block.kubejs.multi_dimensional_machine_casing": "多次元的マシン外装",
-    "block.kubejs.explosion_proof_machine_casing": "耐爆マシン外装",
+    "block.kubejs.multi_dimensional_machine_casing": "多次元機構外装",
+    
+    "block.kubejs.explosion_proof_machine_casing": "対爆マシン外装",
     "block.kubejs.collapse_proof_machine_casing": "耐次元崩壊外装",
     "block.kubejs.fission_casing": "核分裂炉マシン外装",
     "block.kubejs.fission_cell": "核分裂炉用燃料棒",
     "block.kubejs.fission_rod": "核分裂炉用制御棒",
+    "block.kubejs.greenhouse_casing_mk2": "温室用外装 Mk.2",
+    "block.kubejs.greenhouse_casing_mk3": "温室用外装 Mk.3",
+    "block.kubejs.greenhouse_casing_mk4": "温室用外装 Mk.4",
     
     
     "item.kubejs.gt_coin": "GTコイン",

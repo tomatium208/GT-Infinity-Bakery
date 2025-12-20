@@ -3,16 +3,30 @@
     "gtceu.sieving": "Sieving",
     "gtceu.particle_collision": "Particle Collision",
     "gtceu.fission": "Fission Reacting",
+    "gtceu.dimensional_mining": "Multi-Dimensional Mining",
 
     
     "block.gtceu.primitive_bakery": "Primitive Bakery",
     "block.gtceu.fission_reactor": "Fission Reactor",
-    "block.gtceu.non_omnipotent_universe_forge": "Non-Omnipotent Universe Forge", 
+    "block.gtceu.non_omnipotent_universe_forge": "(Non) Omnipotent Universe Forge", 
+    "block.gtceu.dimensional_miner": "§4§lMultidimensional-Mining Organization",  
     
     
     "gtceu.jei.ore_vein.valine3g_vein": "Valine3g Vein",
     "gtceu.jei.ore_vein.nyaonium_vein": "Nyaonium Vein",
 
+
+    "block.kubejs.multi_dimensional_machine_casing": "Multi-Dimensional Machine Casing",
+
+    "block.kubejs.explosion_proof_machine_casing": "Explosion Proof Machine Casing",
+    "block.kubejs.collapse_proof_machine_casing": "Collapse-Proof Machine Casing",
+    "block.kubejs.fission_casing": "Fission Casing",
+    "block.kubejs.fission_cell": "Fission Cell",
+    "block.kubejs.fission_rod": "Fission Rod",
+    "block.kubejs.greenhouse_casing_mk2": "GreenHouse Casing Mk.2",
+    "block.kubejs.greenhouse_casing_mk3": "GreenHouse Casing Mk.3",
+    "block.kubejs.greenhouse_casing_mk4": "GreenHouse Casing Mk.4",
+    
 
     "item.kubejs.cyber_processor.tooltip.0": "§7Can't run Minecraft :(",
     "item.kubejs.cyber_processor.tooltip.1": "ZPM-Tier Circuit",
@@ -67,6 +81,8 @@
     "material.gtceu.tomato_sauce": "Tomato Sauce",
     "material.gtceu.fission_fuel": "Fission Fuel",
     "material.gtceu.nuclear_waste": "Nuclear Waste",
+
+    "material.gtceu.bread": "Bread",
 
     "material.gtceu.meta_null": "NULL",
     "material.gtceu.valine3g": "Valine3g",

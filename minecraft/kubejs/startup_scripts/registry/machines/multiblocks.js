@@ -80,6 +80,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/fusion_reactor"
         )
 
+    // 実験的マルチブロックです。まだ形決めてない
     event.create('sub-dimensional_singular_furnace', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType(GTRecipeTypes.BLAST_RECIPES)
@@ -97,6 +98,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
+                .or(Predicates.blocks("gtceu:cupronickel_coil_block"))
             )
             .build()
         )

@@ -201,6 +201,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 StartupEvents.registry('block', event => {
 
     event.create("dimensional_rift")
+        .glassSoundType()
 
     // SOLID CASINGS
 
