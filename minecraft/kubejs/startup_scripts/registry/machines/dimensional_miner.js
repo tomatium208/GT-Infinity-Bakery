@@ -138,7 +138,4 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/fusion_reactor"
         )
 
-
 })
-
-
