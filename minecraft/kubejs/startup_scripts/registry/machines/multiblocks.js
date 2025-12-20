@@ -80,7 +80,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/fusion_reactor"
         )
 
-    event.create('sub-dimension_singular_furnace', 'multiblock')
+    event.create('sub-dimensional_singular_furnace', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType(GTRecipeTypes.ASSEMBLY_LINE_RECIPES)
         .appearanceBlock(() => Block.getBlock('kubejs:fission_casing'))

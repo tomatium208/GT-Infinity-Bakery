@@ -228,17 +228,17 @@ StartupEvents.registry('block', event => {
 
     // GREENHOUSE CASINGS
 
-    event.create("greenhouse_casing_t1")
+    event.create("greenhouse_casing_mk2").displayName("Greenhouse Machine Casing MK II")
         .stoneSoundType()
-        .textureAll("kubejs:block/casings/greenhouse/casing_t1")
+        .textureAll("kubejs:block/casings/greenhouse/casing_mk2")
 
-    event.create("greenhouse_casing_t2")
+    event.create("greenhouse_casing_mk3").displayName("Greenhouse Machine Casing MK III")
         .stoneSoundType()
-        .textureAll("kubejs:block/casings/greenhouse/casing_t2")
+        .textureAll("kubejs:block/casings/greenhouse/casing_mk3")
 
-    event.create("greenhouse_casing_t3")
+    event.create("greenhouse_casing_mk4").displayName("Greenhouse Machine Casing MK IV")
         .stoneSoundType()
-        .textureAll("kubejs:block/casings/greenhouse/casing_t3")
+        .textureAll("kubejs:block/casings/greenhouse/casing_mk4")
 
 
     // COIL

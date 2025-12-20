@@ -1,0 +1,5 @@
+{
+  "ldlib": {
+    "connection": "kubejs:block/casings/greenhouse/casing_mk4_ctm"
+  }
+}
