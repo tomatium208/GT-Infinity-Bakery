@@ -14,7 +14,7 @@
     "gtceu.jei.ore_vein.nyaonium_vein": "Nyaonium鉱脈",
 
 
-    "block.kubejs.explosion_proof_machine_casing": "対爆マシン外装",
+    "block.kubejs.explosion_proof_machine_casing": "耐爆マシン外装",
     "block.kubejs.fission_casing": "核分裂炉マシン外装",
     "block.kubejs.fission_cell": "核分裂炉用燃料棒",
     "block.kubejs.fission_rod": "核分裂炉用制御棒",
@@ -120,6 +120,8 @@
     "material.gtceu.tomato_sauce": "トマトソース",
     "material.gtceu.fission_fuel": "核分裂燃料",
     "material.gtceu.nuclear_waste": "核廃棄物",
+
+    "material.gtceu.bread": "パン",
 
     "material.gtceu.meta_null": "NULL",
     "material.gtceu.valine3g": "バリン3g",

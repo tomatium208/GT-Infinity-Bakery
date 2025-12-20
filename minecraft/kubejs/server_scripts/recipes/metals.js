@@ -1,5 +1,26 @@
 ServerEvents.recipes(event => {
 
+    // Bread
+
+    event.smelting("kubejs:sliced_bread", "#forge:dusts/bread")
+
+    event.recipes.gtceu.fluid_solidifier("kjs/bread")
+        .notConsumable('gtceu:ingot_casting_mold')
+        .inputFluids("gtceu:bread 144")
+        .itemOutputs("1x kubejs:sliced_bread")
+        .EUt(GTValues.VHA[GTValues.ULV])
+
+    event.recipes.gtceu.macerator("kjs/macerate_bread")
+        .itemInputs("1x kubejs:sliced_bread")
+        .itemOutputs("1x gtceu:bread_dust")
+        .EUt(GTValues.VHA[GTValues.LV])
+    
+    event.recipes.gtceu.extractor("extract_bread")
+        .itemInputs("1x kubejs:sliced_bread")
+        .outputFluids("gtceu:bread 144")
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.LV])
+
     // Nyalloy
 
     event.recipes.gtceu.mixer("kjs/nyalloy")
@@ -21,8 +42,8 @@ ServerEvents.recipes(event => {
         .itemInputs("#forge:dusts/cobalt_brass", "#forge:dusts/bronze", "#forge:dusts/cupronickel", "#forge:dusts/vanadium", "#forge:dusts/steel", "#forge:dusts/gold")
         .itemOutputs("6x gtceu:cbbcvsg_dust")
         .EUt(GTValues.VHA[GTValues.LV])
-    
-    
+
+
     // Kanthal
 
     event.remove({ output: "gtceu:kanthal_ingot", type: "gtceu:chemical_bath" })

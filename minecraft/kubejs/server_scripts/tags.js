@@ -1,9 +1,5 @@
 ServerEvents.tags("item", event => {
 
-    event.add('gtceu:manasteel_ingot',"botania:manasteel_ingots")
-    event.add('gtceu:manasteel_nugget',"botania:manasteel_nuggets")
-    event.add('gtceu:manasteel_block',"botania:manasteel_blocks")
-
     let makeTag = (name, list) => {
         event.add(`gtbakery:${name}`, list)
     }

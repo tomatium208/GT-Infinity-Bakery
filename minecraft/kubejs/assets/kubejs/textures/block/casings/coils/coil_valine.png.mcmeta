@@ -1,5 +1,5 @@
 {
   "ldlib": {
-    "connection": "gtbakery:block/casings/coils/coil_valine_ctm"
+    "connection": "kubejs:block/casings/coils/coil_valine_ctm"
   }
 }

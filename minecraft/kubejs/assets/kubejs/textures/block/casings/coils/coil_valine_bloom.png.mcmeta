@@ -1,6 +1,6 @@
 {
     "ldlib": {
-        "connection": "gtbakery:block/casings/coils/coil_valine_bloom_ctm",
+        "connection": "kubejs:block/casings/coils/coil_valine_bloom_ctm",
         "emissive": true
     },
     "shimmer": {

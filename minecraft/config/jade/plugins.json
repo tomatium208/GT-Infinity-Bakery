@@ -51,6 +51,10 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "deafission": {
+    "reactor": true,
+    "battery": true
+  },
   "gtceu": {
     "auto_output_info": true,
     "primitive_pump": true,

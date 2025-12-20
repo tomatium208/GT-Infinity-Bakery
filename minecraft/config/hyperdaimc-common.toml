@@ -1,0 +1,125 @@
+
+[Hyperlink]
+	#When logging in, warn that server config has been integrated into common config in version 2.0
+	#Default: true
+	"Config warning" = true
+
+	[Hyperlink.Muteki]
+		#Enable behavior of Muteki
+		#Default: true
+		"Enable Muteki" = true
+		#Novel may not Novelize Muteki
+		#Default: false
+		"Hyper Muteki" = false
+		#Muteki is not selected by command selector ( e.g. not included in @e or @a )
+		#Default: true
+		"Muteki command" = true
+
+	[Hyperlink.Novel]
+		#Enable behavior of Novel
+		#Default: true
+		"Enable Novel" = true
+		#Enable vulnerability of Novel
+		#Default: false
+		"Novel vulnerabilization" = false
+		#Specific entities that ignore Novelize
+		"Ignored entities" = ["minecraft:item", "minecraft:experience_orb", "hyperdaimc:fumetsu_skull", "hyperdaimc:fumetsu_storm", "hyperdaimc:fumetsu_storm_skull"]
+		#Specific entities not interrupted in the death process by Novel ( e.g. entities with a death animation )
+		"Special entities" = ["minecraft:ender_dragon", "draconicevolution:draconic_guardian", "cataclysm:ender_guardian", "cataclysm:netherite_monstrosity", "cataclysm:ignis", "cataclysm:the_harbinger", "cataclysm:the_prowler", "cataclysm:coralssus", "cataclysm:amethyst_crab", "cataclysm:ancient_remnant", "cataclysm:wadjet", "cataclysm:maledictus", "cataclysm:aptrgangr"]
+		#Default: false ( = Shift to target a single entity)
+		"Invert Novel control" = false
+
+	[Hyperlink.Chronicle]
+		#Enable behavior of Chronicle
+		#Default: true
+		"Enable Chronicle" = true
+		#Enable vulnerability of Chronicle
+		#Default: false
+		"Chronicle vulnerabilization" = false
+		#Paradox may not Perfect Knockout Chronicle
+		#Default: false
+		"Hyper Chronicle" = false
+		#Owner may not block action in Chronicle
+		#Default: false
+		"Pause owner" = false
+		#Cannot interact with blocks in Chronicle ( Like in Adventure Mode )
+		#Default: false
+		"Pause interaction" = false
+		#Max selection size of Chronicle
+		#Default: 16384
+		#Range: > 1
+		"Selection size" = 16384
+		#Default: false ( = Shift to target a face-offset block)
+		"Invert Chronicle control" = false
+
+	[Hyperlink.Paradox]
+		#Enable behavior of Paradox
+		#Default: true
+		"Enable Paradox" = true
+		#Paradox may Perfect Knockout liquid blocks
+		#Default: true
+		"Fluid Paradox" = true
+		#Default: false ( = Shift to no continuous target blocks)
+		"Invert Paradox control" = false
+
+	[Hyperlink.VRX]
+		#Enable behavior of VRX
+		#Default: true
+		"Enable VRX" = true
+		#Enable vulnerability of VRX
+		#Default: false
+		"VRX vulnerabilization" = false
+		#Keep VRX on yourself after death
+		#Default: true
+		"Keep VRX" = true
+		#Can VRX be set to other players
+		#Default: false
+		"Create for others" = false
+		#Can configure VRX using JEI
+		#Default: true
+		"Just Enough VRX" = true
+		#Unable to set Hyperlink items in VRX
+		#Default: true
+		"Seal Hyperlink" = true
+
+	[Hyperlink.Fumetsu]
+		#Enable Chemical-MAX and Fumetsu Skull brewing recipes
+		#Default: true
+		"Enable recipes" = true
+		#Enable Fumetsu summoning by assembling blocks
+		#Default: true
+		"Enable summoning" = true
+		#Enable Fumetsu to log out
+		#Default: true
+		"Enable logging out" = true
+		#Default: 20
+		#Range: > 20
+		"Max health" = 20
+		#The range for which Fumetsu sets targets
+		#Default: 128
+		#Range: > 64
+		"Search range" = 128
+		#Fumetsu will try to define the underground opponent as a target
+		#Default: false
+		"Search underground" = false
+
+	[Hyperlink.Materializer]
+		#Materializer processing time
+		#Default: 6000
+		#Range: > 1
+		"Process time" = 6000
+		#If the same ingredients appear in recipes, stack them
+		#Default: false ( = Even if the same material exists, only one item of each type will be extracted )
+		"Stack same ingredients" = false
+		#Recipe types searched by Materializer
+		#Default: [ minecraft:crafting, minecraft:smelting, minecraft:blasting, minecraft:smoking, minecraft:campfire_cooking, minecraft:smithing, hyperdaimc:desk, avaritia:crafting_table_recipe, avaritia:compressor_recipe, avaritia:extreme_smithing_recipe ]
+		"Materializer recipe types" = ["minecraft:crafting", "minecraft:smelting", "minecraft:blasting", "minecraft:smoking", "minecraft:campfire_cooking", "minecraft:smithing", "hyperdaimc:desk", "avaritia:crafting_table_recipe", "avaritia:compressor_recipe", "avaritia:extreme_smithing_recipe"]
+		#Specify the items that can be used as fuel for the materializer, along with the number of times they can be used
+		#Write the item ID on the left side of the = and the number of times on the right side ( e.g., hyperdaimc:god_sigil=64 )
+		#The item ID can also be used as a tag ID by adding a # at the beginning
+		"Materializer fuels" = ["hyperdaimc:god_sigil=64"]
+		#Specify recipes to ignore when searching recipes
+		"Recipe blacklist" = ["hyperdaimc:nether_star", "hyperdaimc:desk", "hyperdaimc:game_orb", "hyperdaimc:hyper/muteki", "hyperdaimc:hyper/novel", "hyperdaimc:hyper/chronicle", "hyperdaimc:hyper/paradox", "hyperdaimc:hyper/vrx"]
+		#Specify tags to ignore when searching recipes
+		"Tag blacklist" = ["forge:ingots", "forge:gems", "forge:storage_blocks", "forge:nuggets", "hyperdaimc:essences", "hyperdaimc:cores", "hyperdaimc:gists", "tconstruct:anvil_metal"]
+

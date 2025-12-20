@@ -7,20 +7,20 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .neutrons(9)
         .symbol("Vl")
 
-    event.create("tomatonium")
-        .protons(10)
-        .neutrons(18)
-        .symbol("To")
-
     event.create("meta_null")
         .protons(-1)
         .neutrons(-1)
         .symbol("N/A")
 
+    event.create("tomatonium")
+        .protons(10)
+        .neutrons(18)
+        .symbol("To")
+
     event.create("meow")
         .protons(3)
         .neutrons(3)
-        .symbol("UwU")
+        .symbol(":3")
 
 })
 
@@ -28,14 +28,9 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
 
-    event.create('nyaonium')
-        .parent("ruby")
-
-    event.create("prismatic")
-        .parent("metallic")
-
-    event.create("tomatonium")
-        .parent("dull")
+    event.create('nyaonium').parent(GTMaterialIconSet.RUBY)
+    event.create("prismatic").parent(GTMaterialIconSet.METALLIC)
+    event.create("tomatonium").parent(GTMaterialIconSet.DULL)
 
 })
 
@@ -66,11 +61,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid()
         .color("0x00a108")
 
-    event.create("bread")
-        .dust()
-        .liquid()
-        .color("0xf0be86")
-
     event.create("tomato_sauce")
         .liquid()
         .color("0xdd0000")
@@ -83,23 +73,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid()
         .color("0x1d361e")
 
-    event.create("valine3g_coolant")
-        .liquid()
-        .color("0x797fad")
 
-    event.create("superheated_valine3g_coolant")
+    event.create("bread")
+        .dust()
         .liquid()
-        .color("0xa66b4e")
+        .color("0xf0be86")
 
-
-    event.create("meta_null")
-        .element(GTElements.get("meta_null"))
-        .iconSet(GTMaterialIconSet.BRIGHT)
-        .ingot()
-        .liquid()
-        .color("0x220022")
-        .secondaryColor("0xff00ff")
-        .flags(allMaterialFlag)
 
     event.create("valine3g")
         .element(GTElements.get("valine3g"))
@@ -124,12 +103,23 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("sds")
         .components("1x valine3g", "1x water")
-        .iconSet(GTMaterialIconSet.RADIOACTIVE)
+        .iconSet(GTMaterialIconSet.METALLIC)
         .ingot()
         .ore()
         .liquid()
         .color("0x45281d")
-        .blastTemp(92233, "highest", GTValues.VA[GTValues.EV])
+        .blastTemp(18000, "highest", GTValues.VA[GTValues.LuV])
+        .flags(allMaterialFlag)
+
+    event.create("meta_null")
+        .element(GTElements.get("meta_null"))
+        .iconSet(GTMaterialIconSet.BRIGHT)
+        .ingot()
+        .liquid()
+        .color("0x440044")
+        .secondaryColor("0xff00ff")
+        .flags(allMaterialFlag)
+
 
     event.create("tomatonium")
         .element(GTElements.get("tomatonium"))
@@ -139,7 +129,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .secondaryColor("0x009900")
         .blastTemp(4400, "high", GTValues.VA[GTValues.EV])
         .flags(allMaterialFlag)
-
 
     event.create("cbbcvsg")
         .components("1x cobalt_brass", "1x bronze", "1x cupronickel", "1x vanadium", "1x steel", "1x gold")
@@ -184,7 +173,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(allMaterialFlag)
 
     // アミノ酸だよ
-    
+
     const aminoAcids = [
         ["valine", ["5x carbon", "11x hydrogen", "1x nitrogen", "2x oxygen"], "0x0000ff"],
         ["leucine", ["6x carbon", "13x hydrogen", "1x nitrogen", "2x oxygen"], "0x774444"],
@@ -211,11 +200,19 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 StartupEvents.registry('block', event => {
 
-    // CASING
+    event.create("dimensional_rift") // テクスチャ作ってない
+
+    // PROOF CASINGS
 
     event.create("explosion_proof_machine_casing")
         .stoneSoundType()
-        .textureAll("kubejs:block/casings/explosion_proof/solid")
+        .textureAll("kubejs:block/casings/proof/explosion")
+
+    event.create("collapse_proof_machine_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/proof/collapse")
+
+    // FISSION CASINGS
 
     event.create("fission_casing")
         .stoneSoundType()
@@ -228,6 +225,20 @@ StartupEvents.registry('block', event => {
     event.create("fission_rod")
         .stoneSoundType()
         .notSolid()
+
+    // GREENHOUSE CASINGS
+
+    event.create("greenhouse_casing_t1")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/greenhouse/casing_t1")
+
+    event.create("greenhouse_casing_t2")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/greenhouse/casing_t2")
+
+    event.create("greenhouse_casing_t3")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/greenhouse/casing_t3")
 
 
     // COIL
