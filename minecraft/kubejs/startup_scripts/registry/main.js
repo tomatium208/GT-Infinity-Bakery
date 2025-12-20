@@ -200,7 +200,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 StartupEvents.registry('block', event => {
 
-    event.create("dimensional_rift") // テクスチャ作ってない
+    event.create("dimensional_rift")
+
+    // SOLID CASINGS
+
+    event.create("multi_dimensional_machine_casing").displayName("Multi-Dimensional Machine Casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/solid/multi_dimensional")
 
     // PROOF CASINGS
 

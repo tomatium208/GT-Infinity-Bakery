@@ -14,7 +14,9 @@
     "gtceu.jei.ore_vein.nyaonium_vein": "Nyaonium鉱脈",
 
 
+    "block.kubejs.multi_dimensional_machine_casing": "多次元的マシン外装",
     "block.kubejs.explosion_proof_machine_casing": "耐爆マシン外装",
+    "block.kubejs.collapse_proof_machine_casing": "耐次元崩壊外装",
     "block.kubejs.fission_casing": "核分裂炉マシン外装",
     "block.kubejs.fission_cell": "核分裂炉用燃料棒",
     "block.kubejs.fission_rod": "核分裂炉用制御棒",

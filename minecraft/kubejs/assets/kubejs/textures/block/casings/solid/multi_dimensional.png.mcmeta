@@ -1,0 +1,5 @@
+{
+  "ldlib": {
+    "connection": "kubejs:block/casings/solid/multi_dimensional_ctm"
+  }
+}
