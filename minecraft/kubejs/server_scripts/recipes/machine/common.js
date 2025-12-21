@@ -56,9 +56,9 @@ ServerEvents.recipes(event => {
         });
     });
 
-    const all = normal.concat(["uhv", "uev", "uiv", "uxv", "opv", "max"]);
+    const extended = normal.concat(["uhv", "uev", "uiv", "uxv", "opv", "max"]);
 
-    console.log(all);
+    console.log(extended);
 
-    all.forEach(v => {});
+    extended.forEach(v => {});
 });
