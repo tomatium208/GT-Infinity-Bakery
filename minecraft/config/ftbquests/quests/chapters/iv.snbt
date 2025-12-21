@@ -169,24 +169,6 @@
 			y: -5.0d
 		}
 		{
-			id: "2C355786C3AB6FA5"
-			tasks: [
-				{
-					id: "202DCE0EB4F3A8B6"
-					item: "gtceu:smd_resistor"
-					type: "item"
-				}
-				{
-					id: "154BFFA83A0D205D"
-					item: "gtceu:smd_transistor"
-					type: "item"
-				}
-			]
-			title: "電子部品(x2)"
-			x: 1.0d
-			y: -4.5d
-		}
-		{
 			id: "732DA0FDF84A62C9"
 			rewards: [{
 				id: "057BB1249D8330D6"
@@ -255,8 +237,8 @@
 				item: "gtceu:nickel_zinc_ferrite_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -8.0d
+			x: 1.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2AEED7614811B6A1"]
