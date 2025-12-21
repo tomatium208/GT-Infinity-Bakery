@@ -32,3 +32,12 @@ for (var tier of GTValues.ALL_TIERS) {
     VA[upper_voltages[tier]] = GTValues.VA[tier];
     VHA[upper_voltages[tier]] = GTValues.VHA[tier];
 }
+
+/**
+ * Input a hex color string like "#RRGGBB", returns the integer color value.
+ * @param {`#${string}`} hex
+ * @returns number
+ */
+function color(hex) {
+    return parseInt(hex.slice(1), 16);
+}

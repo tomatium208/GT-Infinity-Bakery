@@ -39,15 +39,15 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         GTMaterialFlags.GENERATE_BOLT_SCREW,
     ];
 
-    event.create("energy_drink").liquid().color("0x00a108");
+    event.create("energy_drink").liquid().color(color("#00a108"));
 
-    event.create("tomato_sauce").liquid().color("0xdd0000");
+    event.create("tomato_sauce").liquid().color(color("#dd0000"));
 
-    event.create("fission_fuel").liquid().color("0x3e573f");
+    event.create("fission_fuel").liquid().color(color("#3e573f"));
 
-    event.create("nuclear_waste").liquid().color("0x1d361e");
+    event.create("nuclear_waste").liquid().color(color("#1d361e"));
 
-    event.create("bread").dust().liquid().color("0xf0be86");
+    event.create("bread").dust().liquid().color(color("#f0be86"));
 
     event
         .create("valine3g")
@@ -56,8 +56,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .ore()
         .liquid(750)
-        .color("0x84848a")
-        .secondaryColor("0x4d4d91")
+        .color(color("#84848a"))
+        .secondaryColor(color("#4d4d91"))
         .blastTemp(750, "low", 30)
         .flags(allMaterialFlag);
 
@@ -67,8 +67,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet(GTMaterialIconSet.getByName("prismatic"))
         .ingot()
         .liquid(9223)
-        .color("0x84848a")
-        .secondaryColor("0x4d4d91")
+        .color(color("#84848a"))
+        .secondaryColor(color("#4d4d91"))
         .blastTemp(9223, "highest", VA.EV)
         .flags(allMaterialFlag);
 
@@ -79,7 +79,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .ore()
         .liquid()
-        .color("0x45281d")
+        .color(color("#45281d"))
         .blastTemp(18000, "highest", VA.LuV)
         .flags(allMaterialFlag);
 
@@ -89,8 +89,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet(GTMaterialIconSet.BRIGHT)
         .ingot()
         .liquid()
-        .color("0x340034")
-        .secondaryColor("0xff00ff")
+        .color(color("#340034"))
+        .secondaryColor(color("#ff00ff"))
         .flags(allMaterialFlag);
 
     event
@@ -98,8 +98,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("tomatonium"))
         .iconSet(GTMaterialIconSet.getByName("tomatonium"))
         .ingot()
-        .color("0xee0000")
-        .secondaryColor("0x009900")
+        .color(color("#ee0000"))
+        .secondaryColor(color("#009900"))
         .blastTemp(5000, "highest", VA.IV)
         .flags(allMaterialFlag);
 
@@ -108,7 +108,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("1x cobalt_brass", "1x bronze", "1x cupronickel", "1x vanadium", "1x steel", "1x gold")
         .iconSet(GTMaterialIconSet.BRIGHT)
         .ingot()
-        .color("0xdd5500")
+        .color(color("#dd5500"))
         .blastTemp(1700, "mid", VA.HV)
         .flags(allMaterialFlag);
 
@@ -117,7 +117,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("1x redstone", "1x red_alloy", "1x brick")
         .iconSet(GTMaterialIconSet.BRIGHT)
         .ingot()
-        .color("0xdd0000")
+        .color(color("#dd0000"))
         .blastTemp(450, "low", VA.MV)
         .flags(allMaterialFlag);
 
@@ -127,15 +127,15 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet(GTMaterialIconSet.getByName("nyaonium"))
         .gem()
         .ore()
-        .color("0x798fb3");
+        .color(color("#798fb3"));
 
     event
         .create("nyalloy")
         .components("1x nyaonium", "2x stainless_steel")
         .iconSet(GTMaterialIconSet.BRIGHT)
         .ingot()
-        .color("0x798fb3")
-        .secondaryColor("0xffff00")
+        .color(color("#798fb3"))
+        .secondaryColor(color("#ffff00"))
         .blastTemp(1750, "mid", VA.HV)
         .flags(allMaterialFlag);
 
@@ -145,8 +145,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet(GTMaterialIconSet.getByName("prismatic"))
         .ingot()
         .liquid()
-        .color("0x798fb3")
-        .secondaryColor("0x0000ff")
+        .color(color("#798fb3"))
+        .secondaryColor(color("#0000ff"))
         .blastTemp(4000, "high", VA.EV)
         .flags(allMaterialFlag);
 

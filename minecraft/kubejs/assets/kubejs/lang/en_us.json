@@ -94,5 +94,22 @@
     "material.gtceu.phenylalanine": "Phenylalanine",
     "material.gtceu.tryptophan": "Tryptophan",
     "material.gtceu.threonine": "Threonine",
-    "material.gtceu.histidine": "Histidine"
+    "material.gtceu.histidine": "Histidine",
+    "gtceu.greenhouse": " Greenhouse",
+    "block.gtceu.greenhouse_t1": "Basic Greenhouse",
+    "block.gtceu.greenhouse_t2": "Advanced Greenhouse",
+    "block.gtceu.greenhouse_t3": "Advanced Greenhouse II",
+    "block.gtceu.greenhouse_t4": "Ultimate Greenhouse",
+    "gtceu.multiblock.greenhouse.tier": "Greenhouse Tier: %s",
+    "gtceu.multiblock.greenhouse.light_emitter_tier": "Light Emitter Tier: %s",
+    "gtceu.multiblock.greenhouse.light_modify": "Light Modify: ",
+    "gtceu.multiblock.greenhouse.light_intensity": "Light Intensity: %s",
+    "gtceu.multiblock.greenhouse.light_intensity.tooltip": "Adjust the light intensity in the greenhouse to optimize plant growth. Higher light intensity increases energy consumption.",
+    "emi_info.kubejs.greenhouse_tier": " Required Greenhouse Tier: %s",
+    "emi_info.kubejs.greenhouse_optimal_light_intensity": " Optimal Light Intensity: %s%%",
+    "emi_info.kubejs.greenhouse_light_intensity_sensitive": " Light Intensity Sensitive: True",
+    "gtceu.greenhouse_tier.1": "Basic",
+    "gtceu.greenhouse_tier.2": "Advanced",
+    "gtceu.greenhouse_tier.3": "Advanced II",
+    "gtceu.greenhouse_tier.4": "Ultimate"
 }
