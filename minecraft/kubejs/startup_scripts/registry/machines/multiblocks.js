@@ -9,10 +9,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.DOWN_TO_UP)
         .setSound(GTSoundEntries.ARC)
 
-    event.create("cosmic_simulation")
-        .category('cosmic_simulation')
+    event.create("scb")
+        .category('bakery')
         .setEUIO('in')
-        .setMaxIOSize(12, 12, 1, 1)
+        .setMaxIOSize(16, 1, 4, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.SUS_RECORD)
 
@@ -80,13 +80,11 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/fusion_reactor"
         )
 
-    // 実験的マルチブロックです。まだ形決めてない
-    event.create('sub-dimensional_singular_furnace', 'multiblock')
+    event.create('stellar_core_bakery', 'multiblock')
         .rotationState(RotationState.ALL)
-        .recipeTypes([GTRecipeTypes.BLAST_RECIPES, GTRecipeTypes.FURNACE_RECIPES])
+        .recipeTypes(["scb","bakery"])
         .appearanceBlock(() => Block.getBlock('kubejs:dimensional_rift'))
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
-        .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCC")
             .aisle("C_C")
@@ -105,7 +103,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         )
         .workableCasingModel(
             "kubejs:block/dimensional_rift",
-            "gtceu:block/multiblock/fusion_reactor"
+            "gtceu:block/multiblock/power_substation"
         )
 
     event.create('non_omnipotent_universe_forge', 'multiblock')

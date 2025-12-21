@@ -202,27 +202,28 @@ StartupEvents.registry('block', event => {
 
     event.create("dimensional_rift")
         .glassSoundType()
-    
+        .lightLevel(1)
+
     event.create("planter_block")
         .stoneSoundType()
         .notSolid()
         .opaque(false)
         .renderType("translucent")
-    
+
     // SOLID CASINGS
 
     event.create("multi_dimensional_machine_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/solid/multi_dimensional")
-    
+
     event.create("miracle-theoretical_meteor_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/solid/miracle_meteor")
-    
+
     event.create("miracle-theoretical_fumetsu_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/solid/miracle_fumetsu")
-    
+
     event.create("spacetime_stabilization_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/solid/spacetime")
