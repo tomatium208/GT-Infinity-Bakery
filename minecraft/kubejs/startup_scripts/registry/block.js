@@ -11,6 +11,11 @@ StartupEvents.registry("block", event => {
         .textureAll("kubejs:block/casings/solid/multi_dimensional");
 
     event
+        .create("absolute_dimension_anchor_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/solid/anchor");
+
+    event
         .create("miracle-theoretical_meteor_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/solid/miracle_meteor");
@@ -20,13 +25,20 @@ StartupEvents.registry("block", event => {
         .stoneSoundType()
         .textureAll("kubejs:block/casings/solid/miracle_fumetsu");
 
-    event.create("spacetime_stabilization_casing").stoneSoundType().textureAll("kubejs:block/casings/solid/spacetime");
+    event
+        .create("spacetime_stabilization_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/solid/spacetime");
 
     // PROOF CASINGS
 
-    event.create("explosion_proof_machine_casing").stoneSoundType().textureAll("kubejs:block/casings/proof/explosion");
+    event.create("explosion_proof_machine_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/proof/explosion");
 
-    event.create("collapse_proof_machine_casing").stoneSoundType().textureAll("kubejs:block/casings/proof/collapse");
+    event.create("collapse_proof_machine_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/proof/collapse");
 
     // NOUF CASINGS
 

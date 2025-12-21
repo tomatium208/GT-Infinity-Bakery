@@ -60,5 +60,5 @@ ServerEvents.recipes(event => {
 
     console.log(extended);
 
-    extended.forEach(v => {});
+    extended.forEach(v => { });
 });

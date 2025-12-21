@@ -9,10 +9,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.DOWN_TO_UP)
         .setSound(GTSoundEntries.ARC)
 
-    event.create("scb")
+    event.create("stellar_core")
         .category('bakery')
         .setEUIO('in')
-        .setMaxIOSize(16, 1, 4, 0)
+        .setMaxIOSize(15, 1, 3, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.SUS_RECORD)
 
@@ -78,32 +78,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .workableCasingModel(
             "kubejs:block/casings/fission/solid",
             "gtceu:block/multiblock/fusion_reactor"
-        )
-
-    event.create('stellar_core_bakery', 'multiblock')
-        .rotationState(RotationState.ALL)
-        .recipeTypes(["scb","bakery"])
-        .appearanceBlock(() => Block.getBlock('kubejs:dimensional_rift'))
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCC")
-            .aisle("C_C")
-            .aisle("C@C")
-            .where("_", Predicates.any())
-            .where('@', Predicates.controller(Predicates.blocks(definition.get())))
-            .where("C", Predicates.blocks("kubejs:dimensional_rift")
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
-                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
-                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
-            )
-            .build()
-        )
-        .workableCasingModel(
-            "kubejs:block/dimensional_rift",
-            "gtceu:block/multiblock/power_substation"
         )
 
     event.create('non_omnipotent_universe_forge', 'multiblock')

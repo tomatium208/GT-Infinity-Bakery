@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VHA[GTValues.EV])
 
-    event.recipes.gtceu.scb("kjs/valine3g_cake")
+    event.recipes.gtceu.stellar_core("kjs/valine3g_cake")
         .inputFluids("gtceu:molten_hsss 2147483647", "gtceu:molten_sds 2147483647")
         .itemInputs("64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g")
         .itemOutputs("1x kubejs:valine3g_cake")
