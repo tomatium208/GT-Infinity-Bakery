@@ -2,8 +2,8 @@
 
 GTCEuStartupEvents.registry("gtceu:element", event => {
     event.create("valine3g").protons(14).neutrons(9).symbol("Vl");
-
-    event.create("meta_null").protons(-1).neutrons(-1).symbol("N/A");
+    // should be not minus :(
+    event.create("meta_null").protons(1).neutrons(1).symbol("N/A");
 
     event.create("tomatonium").protons(10).neutrons(18).symbol("To");
 
@@ -69,7 +69,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid(9223)
         .color("0x84848a")
         .secondaryColor("0x4d4d91")
-        .blastTemp(9223, "highest", GTValues.VA[GTValues.EV])
+        .blastTemp(9223, "highest", VA.EV)
         .flags(allMaterialFlag);
 
     event
@@ -80,7 +80,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ore()
         .liquid()
         .color("0x45281d")
-        .blastTemp(18000, "highest", GTValues.VA[GTValues.LuV])
+        .blastTemp(18000, "highest", VA.LuV)
         .flags(allMaterialFlag);
 
     event
@@ -100,7 +100,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .color("0xee0000")
         .secondaryColor("0x009900")
-        .blastTemp(5200, "mid", GTValues.VA[GTValues.IV])
+        .blastTemp(5200, "mid", VA.IV)
         .flags(allMaterialFlag);
 
     event
@@ -109,7 +109,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet(GTMaterialIconSet.BRIGHT)
         .ingot()
         .color("0xdd5500")
-        .blastTemp(1700, "mid", GTValues.VA[GTValues.HV])
+        .blastTemp(1700, "mid", VA.HV)
         .flags(allMaterialFlag);
 
     event
@@ -118,7 +118,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet(GTMaterialIconSet.BRIGHT)
         .ingot()
         .color("0xdd0000")
-        .blastTemp(450, "low", GTValues.VA[GTValues.MV])
+        .blastTemp(450, "low", VA.MV)
         .flags(allMaterialFlag);
 
     event
@@ -136,7 +136,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .color("0x798fb3")
         .secondaryColor("0xffff00")
-        .blastTemp(1750, "mid", GTValues.VA[GTValues.HV])
+        .blastTemp(1750, "mid", VA.HV)
         .flags(allMaterialFlag);
 
     event
@@ -147,7 +147,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid()
         .color("0x798fb3")
         .secondaryColor("0x0000ff")
-        .blastTemp(4000, "high", GTValues.VA[GTValues.EV])
+        .blastTemp(4000, "high", VA.EV)
         .flags(allMaterialFlag);
 
     // アミノ酸だよ
