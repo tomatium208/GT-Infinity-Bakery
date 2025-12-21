@@ -246,12 +246,12 @@ StartupEvents.registry('block', event => {
     event.create("non_omnipotent_trancendent_industrial_infinity_tesseract_ultimate_overpower_general_starmatter_whirlpool_magical_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/nouf/magical")
-        .lightLevel(10)
+        .lightLevel(15)
 
     event.create("non_omnipotent_trancendent_industrial_infinity_tesseract_ultimate_overpower_general_psychotic_wave_forging_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/nouf/wave")
-        .lightLevel(10)
+        .lightLevel(15)
 
     // FISSION CASINGS
 
