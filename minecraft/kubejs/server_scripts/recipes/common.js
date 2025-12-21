@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-
     event.recipes.gtceu
         .distillery("kjs/fission_fuel")
         .inputFluids("gtceu:uranium_hexafluoride 1000")

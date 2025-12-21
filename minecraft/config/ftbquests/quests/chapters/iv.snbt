@@ -9,8 +9,8 @@
 	quest_links: [{
 		id: "19F17B4F1F0F31A1"
 		linked_quest: "0B2BAA7AF534605C"
-		x: 0.0d
-		y: -10.5d
+		x: -1.5d
+		y: -10.0d
 	}]
 	quests: [
 		{
@@ -35,8 +35,8 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -9.0d
+			x: 2.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["0B2BAA7AF534605C"]
@@ -46,12 +46,13 @@
 				item: "gtceu:rarest_metal_mixture_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -11.0d
+			x: -2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
 				"5CD25190A11C8D66"
+				"529001ED6C14DD85"
 				"529001ED6C14DD85"
 			]
 			id: "07B46BC20851917B"
@@ -65,8 +66,8 @@
 				item: "gtceu:iridium_metal_residue_dust"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -11.0d
+			x: -2.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["07B46BC20851917B"]
@@ -81,14 +82,15 @@
 				item: "gtceu:iridium_ingot"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -10.5d
+			x: -2.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"76DAC678583F42C1"
 				"6B2486875A241E10"
 				"19C6F975612E0AD4"
+				"0F36C6B3734FB6F4"
 				"0F36C6B3734FB6F4"
 			]
 			id: "0C9635656D6BE0FD"
@@ -109,6 +111,7 @@
 			dependencies: [
 				"31D8D419A99EF7D6"
 				"0C9635656D6BE0FD"
+				"0F36C6B3734FB6F4"
 			]
 			id: "42CC5F18E66455B2"
 			rewards: [{
@@ -128,6 +131,7 @@
 			dependencies: [
 				"215C367543E7B503"
 				"42CC5F18E66455B2"
+				"0F36C6B3734FB6F4"
 			]
 			id: "3A894211B64459B7"
 			tasks: [{
@@ -163,9 +167,26 @@
 					type: "item"
 				}
 			]
-			title: "電子部品(x3)"
-			x: -3.5d
-			y: -7.0d
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "2C355786C3AB6FA5"
+			tasks: [
+				{
+					id: "57D9FDA0CA7A204F"
+					item: "gtceu:smd_resistor"
+					type: "item"
+				}
+				{
+					id: "59BE73C2A5AFCC3F"
+					item: "gtceu:smd_transistor"
+					type: "item"
+				}
+			]
+			title: "電子部品(x2)"
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			id: "732DA0FDF84A62C9"
@@ -179,8 +200,8 @@
 				item: "gtceu:polyvinyl_chloride_foil"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -8.0d
+			x: -1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1FC19CD5037649FE"]
@@ -195,8 +216,8 @@
 				item: "gtceu:nano_cpu_wafer"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -8.0d
+			x: -1.0d
+			y: -6.0d
 		}
 		{
 			id: "1FC19CD5037649FE"
@@ -210,8 +231,8 @@
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -9.0d
+			x: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6521178B6D9C904D"]
@@ -247,10 +268,11 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -8.0d
+			x: -1.0d
+			y: -7.0d
 		}
 		{
+			dependencies: ["3A894211B64459B7"]
 			dependencies: ["3A894211B64459B7"]
 			id: "29F0F845635AC95F"
 			rewards: [
@@ -273,8 +295,8 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -6.0d
+			x: 5.0d
+			y: -8.0d
 		}
 		{
 			id: "0F36C6B3734FB6F4"
@@ -283,8 +305,8 @@
 				item: "gtceu:epoxy_printed_circuit_board"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -6.0d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
 			id: "215C367543E7B503"
@@ -293,8 +315,8 @@
 				item: "gtceu:smd_diode"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.0d
+			x: 3.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["252E4A3BAD770B11"]
@@ -304,8 +326,8 @@
 				item: "gtceu:phosphorus_wafer"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -9.5d
+			x: -1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["2837603C09A01D40"]
@@ -320,8 +342,8 @@
 				item: "gtceu:iv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -10.0d
+			x: -1.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["2AEED7614811B6A1"]
