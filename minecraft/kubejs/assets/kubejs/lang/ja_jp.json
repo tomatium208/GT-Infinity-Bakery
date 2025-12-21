@@ -28,7 +28,9 @@
     "block.kubejs.greenhouse_casing_mk4": "温室用外装 Mk.4",
     "item.kubejs.gt_coin": "GTコイン",
     "item.kubejs.chapter_coin": "チャプターコイン",
-    "item.kubejs.computation_system": "コンピューテーション・システム",
+    "item.kubejs.marker_luv": "えぐすぎ電圧",
+    "item.kubejs.computation_system": "コンピューテーションシステム",
+    "item.kubejs.advanced_computation_system": "先進型コンピューテーションシステム",
     "item.kubejs.particle_star": "パーティクルスター",
     "item.kubejs.particle_shard": "パーティクルシャード",
     "item.kubejs.pan": "フライパン",
@@ -106,7 +108,9 @@
     "item.kubejs.ender_processor_mainframe.tooltip.0": "§7Stargateを作る必要はないってことだよね？",
     "item.kubejs.ender_processor_mainframe.tooltip.1": "§2MAX時代の回路",
     "item.kubejs.computation_system.tooltip.0": "基本的な計算システム。Optifineを粉々にするのには十分な性能がある。",
+    "item.kubejs.advanced_computation_system.tooltip.0": "改善した計算システム。バリンガスを焼くのには十分な性能がある。",
     "item.kubejs.particle_star.tooltip.0": "改善したテレポート技術",
+    "item.kubejs.nubeeee.tooltip.0": "ヌベーッ！",
     "item.kubejs.valine3g_cake.tooltip.0": "ハッピーバースデー！",
     "material.gtceu.energy_drink": "エナドリ",
     "material.gtceu.tomato_sauce": "トマトソース",
@@ -132,6 +136,5 @@
     "material.gtceu.phenylalanine": "フェニルアラニン",
     "material.gtceu.tryptophan": "トリプトファン",
     "material.gtceu.threonine": "トレオニン",
-    "material.gtceu.histidine": "ヒスチジン",
-    "item.kubejs.marker_luv": "えぐすぎ電圧"
+    "material.gtceu.histidine": "ヒスチジン"
 }

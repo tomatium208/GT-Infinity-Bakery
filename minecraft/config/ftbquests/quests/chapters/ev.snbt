@@ -490,7 +490,10 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["17AD45B2010AB0F5"]
+			dependencies: [
+				"17AD45B2010AB0F5"
+				"12A52FF9CA3A7AB8"
+			]
 			id: "2046726A25BDA901"
 			rewards: [{
 				id: "4A9AEE58775956F2"
@@ -775,8 +778,8 @@
 				item: "gtceu:ev_emitter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 10.5d
+			x: -1.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -955,21 +958,15 @@
 		}
 		{
 			dependencies: ["6CD0A96940BEA12F"]
-			id: "38FE2DF655F873B7"
-			rewards: [{
-				id: "58C1352511C9CE1F"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 2.0d
+			hide_dependency_lines: true
+			id: "12A52FF9CA3A7AB8"
 			tasks: [{
-				id: "402C81281B6AE0FC"
-				item: "gtceu:ev_electric_motor"
+				id: "1F35B6CB34C22CE7"
+				item: "gtceu:ev_bakery"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 12.0d
+			x: -3.0d
+			y: 2.0d
 		}
 	]
 	title: "EV時代"

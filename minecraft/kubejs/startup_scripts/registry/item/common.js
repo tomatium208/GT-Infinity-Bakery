@@ -18,57 +18,6 @@ StartupEvents.registry("item", event => {
     event.create("marker_opv").texture("kubejs:item/markers/opv").displayName("OpV");
     event.create("marker_max").texture("kubejs:item/markers/max").displayName("MAX");
 
-    // Circuits
-
-    global.circuitTypes = [
-        ["cyber", ["zpm", "uv", "uhv", "uev"]],
-        ["holocarbon", ["uv", "uhv", "uev", "uiv"]],
-        ["grid", ["uhv", "uev", "uiv", "uxv"]],
-        ["coreunit", ["uev", "uiv", "uxv", "opv"]],
-        ["ender", ["uiv", "uxv", "opv", "max"]],
-    ];
-
-    global.circuitTypes.forEach(c => {
-        event
-            .create(`${c[0]}_processor`)
-            .tag("gtceu:circuits")
-            .tag(`gtceu:circuits/${c[1][0]}`)
-            .texture(`kubejs:item/circuits/${c[0]}`)
-            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor.tooltip.0`))
-            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor.tooltip.1`));
-        event
-            .create(`${c[0]}_processor_assembly`)
-            .tag("gtceu:circuits")
-            .tag(`gtceu:circuits/${c[1][1]}`)
-            .texture(`kubejs:item/circuits/${c[0]}_assembly`)
-            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_assembly.tooltip.0`))
-            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_assembly.tooltip.1`));
-        event
-            .create(`${c[0]}_processor_computer`)
-            .tag("gtceu:circuits")
-            .tag(`gtceu:circuits/${c[1][2]}`)
-            .texture(`kubejs:item/circuits/${c[0]}_computer`)
-            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_computer.tooltip.0`))
-            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_computer.tooltip.1`));
-        event
-            .create(`${c[0]}_processor_mainframe`)
-            .tag("gtceu:circuits")
-            .tag(`gtceu:circuits/${c[1][3]}`)
-            .texture(`kubejs:item/circuits/${c[0]}_mainframe`)
-            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_mainframe.tooltip.0`))
-            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_mainframe.tooltip.1`));
-    });
-
-    const normal = ["lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv"];
-
-    normal.forEach(v => {});
-
-    const extended = normal.concat(["uhv", "uev", "uiv", "uxv", "opv", "max"]);
-
-    extended.forEach(v => {});
-
-    // Misc
-
     event.create("computation_system").tooltip(Text.translatable("item.kubejs.computation_system.tooltip.0"));
     event
         .create("advanced_conputation_system")
@@ -87,6 +36,7 @@ StartupEvents.registry("item", event => {
             food.hunger(1).saturation(1);
         });
 
+    event.create("nubeeee").tooltip(Text.translatable("item.kubejs.nubeeee.tooltip.0"));
     event.create("tasty_valine3g");
     event.create("frozen_valine3g");
 
@@ -130,4 +80,53 @@ StartupEvents.registry("item", event => {
     event.create("fission_sandwich").food(food => {
         food.hunger(1).saturation(1).alwaysEdible().effect("minecraft:wither", 24000, 9, 1);
     });
+
+    // Circuits
+
+    global.circuitTypes = [
+        ["cyber", ["zpm", "uv", "uhv", "uev"]],
+        ["holocarbon", ["uv", "uhv", "uev", "uiv"]],
+        ["grid", ["uhv", "uev", "uiv", "uxv"]],
+        ["coreunit", ["uev", "uiv", "uxv", "opv"]],
+        ["ender", ["uiv", "uxv", "opv", "max"]],
+    ];
+
+    global.circuitTypes.forEach(c => {
+        event
+            .create(`${c[0]}_processor`)
+            .tag("gtceu:circuits")
+            .tag(`gtceu:circuits/${c[1][0]}`)
+            .texture(`kubejs:item/circuits/${c[0]}`)
+            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor.tooltip.0`))
+            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor.tooltip.1`));
+        event
+            .create(`${c[0]}_processor_assembly`)
+            .tag("gtceu:circuits")
+            .tag(`gtceu:circuits/${c[1][1]}`)
+            .texture(`kubejs:item/circuits/${c[0]}_assembly`)
+            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_assembly.tooltip.0`))
+            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_assembly.tooltip.1`));
+        event
+            .create(`${c[0]}_processor_computer`)
+            .tag("gtceu:circuits")
+            .tag(`gtceu:circuits/${c[1][2]}`)
+            .texture(`kubejs:item/circuits/${c[0]}_computer`)
+            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_computer.tooltip.0`))
+            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_computer.tooltip.1`));
+        event
+            .create(`${c[0]}_processor_mainframe`)
+            .tag("gtceu:circuits")
+            .tag(`gtceu:circuits/${c[1][3]}`)
+            .texture(`kubejs:item/circuits/${c[0]}_mainframe`)
+            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_mainframe.tooltip.0`))
+            .tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_mainframe.tooltip.1`));
+    });
+
+    const normal = ["lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv"];
+
+    normal.forEach(v => { });
+
+    const extended = normal.concat(["uhv", "uev", "uiv", "uxv", "opv", "max"]);
+
+    extended.forEach(v => { });
 });

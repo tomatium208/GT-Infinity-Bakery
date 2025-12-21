@@ -30,8 +30,8 @@
 		{
 			dependencies: [
 				"5E672DFCDC797CC9"
-				"6FCFE8B31C7F0588"
 				"2F60180B77851068"
+				"6093ECF4FA9EEEAA"
 			]
 			icon: "gtceu:primitive_bakery"
 			id: "6376FDAD6AA88D74"
@@ -62,25 +62,6 @@
 			}]
 			x: -3.0d
 			y: -2.5d
-		}
-		{
-			dependencies: ["6FCFE8B31C7F0588"]
-			id: "4C8A02AC622F725B"
-			rewards: [{
-				id: "6E409F491671C8BF"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				count: 2L
-				id: "407C94982A3E8842"
-				item: "gtceu:lv_electric_motor"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -6.0d
 		}
 		{
 			dependencies: ["341A0C11FE6481B5"]
@@ -279,22 +260,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["7C7CE78B52DDF6EE"]
-			id: "6FCFE8B31C7F0588"
-			rewards: [{
-				id: "5BFD6BC85274D3C6"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1F7AFDDA4AE5EC09"
-				item: "gtceu:lv_emitter"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -6.0d
-		}
-		{
 			hide_dependency_lines: true
 			id: "04269E8EEC41B8C3"
 			tasks: [{
@@ -481,6 +446,22 @@
 			}]
 			x: -3.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["7C7CE78B52DDF6EE"]
+			id: "6093ECF4FA9EEEAA"
+			rewards: [{
+				id: "5AD30DE2FF0B9DA7"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "17F2FEB2D0FE03B6"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
 		}
 	]
 	title: "LV時代"

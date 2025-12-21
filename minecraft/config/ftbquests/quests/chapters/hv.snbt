@@ -249,59 +249,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"3B5C29E5710DA34D"
-				"0AA788130E8A0A07"
-				"569B97C37B96514E"
-			]
-			id: "250E8174125A019A"
-			rewards: [{
-				id: "109D6314894F5195"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "32784E5DBC4C159B"
-				item: "gtceu:hv_emitter"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["250E8174125A019A"]
-			id: "30E1D617E257931F"
-			rewards: [{
-				id: "04480D5918514383"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "3D6EA9710AB87FC9"
-				item: "gtceu:hv_electric_motor"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -6.0d
-		}
-		{
-			id: "0AA788130E8A0A07"
-			rewards: [{
-				id: "5A5016C451B57990"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "46A65BC475F52121"
-				item: "minecraft:ender_eye"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -6.0d
-		}
-		{
 			dependencies: ["3B5C29E5710DA34D"]
 			id: "569B97C37B96514E"
 			rewards: [{
@@ -314,8 +261,8 @@
 				item: "gtceu:chromium_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3B5C29E5710DA34D"]
@@ -654,8 +601,8 @@
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.0d
+			x: 4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["569B97C37B96514E"]
@@ -672,7 +619,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3AB2898F54E21788"]

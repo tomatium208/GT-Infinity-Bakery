@@ -9,8 +9,8 @@
 	quest_links: [{
 		id: "19F17B4F1F0F31A1"
 		linked_quest: "0B2BAA7AF534605C"
-		x: -0.5d
-		y: -9.5d
+		x: -1.5d
+		y: -10.0d
 	}]
 	quests: [
 		{
@@ -35,7 +35,7 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: -10.0d
 		}
 		{
@@ -46,13 +46,13 @@
 				item: "gtceu:rarest_metal_mixture_dust"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -9.0d
 		}
 		{
 			dependencies: [
 				"5CD25190A11C8D66"
-				"2AEED7614811B6A1"
+				"529001ED6C14DD85"
 			]
 			id: "07B46BC20851917B"
 			rewards: [{
@@ -65,7 +65,7 @@
 				item: "gtceu:iridium_metal_residue_dust"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -8.0d
 		}
 		{
@@ -81,44 +81,15 @@
 				item: "gtceu:iridium_ingot"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["245DA44F596A8F27"]
-			id: "54BF01B887C90C3E"
-			rewards: [{
-				id: "327A12663D45E704"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "514E382328A205CA"
-				item: "gtceu:iv_emitter"
-				type: "item"
-			}]
 			x: -2.5d
 			y: -7.0d
 		}
 		{
-			dependencies: ["54BF01B887C90C3E"]
-			id: "465023F9CA0003D4"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "79D1433414330164"
-				item: "gtceu:iv_electric_motor"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -9.0d
-		}
-		{
 			dependencies: [
 				"76DAC678583F42C1"
-				"2C355786C3AB6FA5"
 				"6B2486875A241E10"
 				"19C6F975612E0AD4"
+				"0F36C6B3734FB6F4"
 			]
 			id: "0C9635656D6BE0FD"
 			rewards: [{
@@ -136,8 +107,9 @@
 		}
 		{
 			dependencies: [
-				"76DAC678583F42C1"
 				"31D8D419A99EF7D6"
+				"0C9635656D6BE0FD"
+				"0F36C6B3734FB6F4"
 			]
 			id: "42CC5F18E66455B2"
 			rewards: [{
@@ -154,6 +126,11 @@
 			y: -6.0d
 		}
 		{
+			dependencies: [
+				"215C367543E7B503"
+				"42CC5F18E66455B2"
+				"0F36C6B3734FB6F4"
+			]
 			id: "3A894211B64459B7"
 			tasks: [{
 				id: "012F873CE31D9002"
@@ -171,12 +148,24 @@
 				item: "kubejs:gt_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "0D6E887416368C64"
-				item: "gtceu:smd_capacitor"
-				type: "item"
-			}]
-			x: 1.0d
+			tasks: [
+				{
+					id: "0D6E887416368C64"
+					item: "gtceu:smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "57D9FDA0CA7A204F"
+					item: "gtceu:smd_resistor"
+					type: "item"
+				}
+				{
+					id: "59BE73C2A5AFCC3F"
+					item: "gtceu:smd_transistor"
+					type: "item"
+				}
+			]
+			x: 0.0d
 			y: -5.0d
 		}
 		{
@@ -194,8 +183,8 @@
 				}
 			]
 			title: "電子部品(x2)"
-			x: -1.0d
-			y: -6.0d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			id: "732DA0FDF84A62C9"
@@ -209,8 +198,8 @@
 				item: "gtceu:polyvinyl_chloride_foil"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: -1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1FC19CD5037649FE"]
@@ -226,7 +215,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -5.0d
+			y: -6.0d
 		}
 		{
 			id: "1FC19CD5037649FE"
@@ -241,7 +230,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6521178B6D9C904D"]
@@ -277,10 +266,11 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -1.0d
 			y: -7.0d
 		}
 		{
+			dependencies: ["3A894211B64459B7"]
 			id: "29F0F845635AC95F"
 			rewards: [
 				{
@@ -302,8 +292,66 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			id: "0F36C6B3734FB6F4"
+			tasks: [{
+				id: "7047A986425951BC"
+				item: "gtceu:epoxy_printed_circuit_board"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			id: "215C367543E7B503"
+			tasks: [{
+				id: "66D48C71CE683689"
+				item: "gtceu:smd_diode"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["252E4A3BAD770B11"]
+			id: "2837603C09A01D40"
+			tasks: [{
+				id: "1053EF52AC6588CD"
+				item: "gtceu:phosphorus_wafer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2837603C09A01D40"]
+			id: "529001ED6C14DD85"
+			rewards: [{
+				id: "719C801D7AC56B97"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "09424AFEC9CED7B4"
+				item: "gtceu:iv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2AEED7614811B6A1"]
+			id: "252E4A3BAD770B11"
+			tasks: [{
+				id: "5D31FF7766A49E2D"
+				item: "gtceu:iv_cutter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.5d
 		}
 	]
 	title: "IV時代"

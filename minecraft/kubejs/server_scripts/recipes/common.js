@@ -1,33 +1,4 @@
 ServerEvents.recipes(event => {
-    const normal = [
-        ["lv", "steel", "tin"],
-        ["mv", "aluminium", "copper"],
-        ["hv", "stainless_steel", "gold"],
-        ["ev", "titanium", "aluminium"],
-        ["iv", "tungsten_steel", "platinum"],
-        ["luv", "rhodium_plated_palladium", "niobium_titanium"],
-        ["zpm", "naquadah_alloy", "vanadium_gallium"],
-        ["uv", "darmstadtium", "yttrium_barium_cuprate"],
-    ];
-
-    normal.forEach(v => { });
-
-    const motor = normal.slice(0, 5);
-
-    motor.forEach(v => {
-        console.log(v);
-
-        event.remove({ output: `gtceu:${v[0]}_electric_motor` });
-
-        event
-            .shaped(`2x gtceu:${v[0]}_electric_motor`, ["EWM", "WSW", "MWE"], {
-                E: `gtceu:${v[0]}_emitter`,
-                W: `gtceu:${v[2]}_single_cable`,
-                M: `#forge:rods/${v[1]}`,
-                S: "#forge:rods/magnetic_steel",
-            })
-            .id(`kubejs:${v[0]}_electric_motor`);
-    });
 
     event.recipes.gtceu
         .distillery("kjs/fission_fuel")
