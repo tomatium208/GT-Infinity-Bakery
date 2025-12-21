@@ -100,7 +100,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .color("0xee0000")
         .secondaryColor("0x009900")
-        .blastTemp(5200, "mid", VA.IV)
+        .blastTemp(5000, "highest", VA.IV)
         .flags(allMaterialFlag);
 
     event
