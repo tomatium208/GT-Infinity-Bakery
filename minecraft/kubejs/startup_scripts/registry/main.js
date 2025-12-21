@@ -246,12 +246,12 @@ StartupEvents.registry('block', event => {
     event.create("non_omnipotent_trancendent_industrial_infinity_tesseract_ultimate_overpower_general_starmatter_whirlpool_magical_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/nouf/magical")
-        .lightLevel(15)
+        .lightLevel(1)
 
     event.create("non_omnipotent_trancendent_industrial_infinity_tesseract_ultimate_overpower_general_psychotic_wave_forging_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/nouf/wave")
-        .lightLevel(15)
+        .lightLevel(1)
 
     // FISSION CASINGS
 
@@ -366,10 +366,10 @@ StartupEvents.registry("item", event => {
 
     global.circuitTypes.forEach(c => {
 
-        event.create(`${c[0]}_processor`).tag("gtceu:circuits").tag(`gtceu:circuits/${c[1][0]}`).texture(`kubejs:item/circuits/${c[0]}`)
-        event.create(`${c[0]}_processor_assembly`).tag("gtceu:circuits").tag(`gtceu:circuits/${c[1][1]}`).texture(`kubejs:item/circuits/${c[0]}_assembly`)
-        event.create(`${c[0]}_processor_computer`).tag("gtceu:circuits").tag(`gtceu:circuits/${c[1][2]}`).texture(`kubejs:item/circuits/${c[0]}_computer`)
-        event.create(`${c[0]}_processor_mainframe`).tag("gtceu:circuits").tag(`gtceu:circuits/${c[1][3]}`).texture(`kubejs:item/circuits/${c[0]}_mainframe`)
+        event.create(`${c[0]}_processor`).tag("gtceu:circuits").tag(`gtceu:circuits/${c[1][0]}`).texture(`kubejs:item/circuits/${c[0]}`).tooltip(Text.translatable(`item.kubejs.${c[0]}_processor.tooltip.0`)).tooltip(Text.translatable(`item.kubejs.${c[0]}_processor.tooltip.1`))
+        event.create(`${c[0]}_processor_assembly`).tag("gtceu:circuits").tag(`gtceu:circuits/${c[1][1]}`).texture(`kubejs:item/circuits/${c[0]}_assembly`).tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_assembly.tooltip.0`)).tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_assembly.tooltip.1`))
+        event.create(`${c[0]}_processor_computer`).tag("gtceu:circuits").tag(`gtceu:circuits/${c[1][2]}`).texture(`kubejs:item/circuits/${c[0]}_computer`).tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_computer.tooltip.0`)).tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_computer.tooltip.1`))
+        event.create(`${c[0]}_processor_mainframe`).tag("gtceu:circuits").tag(`gtceu:circuits/${c[1][3]}`).texture(`kubejs:item/circuits/${c[0]}_mainframe`).tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_mainframe.tooltip.0`)).tooltip(Text.translatable(`item.kubejs.${c[0]}_processor_mainframe.tooltip.1`))
 
     })
 
@@ -391,10 +391,10 @@ StartupEvents.registry("item", event => {
 
     // Misc
 
-    event.create("computation_system")
-    event.create("advanced_conputation_system")
+    event.create("computation_system").tooltip(Text.translatable("item.kubejs.computation_system.tooltip.0"))
+    event.create("advanced_conputation_system").tooltip(Text.translatable("item.kubejs.advanced_computation_system.tooltip.0"))
 
-    event.create("particle_star").textureJson({ layer0: "kubejs:item/particle_star", layer1: "kubejs:item/particle" })
+    event.create("particle_star").textureJson({ layer0: "kubejs:item/particle_star", layer1: "kubejs:item/particle" }).tooltip(Text.translatable("item.kubejs.particle_star.tooltip.0"))
     event.create("particle_shard")
 
 
