@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
-
-    event.recipes.gtceu.sieving('kjs/gravel_1')
+    event.recipes.gtceu
+        .sieving("kjs/gravel_1")
         .inputFluids("gtceu:energy_drink 144")
         .itemInputs("minecraft:gravel")
 
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .itemOutputsRanged("gtceu:nickel_ore", 1, 3)
         .itemOutputsRanged("gtceu:redstone_ore", 1, 3)
         .itemOutputsRanged("gtceu:certus_quartz_ore", 1, 3)
-        
+
         .itemOutputsRanged("gtceu:silver_ore", 1, 3)
         .itemOutputsRanged("gtceu:aluminium_ore", 1, 3)
         .itemOutputsRanged("gtceu:lead_ore", 1, 3)
@@ -19,7 +19,6 @@ ServerEvents.recipes(event => {
 
         .itemOutputsRanged("gtceu:cobalt_ore", 1, 3)
 
-        .EUt(GTValues.VHA[GTValues.LV])
-        .circuit(1)
-
-})
+        .EUt(VHA.LV)
+        .circuit(1);
+});
