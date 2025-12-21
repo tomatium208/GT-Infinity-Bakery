@@ -206,6 +206,8 @@ StartupEvents.registry('block', event => {
     event.create("planter_block")
         .stoneSoundType()
         .notSolid()
+        .opaque(false)
+        .renderType("translucent")
     
     // SOLID CASINGS
 
@@ -244,10 +246,12 @@ StartupEvents.registry('block', event => {
     event.create("non_omnipotent_trancendent_industrial_infinity_tesseract_ultimate_overpower_general_starmatter_whirlpool_magical_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/nouf/magical")
+        .lightLevel(10)
 
     event.create("non_omnipotent_trancendent_industrial_infinity_tesseract_ultimate_overpower_general_psychotic_wave_forging_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/nouf/wave")
+        .lightLevel(10)
 
     // FISSION CASINGS
 
