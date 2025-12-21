@@ -4,21 +4,18 @@
     "gtceu.particle_collision": "Particle Collision",
     "gtceu.fission": "Fission Reacting",
     "gtceu.dimensional_mining": "Multi-Dimensional Mining",
-
-    
     "block.gtceu.primitive_bakery": "Primitive Bakery",
     "block.gtceu.fission_reactor": "Fission Reactor",
-    "block.gtceu.non_omnipotent_universe_forge": "(Non) Omnipotent Universe Forge", 
-    "block.gtceu.dimensional_miner": "§4§lMultidimensional-Mining Organization",  
-    
-    
+    "block.gtceu.non_omnipotent_universe_forge": "(Non) Omnipotent Universe Forge",
+    "block.gtceu.dimensional_miner": "§4§lMultidimensional-Mining Organization",
     "gtceu.jei.ore_vein.valine3g_vein": "Valine3g Vein",
     "gtceu.jei.ore_vein.nyaonium_vein": "Nyaonium Vein",
-
-
+    "block.kubejs.dimensional_rift": "§5Dimensional Rift",
     "block.kubejs.multi_dimensional_machine_casing": "Multi-Dimensional Machine Casing",
-
-    "block.kubejs.explosion_proof_machine_casing": "Explosion Proof Machine Casing",
+    "block.kubejs.miracle-theoretical_meteor_casing": "Miracle-Theoretical Meteor Casing",
+    "block.kubejs.miracle-theoretical_fumetsu_casing": "Miracle-Theoretical Fumetsu Casing",
+    "block.kubejs.spacetime_stabilization_casing": "Spacetime Stabilization Casing",
+    "block.kubejs.explosion_proof_machine_casing": "Explosion-Proof Machine Casing",
     "block.kubejs.collapse_proof_machine_casing": "Collapse-Proof Machine Casing",
     "block.kubejs.fission_casing": "Fission Casing",
     "block.kubejs.fission_cell": "Fission Cell",
@@ -26,8 +23,6 @@
     "block.kubejs.greenhouse_casing_mk2": "GreenHouse Casing Mk.2",
     "block.kubejs.greenhouse_casing_mk3": "GreenHouse Casing Mk.3",
     "block.kubejs.greenhouse_casing_mk4": "GreenHouse Casing Mk.4",
-    
-
     "item.kubejs.cyber_processor.tooltip.0": "§7Can't run Minecraft :(",
     "item.kubejs.cyber_processor.tooltip.1": "ZPM-Tier Circuit",
     "item.kubejs.cyber_processor_assembly.tooltip.0": "§7Better than JavaScript",
@@ -36,7 +31,6 @@
     "item.kubejs.cyber_processor_computer.tooltip.1": "UHV-Tier Circuit",
     "item.kubejs.cyber_processor_mainframe.tooltip.0": "§7I n f i n i t y  R e a c h e d",
     "item.kubejs.cyber_processor_mainframe.tooltip.1": "UEV-Tier Circuit",
-
     "item.kubejs.holocarbon_processor.tooltip.0": "§7High Quality",
     "item.kubejs.holocarbon_processor.tooltip.1": "UV-Tier Circuit",
     "item.kubejs.holocarbon_processor_assembly.tooltip.0": "§7High Quality",
@@ -45,7 +39,6 @@
     "item.kubejs.holocarbon_processor_computer.tooltip.1": "UEV-Tier Circuit",
     "item.kubejs.holocarbon_processor_mainframe.tooltip.0": "§7High Quality",
     "item.kubejs.holocarbon_processor_mainframe.tooltip.1": "UIV-Tier Circuit",
-    
     "item.kubejs.grid_processor.tooltip.0": "§7Watch out your back!",
     "item.kubejs.grid_processor.tooltip.1": "§5UHV-Tier Circuit",
     "item.kubejs.grid_processor_assembly.tooltip.0": "§7Watch out your back!",
@@ -54,7 +47,6 @@
     "item.kubejs.grid_processor_computer.tooltip.1": "§5UIV-Tier Circuit",
     "item.kubejs.grid_processor_mainframe.tooltip.0": "§7Watch out your back!",
     "item.kubejs.grid_processor_mainframe.tooltip.1": "§5UXV-Tier Circuit",
-
     "item.kubejs.coreunit_processor.tooltip.0": "§7To space...",
     "item.kubejs.coreunit_processor.tooltip.1": "§cUEV-Tier Circuit",
     "item.kubejs.coreunit_processor_assembly.tooltip.0": "§7To space...",
@@ -63,7 +55,6 @@
     "item.kubejs.coreunit_processor_computer.tooltip.1": "§cUXV-Tier Circuit",
     "item.kubejs.coreunit_processor_mainframe.tooltip.0": "§7To space...",
     "item.kubejs.coreunit_processor_mainframe.tooltip.1": "§cOpV-Tier Circuit",
-
     "item.kubejs.ender_processor.tooltip.0": "§7Beyond Greg",
     "item.kubejs.ender_processor.tooltip.1": "§2UIV-Tier Circuit",
     "item.kubejs.ender_processor_assembly.tooltip.0": "§7Beyond Greg",
@@ -72,18 +63,14 @@
     "item.kubejs.ender_processor_computer.tooltip.1": "§2OpV-Tier Circuit",
     "item.kubejs.ender_processor_mainframe.tooltip.0": "§7Beyond Greg",
     "item.kubejs.ender_processor_mainframe.tooltip.1": "§2MAX-Tier Circuit",
-
     "item.kubejs.computation_system.tooltip.0": "Improved Calculation",
     "item.kubejs.particle_star.tooltip.0": "Improved Teleportation Technology",
-    
-
+    "item.kubejs.valine3g_cake.tooltip.0": "Happy Birthday <3",
     "material.gtceu.energy_drink": "Energy Drink",
     "material.gtceu.tomato_sauce": "Tomato Sauce",
     "material.gtceu.fission_fuel": "Fission Fuel",
     "material.gtceu.nuclear_waste": "Nuclear Waste",
-
     "material.gtceu.bread": "Bread",
-
     "material.gtceu.meta_null": "NULL",
     "material.gtceu.valine3g": "Valine3g",
     "material.gtceu.refined_valine3g": "Refined Valine3g",
@@ -94,7 +81,6 @@
     "material.gtceu.nyaonium": "Meownium",
     "material.gtceu.nyalloy": "Meownium alloy",
     "material.gtceu.prismatic_nyaonium_alloy": "Prismatic Meownium Alloy",
-
     "material.gtceu.valine": "Valine",
     "material.gtceu.leucine": "Leucine",
     "material.gtceu.isoleucine": "Isoleucine",

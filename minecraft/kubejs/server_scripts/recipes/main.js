@@ -90,6 +90,18 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VHA[GTValues.EV])
 
+    event.recipes.gtceu.assembly_line("kjs/valine3g_cake")
+        .inputFluids("gtceu:molten_hsss 2147483647", "gtceu:molten_sds 2147483647")
+        .itemInputs("64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g", "64x kubejs:tasty_valine3g")
+        .itemOutputs("1x kubejs:valine3g_cake")
+        .duration(72000)
+        .EUt(GTValues.VA[GTValues.MAX])
+        .stationResearch(b => b
+            .researchStack('kubejs:tasty_valine3g')
+            .CWUt(1)
+            .EUt(GTValues.VA[GTValues.MAX])
+        )
+
 
 
     event.recipes.gtceu.extractor("kjs/tomato_sauce")

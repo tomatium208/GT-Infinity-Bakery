@@ -113,6 +113,198 @@
 			x: -3.0d
 			y: -9.0d
 		}
+		{
+			dependencies: [
+				"76DAC678583F42C1"
+				"2C355786C3AB6FA5"
+				"6B2486875A241E10"
+				"19C6F975612E0AD4"
+			]
+			id: "0C9635656D6BE0FD"
+			rewards: [{
+				id: "1FEC08FE2E3B93F7"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B85491AE8049583"
+				item: "gtceu:nano_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"76DAC678583F42C1"
+				"31D8D419A99EF7D6"
+			]
+			id: "42CC5F18E66455B2"
+			rewards: [{
+				id: "5DD02EA03B0E832F"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "456A8EEF5D92998D"
+				item: "gtceu:nano_processor_assembly"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			id: "3A894211B64459B7"
+			tasks: [{
+				id: "012F873CE31D9002"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["732DA0FDF84A62C9"]
+			id: "76DAC678583F42C1"
+			rewards: [{
+				id: "7746DD57DC2AD2EF"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D6E887416368C64"
+				item: "gtceu:smd_capacitor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			id: "2C355786C3AB6FA5"
+			tasks: [
+				{
+					id: "202DCE0EB4F3A8B6"
+					item: "gtceu:smd_resistor"
+					type: "item"
+				}
+				{
+					id: "154BFFA83A0D205D"
+					item: "gtceu:smd_transistor"
+					type: "item"
+				}
+			]
+			title: "電子部品(x2)"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			id: "732DA0FDF84A62C9"
+			rewards: [{
+				id: "057BB1249D8330D6"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "390F6B29BCB8672F"
+				item: "gtceu:polyvinyl_chloride_foil"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1FC19CD5037649FE"]
+			id: "6B2486875A241E10"
+			rewards: [{
+				id: "265FC97F01C1AA83"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E827FB9F58068E0"
+				item: "gtceu:nano_cpu_wafer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			id: "1FC19CD5037649FE"
+			rewards: [{
+				id: "30A2759E29D3AB82"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B6FFCFD50D6A9B1"
+				item: "gtceu:carbon_fibers"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6521178B6D9C904D"]
+			id: "31D8D419A99EF7D6"
+			tasks: [{
+				id: "6C03A1ED593CBB46"
+				item: "gtceu:smd_inductor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			id: "6521178B6D9C904D"
+			rewards: [{
+				id: "13CAEED017EB5653"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5921CDCE892FD599"
+				item: "gtceu:nickel_zinc_ferrite_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2AEED7614811B6A1"]
+			id: "19C6F975612E0AD4"
+			tasks: [{
+				id: "39996DF6A5BFA9E1"
+				item: "gtceu:ev_circuit_assembler"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			id: "29F0F845635AC95F"
+			rewards: [
+				{
+					count: 3
+					id: "7EC2D26547121034"
+					item: "kubejs:gt_coin"
+					type: "item"
+				}
+				{
+					id: "4085BBF05B99BDF9"
+					item: "kubejs:chapter_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "707E0A2B650EEAEC"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
 	]
 	title: "IV時代"
 }

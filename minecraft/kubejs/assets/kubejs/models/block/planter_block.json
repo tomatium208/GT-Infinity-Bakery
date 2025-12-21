@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "kubejs:block/planter_block_bottom",
+    "side": "kubejs:block/planter_block_side",
+    "top": "kubejs:block/planter_block_top"
+  }
+}

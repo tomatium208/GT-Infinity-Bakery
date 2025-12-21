@@ -108,22 +108,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["71AB4DABC885B162"]
-			id: "7EA88905487C8822"
-			rewards: [{
-				id: "69689412068E6244"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "01C3C35458875103"
-				item: "gtceu:tomatonium_ingot"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["0625E78D841B2410"]
 			id: "0BAEDCCD96A637EF"
 			rewards: [{
@@ -221,7 +205,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			id: "0B2BAA7AF534605C"
@@ -708,7 +692,7 @@
 		{
 			dependencies: [
 				"507E350481BA11C6"
-				"7EA88905487C8822"
+				"71AB4DABC885B162"
 			]
 			id: "6AB840E995314296"
 			rewards: [{

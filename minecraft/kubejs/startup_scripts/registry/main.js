@@ -116,7 +116,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet(GTMaterialIconSet.BRIGHT)
         .ingot()
         .liquid()
-        .color("0x440044")
+        .color("0x340034")
         .secondaryColor("0xff00ff")
         .flags(allMaterialFlag)
 
@@ -127,7 +127,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .color("0xee0000")
         .secondaryColor("0x009900")
-        .blastTemp(4400, "high", GTValues.VA[GTValues.EV])
+        .blastTemp(5200, "mid", GTValues.VA[GTValues.IV])
         .flags(allMaterialFlag)
 
     event.create("cbbcvsg")
@@ -202,12 +202,28 @@ StartupEvents.registry('block', event => {
 
     event.create("dimensional_rift")
         .glassSoundType()
-
+    
+    event.create("planter_block")
+        .stoneSoundType()
+        .notSolid()
+    
     // SOLID CASINGS
 
-    event.create("multi_dimensional_machine_casing").displayName("Multi-Dimensional Machine Casing")
+    event.create("multi_dimensional_machine_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/solid/multi_dimensional")
+    
+    event.create("miracle-theoretical_meteor_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/solid/miracle_meteor")
+    
+    event.create("miracle-theoretical_fumetsu_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/solid/miracle_fumetsu")
+    
+    event.create("spacetime_stabilization_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/solid/spacetime")
 
     // PROOF CASINGS
 
@@ -218,6 +234,20 @@ StartupEvents.registry('block', event => {
     event.create("collapse_proof_machine_casing")
         .stoneSoundType()
         .textureAll("kubejs:block/casings/proof/collapse")
+
+    // NOUF CASINGS
+
+    event.create("non_omnipotent_trancendent_industrial_infinity_tesseract_ultimate_overpower_general_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/nouf/general")
+
+    event.create("non_omnipotent_trancendent_industrial_infinity_tesseract_ultimate_overpower_general_starmatter_whirlpool_magical_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/nouf/magical")
+
+    event.create("non_omnipotent_trancendent_industrial_infinity_tesseract_ultimate_overpower_general_psychotic_wave_forging_casing")
+        .stoneSoundType()
+        .textureAll("kubejs:block/casings/nouf/wave")
 
     // FISSION CASINGS
 
@@ -371,6 +401,10 @@ StartupEvents.registry("item", event => {
 
     event.create("tasty_valine3g")
     event.create("frozen_valine3g")
+
+    event.create("valine3g_cake").food(food => {
+        food.hunger(2147483647)
+    }).tooltip(Text.translatable("item.kubejs.valine3g_cake.tooltip.0"))
 
 
     event.create("tomato").food(food => {

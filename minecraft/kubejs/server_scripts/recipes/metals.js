@@ -14,12 +14,21 @@ ServerEvents.recipes(event => {
         .itemInputs("1x kubejs:sliced_bread")
         .itemOutputs("1x gtceu:bread_dust")
         .EUt(GTValues.VHA[GTValues.LV])
-    
+
     event.recipes.gtceu.extractor("extract_bread")
         .itemInputs("1x kubejs:sliced_bread")
         .outputFluids("gtceu:bread 144")
         .duration(100)
         .EUt(GTValues.VHA[GTValues.LV])
+
+    // Tomatonium
+
+    event.recipes.gtceu.ore_washer("kjs/tomatonium")
+        .inputFluids("minecraft:water 1000")
+        .itemInputs("kubejs:tomato")
+        .itemOutputs("2x gtceu:tomatonium_dust")
+        .duration(40)
+        .EUt(GTValues.VHA[GTValues.MV])
 
     // Nyalloy
 
