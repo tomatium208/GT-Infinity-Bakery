@@ -13,3 +13,9 @@ config - KubeJS config storage. This is also the only directory that scripts can
 exported - Data dumps like texture atlases end up here
 
 You can find type-specific logs in logs/kubejs/ directory
+
+/assets/kubejs/textures/block/casings/greenhouse
+# 開発者の方へ届けッ！！！！
+
+Q. なぜgreenhouse\_casing\_mk1が無い  
+A. greenhouse mk1でメインで使ってるケーシングはsolid machine casingなので。
