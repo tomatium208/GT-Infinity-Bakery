@@ -11,8 +11,8 @@
 		image: "kubejs:item/markers/mv"
 		rotation: 0.0d
 		width: 2.0d
-		x: 3.0d
-		y: -2.5d
+		x: 1.5d
+		y: -3.0d
 	}]
 	order_index: 2
 	quest_links: [ ]
@@ -340,6 +340,59 @@
 			y: 5.0d
 		}
 		{
+			dependencies: [
+				"2C3B34A914DF069B"
+				"5E10C1726FB0961B"
+				"20555605017BF6DF"
+			]
+			id: "242C2C17B80C8C1A"
+			rewards: [{
+				id: "38B60485A1372093"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0043C29B9EE77C40"
+				item: "gtceu:mv_emitter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			id: "2C3B34A914DF069B"
+			rewards: [{
+				id: "046B54B83BF8487C"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "577BC803CC96BA84"
+				item: "gtceu:flawless_emerald_gem"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["242C2C17B80C8C1A"]
+			id: "357B1797EE43C86B"
+			rewards: [{
+				id: "72D7EBD6B6CD9518"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "68B71E25C1D23365"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
 			icon: "gtceu:pyrolyse_oven"
 			id: "132CD04F9EFD01B3"
 			rewards: [{
@@ -471,6 +524,22 @@
 		}
 		{
 			dependencies: ["5E10C1726FB0961B"]
+			id: "20555605017BF6DF"
+			rewards: [{
+				id: "415D9936B3BDD626"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "596D6428CEF77241"
+				item: "gtceu:electrum_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5E10C1726FB0961B"]
 			id: "057327B052E80C18"
 			optional: true
 			rewards: [{
@@ -502,8 +571,8 @@
 				item: "gtceu:mv_machine_hull"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: -1.0d
+			y: -4.0d
 		}
 	]
 	title: "MV時代"

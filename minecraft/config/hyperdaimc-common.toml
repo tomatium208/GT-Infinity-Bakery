@@ -2,7 +2,7 @@
 [Hyperlink]
 	#When logging in, warn that server config has been integrated into common config in version 2.0
 	#Default: true
-	"Config warning" = true
+	"Config warning" = false
 
 	[Hyperlink.Muteki]
 		#Enable behavior of Muteki
@@ -113,7 +113,7 @@
 		"Stack same ingredients" = false
 		#Recipe types searched by Materializer
 		#Default: [ minecraft:crafting, minecraft:smelting, minecraft:blasting, minecraft:smoking, minecraft:campfire_cooking, minecraft:smithing, hyperdaimc:desk, avaritia:crafting_table_recipe, avaritia:compressor_recipe, avaritia:extreme_smithing_recipe ]
-		"Materializer recipe types" = ["minecraft:crafting", "minecraft:smelting", "minecraft:blasting", "minecraft:smoking", "minecraft:campfire_cooking", "minecraft:smithing", "hyperdaimc:desk", "avaritia:crafting_table_recipe", "avaritia:compressor_recipe", "avaritia:extreme_smithing_recipe"]
+		"Materializer recipe types" = []
 		#Specify the items that can be used as fuel for the materializer, along with the number of times they can be used
 		#Write the item ID on the left side of the = and the number of times on the right side ( e.g., hyperdaimc:god_sigil=64 )
 		#The item ID can also be used as a tag ID by adding a # at the beginning
