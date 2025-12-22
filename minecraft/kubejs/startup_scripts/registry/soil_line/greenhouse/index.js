@@ -16,6 +16,9 @@ var $List = Java.loadClass("java.util.List");
 var $Arrays = Java.loadClass("java.util.Arrays");
 var $RecipeLogic$Status = Java.loadClass("com.gregtechceu.gtceu.api.machine.trait.RecipeLogic$Status");
 var $ContentModifier = Java.loadClass("com.gregtechceu.gtceu.api.recipe.content.ContentModifier");
+var $RecipeHelper = Java.loadClass("com.gregtechceu.gtceu.api.recipe.RecipeHelper");
+var $GTUtil = Java.loadClass("com.gregtechceu.gtceu.utils.GTUtil");
+var $IOverclockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.feature.IOverclockMachine");
 
 /**
  *
@@ -196,24 +199,28 @@ function greenhouseModifier() {
         }
         const holder = machine.getHolder();
         const nbt = holder.persistentData;
-        //#region cast to IRecipeLogicMachine
-        /** @type {Internal.IRecipeLogicMachine} */
-        const _ = machine;
-        //#endregion
+        const modifier = ModifierFunction.builder();
 
-        const rl = _.getRecipeLogic();
+        //#region 同じレシピを実行し続けると効率が落ちる
+        const rl = /** @type {Internal.IRecipeLogicMachine} */ (machine).getRecipeLogic();
         const runs = rl.getConsecutiveRecipes();
         const durationMultiplier = 1 / (1.0 - (Math.min(runs, 100) / 100.0) * 0.5);
+        modifier.durationMultiplier(durationMultiplier);
+        //#endregion
 
-        const lightIntensityPercent = holder.persistentData.getDouble("greenhouse_lightIntensity");
+        //#region 光量による変化
         // EU/tの50%は光量に依存する
-
+        // 植物にとって最適な光量
         const optimalLI = recipe.data.getDouble("optimal_light_intensity");
+        // trueの場合、光量効率が50%を下回るとレシピ実行不可
         const isLISensitive = recipe.data.getBoolean("light_intensity_sensitive") || false;
         const LI = nbt.getDouble("greenhouse_lightIntensity");
-        if (optimalLI === 0) {
-            throw new Error("Greenhouse recipe missing optimal_light_intensity data");
-        }
+        // IllegalState
+        assert(
+            optimalLI !== 0,
+            () => new Error("IllegalState: Greenhouse recipe missing optimal_light_intensity data")
+        );
+
         const result = calcGreenhouse(LI / 100, { opt: optimalLI / 100, rangeLow: rangeLow, brightLoose: brightLoose });
         if (isLISensitive && result.efficiency < 0.5) {
             nbt.putString("last_error", "gtceu.multiblock.greenhouse.error.low_light_intensity");
@@ -221,9 +228,12 @@ function greenhouseModifier() {
         }
         const parallel = Math.floor(result.efficiency * 8 + 0.1); // efficiencyが0.99とかのとき8並列にしたい
 
-        const modifier = ModifierFunction.builder()
-            .durationMultiplier(durationMultiplier)
-            .eutMultiplier(result.I_total);
+        modifier.eutMultiplier(result.I_total);
+        const recipeTier = $GTUtil.getTierByVoltage(recipe.getInputEUt().totalEU * result.I_total);
+        // too high tier
+        if (recipeTier > /** @type {Internal.IOverclockMachine} */ (machine).getMaxOverclockTier()) {
+            return ModifierFunction.NULL;
+        }
 
         if (parallel > 1) {
             // EU消費増加なしで並列するボーナス
@@ -232,6 +242,20 @@ function greenhouseModifier() {
         return modifier.build();
     };
 }
+
+/**
+ * node:assertの簡易実装
+ * @template T
+ * @param {condition} T
+ * @param (() => unknown) callback When assertion fails
+ * @returns {asserts T}
+ */
+function assert(condition, callback) {
+    if (!condition) {
+        throw callback();
+    }
+}
+
 const brightLoose = 2;
 const rangeLow = 0.2;
 /**
