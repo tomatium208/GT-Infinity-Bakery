@@ -64,7 +64,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["6FCFE8B31C7F0588"]
 			id: "4C8A02AC622F725B"
 			rewards: [{
 				id: "6E409F491671C8BF"
@@ -74,7 +73,7 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
-				count: 2L
+				count: 16L
 				id: "407C94982A3E8842"
 				item: "gtceu:lv_electric_motor"
 				type: "item"
@@ -481,6 +480,18 @@
 			}]
 			x: -3.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["64AA56D0FAE0CB85"]
+			id: "498D2D5FC04F0FCA"
+			shape: "diamond"
+			tasks: [{
+				id: "3FFCCABCC4A274BC"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -10.0d
 		}
 	]
 	title: "LV時代"

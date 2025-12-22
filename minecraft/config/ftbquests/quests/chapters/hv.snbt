@@ -570,9 +570,15 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 4L
 				id: "09C2C0FD0712F444"
-				item: { Count: 4, id: "gtceu:inductor" }
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:inductors)"
+					}
+				}
+				title: "Any #gtceu:inductors"
 				type: "item"
 			}]
 			x: -1.0d
@@ -623,15 +629,27 @@
 			id: "6D302E5A85AE44E5"
 			tasks: [
 				{
-					count: 4L
 					id: "51A56FC836FB990F"
-					item: "gtceu:transistor"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:transistors)"
+						}
+					}
+					title: "Any #gtceu:transistors"
 					type: "item"
 				}
 				{
-					count: 4L
 					id: "7099E055F095AED1"
-					item: { Count: 4, id: "gtceu:capacitor" }
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:capacitors)"
+						}
+					}
+					title: "Any #gtceu:capacitors"
 					type: "item"
 				}
 			]

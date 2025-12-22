@@ -16,9 +16,10 @@
 		}
 		{
 			height: 2.0d
-			image: "kubejs:item/markers/ulv"
+			hover: ["蒸気時代"]
+			image: "kubejs:textures/steam_age.png"
 			rotation: 0.0d
-			width: 2.0d
+			width: 4.0d
 			x: -6.0d
 			y: -7.5d
 		}
@@ -136,7 +137,31 @@
 					type: "item"
 				}
 				{
-					id: "5BB5779EF7D1009B"
+					id: "24D0A21BED39FCF1"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/saws)"
+						}
+					}
+					title: "Any #forge:tools/saws"
+					type: "item"
+				}
+				{
+					id: "1A9B33EB9BAA25EF"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/knives)"
+						}
+					}
+					title: "Any #forge:tools/knives"
+					type: "item"
+				}
+				{
+					id: "461A19498C3185CC"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
@@ -157,11 +182,41 @@
 				"5129D1CDCF6F891E"
 			]
 			id: "2B06A4B8CF9A5301"
-			rewards: [{
-				id: "39068F1F8E840326"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "39068F1F8E840326"
+					item: "kubejs:gt_coin"
+					type: "item"
+				}
+				{
+					id: "1B8B06AD069EC774"
+					item: {
+						Count: 1
+						id: "gtceu:tungsten_carbide_mining_hammer"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 4
+								MaxDamage: 3071
+								ToolSpeed: 28.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 64L
 				id: "43FC17C84B785A91"
@@ -532,9 +587,8 @@
 					type: "item"
 				}
 				{
-					elapsedTime: 3600L
 					id: "61D1FD0F9697EBEF"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			x: -6.0d
@@ -974,6 +1028,7 @@
 			dependencies: ["5FA8BEB0775AF0A5"]
 			icon: "gtceu:creosote_bucket"
 			id: "11B842BF72E106FE"
+			shape: "rsquare"
 			subtitle: "クレオソート油は燃料に最適です！"
 			tasks: [{
 				id: "0701EB14B5BC7340"
@@ -1031,6 +1086,17 @@
 			}]
 			x: 13.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["089748D677C9809F"]
+			id: "5D57C40AC6ED67EC"
+			tasks: [{
+				id: "5B3FFB5D5C3696F5"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
 		}
 	]
 	title: "蒸気時代"

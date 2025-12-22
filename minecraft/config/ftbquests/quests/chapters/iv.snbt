@@ -305,6 +305,33 @@
 			x: 4.0d
 			y: -4.0d
 		}
+		{
+			id: "71E6A59C3748E3A6"
+			tasks: [
+				{
+					id: "43CFEAE0A25A156F"
+					item: "gtceu:epoxy_circuit_board"
+					type: "item"
+				}
+				{
+					id: "0DF3A34A95B72E62"
+					item: "gtceu:epoxy_printed_circuit_board"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "574CCE0C4782003C"
+			tasks: [{
+				id: "58CD827ABB69477C"
+				item: "gtceu:epoxy_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
 	]
 	title: "IV時代"
 }

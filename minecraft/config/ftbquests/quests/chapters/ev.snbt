@@ -6,12 +6,20 @@
 	icon: "gtceu:micro_processor_computer"
 	id: "6308697F35A9F790"
 	order_index: 4
-	quest_links: [{
-		id: "413FECB82E1BCA4D"
-		linked_quest: "3AB2898F54E21788"
-		x: 6.0d
-		y: 12.0d
-	}]
+	quest_links: [
+		{
+			id: "413FECB82E1BCA4D"
+			linked_quest: "3AB2898F54E21788"
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			id: "0F56ED92125E9F3A"
+			linked_quest: "494C6FE040E38E50"
+			x: 1.0d
+			y: 6.0d
+		}
+	]
 	quests: [
 		{
 			id: "0B5F3B89638F839C"
@@ -108,39 +116,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0625E78D841B2410"]
-			id: "0BAEDCCD96A637EF"
-			rewards: [{
-				id: "0A43539B15C6060C"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0D578BB7D8EC547F"
-				item: "gtceu:kanthal_ingot"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["0BAEDCCD96A637EF"]
-			id: "358ADA5F43BCAED7"
-			rewards: [{
-				id: "6E0F947E128346D1"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "26C4717F3B6E6F1F"
-				item: "gtceu:kanthal_coil_block"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["358ADA5F43BCAED7"]
+			dependencies: ["494C6FE040E38E50"]
 			id: "2EE54239F023CC65"
 			optional: true
 			rewards: [{
@@ -231,10 +207,18 @@
 				item: "kubejs:gt_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "040ABA8847670087"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "040ABA8847670087"
+					type: "checkmark"
+				}
+				{
+					id: "515DEEE6BAABACA6"
+					item: "gtceu:aqua_regia_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "王水"
 			x: 4.0d
 			y: 7.0d
@@ -260,10 +244,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"4BD85789139A9B83"
-				"2DBA54EB856B35FF"
-			]
+			dependencies: ["4BD85789139A9B83"]
 			id: "1F4507FD36E52247"
 			rewards: [{
 				id: "10C3B4E5A21CE571"
@@ -277,16 +258,6 @@
 			}]
 			x: 5.0d
 			y: 8.0d
-		}
-		{
-			id: "2DBA54EB856B35FF"
-			tasks: [{
-				id: "0CEC2F349DAC7365"
-				item: "gtceu:ev_chemical_reactor"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 9.0d
 		}
 		{
 			id: "6463040DFDCE05BA"
@@ -344,10 +315,18 @@
 				item: "kubejs:gt_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "30F0EDD891542F80"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "30F0EDD891542F80"
+					type: "checkmark"
+				}
+				{
+					id: "1DA4FB625E600B60"
+					item: "gtceu:nitric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "硝酸"
 			x: 2.5d
 			y: 7.0d
@@ -612,7 +591,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["358ADA5F43BCAED7"]
+			dependencies: ["494C6FE040E38E50"]
 			id: "522E9476F8EC0185"
 			rewards: [{
 				id: "09A5BB3B0DD54863"
@@ -674,7 +653,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["358ADA5F43BCAED7"]
 			id: "15565CB280E8338E"
 			rewards: [{
 				id: "6AA5E584A878EC43"
@@ -792,6 +770,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "goat"
 			tasks: [{
 				id: "2BECB65FE333307F"
 				item: "gtceu:large_chemical_reactor"

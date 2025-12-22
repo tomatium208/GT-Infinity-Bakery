@@ -29,7 +29,7 @@
 			y: -2.0d
 		}
 		{
-			hide_dependency_lines: true
+			dependencies: ["0BECEA34AB766D96"]
 			id: "5D54DDECBA1C0AA5"
 			tasks: [{
 				id: "4989E460DC5BA7CC"
@@ -73,8 +73,8 @@
 		{
 			dependencies: [
 				"2DF80595F0EF54ED"
-				"043D060DC98C9CAA"
 				"35AABE01131CAEE4"
+				"5E10C1726FB0961B"
 			]
 			id: "4AFA67E64A042152"
 			rewards: [{
@@ -91,27 +91,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5E10C1726FB0961B"]
-			id: "043D060DC98C9CAA"
-			rewards: [{
-				id: "11FEDCEE1074713B"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				count: 32L
-				id: "653CC0F87469238B"
-				item: "gtceu:silicon_dust"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
 			dependencies: [
 				"5D54DDECBA1C0AA5"
 				"1DD5B37011C6C495"
 			]
+			hide_dependent_lines: true
 			id: "2AE4E3110D0F728B"
 			rewards: [{
 				id: "334156890C002EF5"
@@ -158,7 +142,10 @@
 			y: 3.0d
 		}
 		{
-			hide_dependency_lines: true
+			dependencies: [
+				"2AE4E3110D0F728B"
+				"70F228E1BE517661"
+			]
 			id: "07EC631084F978C2"
 			tasks: [{
 				id: "49DD601940497CCB"
@@ -192,7 +179,6 @@
 			dependencies: [
 				"48D1809C83626477"
 				"0AAC090307C6ECE6"
-				"718A5C2588A9B1CE"
 			]
 			id: "0AB31D8ECB2A0BCC"
 			rewards: [{
@@ -212,7 +198,7 @@
 			dependencies: [
 				"0AB31D8ECB2A0BCC"
 				"7CAFB135392C7C44"
-				"05AB85520997BF7F"
+				"718A5C2588A9B1CE"
 			]
 			id: "3278C3CF89CF81CD"
 			rewards: [
@@ -255,7 +241,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["043D060DC98C9CAA"]
 			id: "1DD5B37011C6C495"
 			rewards: [{
 				id: "2EB8F8F3FA63980C"
@@ -302,18 +287,24 @@
 			y: 2.0d
 		}
 		{
-			hide_dependency_lines: true
+			dependencies: [
+				"2AE4E3110D0F728B"
+				"4750200EFC59842E"
+			]
 			id: "718A5C2588A9B1CE"
 			tasks: [{
 				id: "7FB77CBFBFE4A570"
 				item: "gtceu:ram_chip"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
-			dependencies: ["2E4F47DD783D015F"]
+			dependencies: [
+				"2E4F47DD783D015F"
+				"457059D40E672852"
+			]
 			id: "7CAFB135392C7C44"
 			rewards: [{
 				id: "46388910724D6D08"
@@ -327,23 +318,12 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 2.5d
-		}
-		{
-			id: "5A4B7030C757DD6B"
-			tasks: [{
-				id: "3BEA348617678035"
-				item: "gtceu:mv_distillery"
-				type: "item"
-			}]
-			x: -3.0d
 			y: 5.0d
 		}
 		{
 			dependencies: [
 				"2C3B34A914DF069B"
 				"5E10C1726FB0961B"
-				"20555605017BF6DF"
 			]
 			id: "242C2C17B80C8C1A"
 			rewards: [{
@@ -371,26 +351,8 @@
 				item: "gtceu:flawless_emerald_gem"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["242C2C17B80C8C1A"]
-			id: "357B1797EE43C86B"
-			rewards: [{
-				id: "72D7EBD6B6CD9518"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "68B71E25C1D23365"
-				item: "gtceu:mv_electric_motor"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -3.0d
+			x: -4.5d
+			y: -2.0d
 		}
 		{
 			icon: "gtceu:pyrolyse_oven"
@@ -408,8 +370,8 @@
 				item: "gtceu:pyrolyse_oven"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: -7.0d
+			y: 1.0d
 		}
 		{
 			id: "454105ABDB8D6617"
@@ -448,17 +410,6 @@
 			y: 4.0d
 		}
 		{
-			hide_dependency_lines: true
-			id: "05AB85520997BF7F"
-			tasks: [{
-				id: "2CE8C47BFD87CBA3"
-				item: "gtceu:cpu_chip"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -0.5d
-		}
-		{
 			id: "6FFC0063B0A66019"
 			tasks: [{
 				id: "5D0A9201C025EDB8"
@@ -469,26 +420,9 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["132CD04F9EFD01B3"]
-			icon: "gtceu:wood_gas_bucket"
-			id: "2807D8423ADACBE9"
-			rewards: [{
-				id: "665A0A6F7EC898E7"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6B246DAE72B4145C"
-				type: "checkmark"
-			}]
-			title: "木質ガス"
-			x: -2.0d
-			y: 6.0d
-		}
-		{
 			dependencies: [
-				"2807D8423ADACBE9"
-				"5A4B7030C757DD6B"
+				"2B8DA5CBA7F95DE4"
+				"554FDA1714D8455C"
 			]
 			icon: "gtceu:ethylene_bucket"
 			id: "35AABE01131CAEE4"
@@ -519,24 +453,8 @@
 				type: "checkmark"
 			}]
 			title: "液化ポリエチレン"
-			x: 6.0d
+			x: 0.0d
 			y: 5.0d
-		}
-		{
-			dependencies: ["5E10C1726FB0961B"]
-			id: "20555605017BF6DF"
-			rewards: [{
-				id: "415D9936B3BDD626"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "596D6428CEF77241"
-				item: "gtceu:electrum_ingot"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -3.5d
 		}
 		{
 			dependencies: ["5E10C1726FB0961B"]
@@ -573,6 +491,323 @@
 			}]
 			x: -1.0d
 			y: -4.0d
+		}
+		{
+			id: "0BECEA34AB766D96"
+			tasks: [{
+				id: "2BEC4D7FAC367955"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"494C6FE040E38E50"
+				"7039D1ED2B432A9D"
+			]
+			id: "457059D40E672852"
+			tasks: [{
+				id: "0B79E54678A3D527"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			id: "7039D1ED2B432A9D"
+			tasks: [{
+				id: "66D060E5A080562E"
+				item: "gtceu:mv_chemical_bath"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6A4B61A001F60665"]
+			id: "494C6FE040E38E50"
+			tasks: [{
+				count: 16L
+				id: "73F8AD53D2ABE1A9"
+				item: { Count: 16, id: "gtceu:kanthal_coil_block" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6D98CFC1A1DF71E7"]
+			id: "6A4B61A001F60665"
+			tasks: [{
+				id: "714FF16F2496BA69"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3AEB4383A23EA15E"]
+			id: "6D98CFC1A1DF71E7"
+			tasks: [{
+				id: "273CFBB26C25FCF2"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"40488D5E36F86CCA"
+				"2AE4E3110D0F728B"
+			]
+			id: "3AEB4383A23EA15E"
+			tasks: [{
+				id: "29A0307D65F81BF3"
+				item: "gtceu:ulpic_chip"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			id: "40488D5E36F86CCA"
+			tasks: [{
+				id: "08170607927D82B5"
+				item: "gtceu:sapphire_lens"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3053C0DDD8E6AAF1"]
+			icon: "gtceu:severely_steam_cracked_naphtha_bucket"
+			id: "2B8DA5CBA7F95DE4"
+			tasks: [
+				{
+					id: "0E40C0543B8297B7"
+					item: "gtceu:severely_steam_cracked_naphtha_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D859B55EB19D5D6"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2C9FFDA9ECF38AD2"]
+			icon: "gtceu:naphtha_bucket"
+			id: "3053C0DDD8E6AAF1"
+			tasks: [
+				{
+					id: "2198890919AA58F2"
+					item: "gtceu:naphtha_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E84447C9692DD99"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"650CA7E98BFB1D26"
+				"4AAB49AA63E4B88B"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:oil_medium_bucket"
+			id: "2C9FFDA9ECF38AD2"
+			subtitle: "raw oil is best, but oil demo ok"
+			tasks: [
+				{
+					id: "096FB9E6ED3F9E38"
+					item: "gtceu:oil_medium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4D436D45133EC89A"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			icon: "gtceu:mv_fluid_drilling_rig"
+			id: "4AAB49AA63E4B88B"
+			tasks: [
+				{
+					id: "76C8ADEF05434182"
+					item: "gtceu:mv_fluid_drilling_rig"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7EF075B682A0448B"
+					item: { Count: 10, id: "gtceu:solid_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "02E115EECE0ADC0B"
+					item: { Count: 15, id: "gtceu:steel_frame" }
+					type: "item"
+				}
+				{
+					id: "130818553505AA2C"
+					item: "gtceu:mv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "6EE3AA243B53EFDB"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 8.0d
+		}
+		{
+			icon: "gtceu:steel_drum"
+			id: "650CA7E98BFB1D26"
+			tasks: [
+				{
+					id: "05B23AC99BC55C2F"
+					item: "gtceu:steel_drum"
+					type: "item"
+				}
+				{
+					id: "0634118AA4077CCB"
+					type: "checkmark"
+				}
+			]
+			title: "ドラムを抱えて油田を探す"
+			x: -3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"6622E2DC936CCCF9"
+				"53A0302769E1D28B"
+			]
+			icon: "gtceu:ethanol_bucket"
+			id: "554FDA1714D8455C"
+			tasks: [
+				{
+					id: "1EBBDE43C7C09705"
+					item: "gtceu:ethanol_bucket"
+					type: "item"
+				}
+				{
+					id: "4F0F9C8B0FABE5B4"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1F3AAB5B1E9EFCBA"]
+			icon: "gtceu:biomass_bucket"
+			id: "6622E2DC936CCCF9"
+			tasks: [
+				{
+					id: "61341B0493177BF8"
+					item: "gtceu:biomass_bucket"
+					type: "item"
+				}
+				{
+					id: "4448D8BEFC00D778"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			id: "1F3AAB5B1E9EFCBA"
+			subtitle: "no! biochem is better!"
+			tasks: [
+				{
+					id: "7826961DA5936638"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					id: "7A1D16C05F5378A9"
+					item: "gtceu:bio_chaff"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			id: "53A0302769E1D28B"
+			tasks: [{
+				id: "5605F0543249A0D4"
+				item: "gtceu:mv_distillery"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E4F47DD783D015F"]
+			id: "232175F08810D3A9"
+			tasks: [{
+				id: "45EEA6C0AF4163FD"
+				item: "gtceu:lv_super_tank"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			id: "70F228E1BE517661"
+			tasks: [{
+				id: "3BBD82D77D03F016"
+				item: "gtceu:ruby_lens"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "4750200EFC59842E"
+			tasks: [{
+				id: "346623435429A363"
+				item: "gtceu:emerald_lens"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["242C2C17B80C8C1A"]
+			id: "2E99BCA14F112392"
+			tasks: [{
+				id: "056C8F87055F7648"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
 		}
 	]
 	title: "MV時代"
