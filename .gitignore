@@ -1,1 +1,26 @@
 /instance.cfg
+
+# 一旦全部無視
+*
+!*/
+
+# Git
+!.gitignore
+!*.gitignore
+!.gitattributes
+# ?
+!.packignore
+!GTIB.png
+!LISENCE
+!LISENSE
+!README.md
+!mmc-pack.json
+# Kubejs
+!minecraft/kubejs/**
+# Configs
+!minecraft/config/ftbquests/**
+!minecraft/config/ae2/**
+!minecraft/config/gtceu.yaml
+!minecraft/config/hyperdaimc-common.toml
+!minecraft/config/untranslateditems-client.toml
+# 他に追加したい時はここに書く
