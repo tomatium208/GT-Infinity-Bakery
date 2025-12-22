@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
             "2x gtceu:micro_processor",
             "4x #gtceu:inductors",
             "8x #gtceu:capacitors",
-            "4x gtceu:lpic_chip",
+            "1x gtceu:lpic_chip",
             "8x #forge:fine_wires/cbbcvsg",
         ],
         144,

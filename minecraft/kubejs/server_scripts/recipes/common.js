@@ -214,12 +214,4 @@ ServerEvents.recipes(event => {
             .itemOutputs(`2x ${plank}`, "1x gtceu:wood_dust")
             .EUt(VA.ULV);
     });
-
-    event.shaped("gtceu:primitive_bakery", ["SES", "FTF", "SCS"], {
-        S: "gtceu:steam_machine_casing",
-        F: "gtceu:bronze_firebox_casing",
-        T: "gtbakery:toast",
-        C: "#gtceu:circuits/lv",
-        E: "gtceu:lv_emitter",
-    });
 });

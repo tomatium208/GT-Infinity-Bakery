@@ -80,7 +80,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ore()
         .liquid()
         .color(color("#45281d"))
-        .blastTemp(18000, "highest", VA.LuV)
+        .blastTemp(15000, "highest", VA.LuV, 600)
         .flags(allMaterialFlag);
 
     event
@@ -100,7 +100,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .color(color("#ee0000"))
         .secondaryColor(color("#009900"))
-        .blastTemp(5000, "highest", VA.IV)
+        .blastTemp(5000, "highest", VA.IV, 600)
         .flags(allMaterialFlag);
 
     event

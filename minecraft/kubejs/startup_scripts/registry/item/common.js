@@ -55,7 +55,7 @@ StartupEvents.registry("item", event => {
         food.hunger(3).saturation(0.1);
     });
 
-    event.create("sliced_bread").food(food => {
+    event.create("sliced_bread").tag('forge:bread').food(food => {
         food.hunger(4).saturation(0.75);
     });
     event.create("toast").food(food => {
