@@ -19,8 +19,8 @@
 			image: "kubejs:item/markers/ulv"
 			rotation: 0.0d
 			width: 2.0d
-			x: 3.0d
-			y: -4.5d
+			x: -6.0d
+			y: -7.5d
 		}
 	]
 	order_index: 0
@@ -68,41 +68,87 @@
 			dependencies: ["01A3A4F76CAC6835"]
 			id: "29174E90A864C67C"
 			rewards: [{
+				count: 2
 				id: "50CDFF3222CEBC19"
 				item: "kubejs:gt_coin"
 				type: "item"
 			}]
 			subtitle: "スティーブの腕力は世界一ィィ！！"
-			tasks: [{
-				id: "5EDC88696F29F4AD"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:tools/hammers)"
+			tasks: [
+				{
+					id: "5EDC88696F29F4AD"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/hammers)"
+						}
 					}
+					title: "任意のハンマー"
+					type: "item"
 				}
-				title: "任意のハンマー"
-				type: "item"
-			}]
+				{
+					id: "2DDBE7EB768E37E6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/files)"
+						}
+					}
+					title: "Any #forge:tools/files"
+					type: "item"
+				}
+				{
+					id: "04C17FB0C2168052"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/wrenches)"
+						}
+					}
+					title: "Any #forge:tools/wrenches"
+					type: "item"
+				}
+				{
+					id: "3B82FCCC5DBB9BEF"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/screwdrivers)"
+						}
+					}
+					title: "Any #forge:tools/screwdrivers"
+					type: "item"
+				}
+				{
+					id: "2BB29FA814E6915D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/wire_cutters)"
+						}
+					}
+					title: "Any #forge:tools/wire_cutters"
+					type: "item"
+				}
+				{
+					id: "5BB5779EF7D1009B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mortars)"
+						}
+					}
+					title: "Any #forge:tools/mortars"
+					type: "item"
+				}
+			]
 			x: 0.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["29174E90A864C67C"]
-			id: "15F780F7F8C82532"
-			rewards: [{
-				id: "1610285B2177BDDC"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				count: 4L
-				id: "180FBB4382DDB71F"
-				item: "gtceu:bronze_dust"
-				type: "item"
-			}]
-			x: 2.0d
 			y: -1.0d
 		}
 		{
@@ -140,98 +186,78 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["29174E90A864C67C"]
-			id: "6CF858997EF2D8BD"
-			optional: true
-			rewards: [{
-				id: "3385B74ECDE1D2E7"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "10AC192B2C0E018A"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:tools/wrench)"
-					}
-				}
-				title: "任意のレンチ"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["29174E90A864C67C"]
-			id: "4684626E876E20FC"
-			optional: true
-			rewards: [{
-				id: "3F6E27B05C39991E"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7542A58A0FB90E85"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:tools/files)"
-					}
-				}
-				title: "任意のやすり"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["15F780F7F8C82532"]
+			dependencies: [
+				"089748D677C9809F"
+				"30EE4854FA50319C"
+				"651E2E38CED766C6"
+			]
 			id: "5FF8AE2ACDBE1526"
 			optional: true
+			rewards: [
+				{
+					id: "3F2A69D99C220787"
+					item: "gtceu:lv_super_tank"
+					type: "item"
+				}
+				{
+					id: "03C860DBA0E55D6B"
+					item: "kubejs:gt_coin"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "WARNING!!"
 			tasks: [{
 				id: "49B480F96104E08A"
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			title: "Into Steam"
+			x: 4.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["15F780F7F8C82532"]
+			dependencies: ["5FF8AE2ACDBE1526"]
 			id: "3A6548201F27B140"
 			tasks: [{
 				id: "3740C11D51A4076F"
 				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
-			dependencies: [
-				"3A6548201F27B140"
-				"461790A917B93104"
-			]
+			dependencies: ["3A6548201F27B140"]
 			id: "6653B6E3DBD60B35"
 			rewards: [{
 				id: "5623B582CD013069"
 				item: "kubejs:gt_coin"
 				type: "item"
 			}]
-			tasks: [{
-				count: 4L
-				id: "7A6D2814BC6AA5E7"
-				item: "gtceu:compressed_fireclay"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 0.0d
+			tasks: [
+				{
+					id: "1F59C20A28A94F70"
+					item: "gtceu:fireclay_dust"
+					type: "item"
+				}
+				{
+					id: "145E28FF1E5A72D1"
+					item: "gtceu:compressed_fireclay"
+					type: "item"
+				}
+				{
+					id: "4B9DA568BBCAB423"
+					item: "gtceu:firebrick"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6653B6E3DBD60B35"]
@@ -245,13 +271,21 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			tasks: [{
-				id: "55FFFFA9B3CF5526"
-				item: "gtceu:primitive_blast_furnace"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -2.0d
+			tasks: [
+				{
+					id: "55FFFFA9B3CF5526"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 33L
+					id: "04A8759126C5C024"
+					item: { Count: 33, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6B9595C5EABE59B1"]
@@ -261,6 +295,8 @@
 				item: "kubejs:gt_coin"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			subtitle: "石炭が溶けていく..."
 			tasks: [{
 				count: 16L
@@ -268,13 +304,13 @@
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.0d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"611ACE625ADB9691"
-				"7043885BE68DE244"
+				"3D2865BC594770A6"
 			]
 			id: "1E45C47BF14F21E4"
 			rewards: [{
@@ -287,10 +323,12 @@
 				item: "gtceu:glass_tube"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 9.5d
+			y: -4.0d
 		}
 		{
+			dependencies: ["5FF8AE2ACDBE1526"]
+			hide_dependent_lines: true
 			id: "611ACE625ADB9691"
 			shape: "circle"
 			tasks: [{
@@ -298,14 +336,11 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"1E45C47BF14F21E4"
-				"4837B6351061218F"
-			]
+			dependencies: ["1E45C47BF14F21E4"]
 			id: "0B090153A1536199"
 			rewards: [{
 				id: "5949B02C41105AD3"
@@ -318,40 +353,16 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7D4F8DD66F06E9EC"]
-			id: "4837B6351061218F"
-			rewards: [{
-				id: "079DEDF7924CBC11"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				count: 4L
-				id: "77C2ED93127826BC"
-				item: "gtceu:wrought_iron_ingot"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -2.0d
-		}
-		{
-			id: "7D4F8DD66F06E9EC"
-			tasks: [{
-				id: "0E323B38224FB9C0"
-				item: "gtceu:lp_steam_compressor"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -2.0d
+			x: 11.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
 				"0B090153A1536199"
 				"511FFBF60A4BB47E"
+				"060AEB0211903F7E"
+				"38575F059D1F2778"
+				"7FF22C9B2C3BF2BD"
 			]
 			id: "0B6CC29B5FA6B664"
 			rewards: [
@@ -370,12 +381,13 @@
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
+				count: 16L
 				id: "52F65F55CED921D7"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -5.0d
+			x: 13.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["611ACE625ADB9691"]
@@ -391,7 +403,7 @@
 				item: "gtceu:resistor"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 11.0d
 			y: -5.0d
 		}
 		{
@@ -434,45 +446,6 @@
 			y: -3.0d
 		}
 		{
-			id: "49D3FB58E34FE5C8"
-			rewards: [{
-				id: "34BDFF5585D6A813"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5F98E6B47BB444A3"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:tools/mortars)"
-					}
-				}
-				title: "任意のすり鉢"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["49D3FB58E34FE5C8"]
-			id: "461790A917B93104"
-			rewards: [{
-				id: "31973063549227FF"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				count: 2L
-				id: "386D06AA73EADA2A"
-				item: { Count: 2, id: "gtceu:fireclay_dust" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 1.0d
-		}
-		{
 			dependencies: [
 				"2B06A4B8CF9A5301"
 				"5129D1CDCF6F891E"
@@ -489,7 +462,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["248B9B7D84D27BDB"]
@@ -532,19 +505,531 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["5495A9CDA881A239"]
-			id: "7043885BE68DE244"
+			can_repeat: true
+			dependencies: ["69B6E7ADB69DD45F"]
+			icon: "gtceu:prospector.lv"
+			id: "7CF248D318075DF9"
+			invisible: true
+			optional: true
 			rewards: [{
-				id: "7582413215A14EC3"
+				id: "1CDDA71D346BCA3C"
+				item: {
+					Count: 1
+					id: "gtceu:prospector.lv"
+					tag: {
+						Charge: 100000L
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Fully Charged Ore Prospector"
+			tasks: [
+				{
+					consume_items: true
+					id: "0D1FF6FF605EE4DC"
+					item: "gtceu:prospector.lv"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					elapsedTime: 3600L
+					id: "61D1FD0F9697EBEF"
+					type: "questsadditions:time"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29174E90A864C67C"]
+			id: "7655AF41705F4557"
+			tasks: [{
+				id: "2AE6D2DB5B711EA0"
+				item: {
+					Count: 1
+					id: "gtceu:wrought_iron_mining_hammer"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 2
+							MaxDamage: 1151
+							ToolSpeed: 4.8f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["29174E90A864C67C"]
+			id: "0D5C04DA73795912"
+			rewards: [{
+				id: "45931D641A3A0366"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "6BD2DA9FB33DDC44"
+					item: { Count: 3, id: "gtceu:copper_dust" }
+					type: "item"
+				}
+				{
+					id: "345EADB54C65D93F"
+					item: "gtceu:tin_dust"
+					type: "item"
+				}
+			]
+			title: "最初の合金"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0D5C04DA73795912"]
+			description: ["バッチクラフトを覚えないと死にます"]
+			id: "089748D677C9809F"
+			rewards: [{
+				id: "667E8E974AFE3F91"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			subtitle: "一瞬でなくなります"
+			tasks: [{
+				count: 64L
+				id: "6737098B2DF2B6F8"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7FB2D34CA8AA1919"]
+			icon: "gtceu:primitive_pump"
+			id: "30EE4854FA50319C"
+			rewards: [{
+				id: "59030C74259410E6"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "718EC5743E3ED052"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "72A9BEC92ED1711E"
+					item: { Count: 10, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "4B25FDA2502AD250"
+					item: { Count: 10, id: "gtceu:pump_deck" }
+					type: "item"
+				}
+				{
+					id: "1763DF30DAA53E35"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0F967A89FF6356AC"]
+			icon: "gtceu:coke_oven"
+			id: "583249F3F8008A3C"
+			rewards: [{
+				id: "2E8DBE550CCFE624"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3E39AF964CF79A7F"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "190C216275F5EC8B"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7CB02DA03D5055A7"
+					item: { Count: 2, id: "gtceu:coke_oven_hatch" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["583249F3F8008A3C"]
+			id: "7FB2D34CA8AA1919"
+			tasks: [
+				{
+					count: 8L
+					id: "15B73D220A8D4A45"
+					item: { Count: 8, id: "gtceu:treated_wood_planks" }
+					type: "item"
+				}
+				{
+					id: "01E910D170E237E1"
+					item: "gtceu:creosote_bucket"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7E3F18C15AE67E0D"]
+			id: "0F967A89FF6356AC"
+			tasks: [
+				{
+					id: "41AF7F3D35E11F11"
+					item: "gtceu:compressed_coke_clay"
+					type: "item"
+				}
+				{
+					id: "663911DD99DC28A4"
+					item: "gtceu:coke_oven_brick"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			id: "7E3F18C15AE67E0D"
+			tasks: [
+				{
+					id: "581AC9F2B2793C66"
+					item: "gtceu:empty_wooden_form"
+					type: "item"
+				}
+				{
+					id: "6C8CF7A67800090D"
+					item: "gtceu:brick_wooden_form"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5FF8AE2ACDBE1526"]
+			id: "3B0475FEB21C7FAA"
+			tasks: [{
+				id: "3B265D03610F5C8D"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5FF8AE2ACDBE1526"]
+			hide_dependency_lines: true
+			id: "09976A6498C02A5E"
+			tasks: [{
+				id: "19C811EC122FA17A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lp_steam_extractor)item(gtceu:hp_steam_extractor))"
+					}
+				}
+				type: "item"
+			}]
+			title: "Extractor"
+			x: 6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5320E10E152D5B53"]
+			id: "2C5C05A26E5655EA"
+			tasks: [{
+				id: "04F68CCDBBBB5983"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"2C5C05A26E5655EA"
+				"09976A6498C02A5E"
+			]
+			id: "0EEDECA7795F3999"
+			tasks: [{
+				count: 3L
+				id: "6D6E22E906BADE70"
+				item: { Count: 3, id: "gtceu:raw_rubber_dust" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6DE97B2E5DB936B3"]
+			id: "5D97030CDECF2870"
+			tasks: [{
+				id: "6319E33A7EF78704"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.5d
+		}
+		{
+			id: "6DE97B2E5DB936B3"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "10472DC901C1C327"
+				type: "dimension"
+			}]
+			x: 8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"3D2865BC594770A6"
+				"5D97030CDECF2870"
+				"0EEDECA7795F3999"
+				"611ACE625ADB9691"
+			]
+			id: "45A092077CBD881D"
+			rewards: [{
+				id: "3D5CCB5E8F5226C9"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "0605545F80D7B2F3"
+					item: "gtceu:rubber_ingot"
+					type: "item"
+				}
+				{
+					id: "213CA1A4BEBDB20E"
+					item: "gtceu:rubber_plate"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5495A9CDA881A239"]
+			id: "3D2865BC594770A6"
+			tasks: [
+				{
+					id: "07F06630136C17C0"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+				{
+					id: "5471A04B52397EF7"
+					item: "gtceu:ball_casting_mold"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"45A092077CBD881D"
+				"30FD1553530A10D1"
+			]
+			id: "060AEB0211903F7E"
+			tasks: [{
+				id: "7E55F8F51EF50252"
+				item: "gtceu:red_alloy_single_cable"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["611ACE625ADB9691"]
+			id: "30FD1553530A10D1"
+			rewards: [{
+				id: "54E4E774E51CF97A"
 				item: "kubejs:gt_coin"
 				type: "item"
 			}]
 			tasks: [{
-				id: "427CE7E0F077C995"
-				item: "gtceu:empty_mold"
+				id: "3CC9C7A754360142"
+				item: "gtceu:red_alloy_ingot"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 11.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5495A9CDA881A239"]
+			id: "38575F059D1F2778"
+			tasks: [{
+				id: "7A8367B7293C47D1"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F3551A0C4A26329"]
+			id: "7FF22C9B2C3BF2BD"
+			tasks: [{
+				id: "22A66A369F669C86"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3A6548201F27B140"
+				"2C5C05A26E5655EA"
+			]
+			hide_dependency_lines: true
+			id: "0F3551A0C4A26329"
+			tasks: [{
+				id: "11F06781AA40893C"
+				item: "gtceu:resin_circuit_board"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5495A9CDA881A239"]
+			id: "694466F76AC73757"
+			optional: true
+			tasks: [
+				{
+					id: "53F3CACDF3630252"
+					item: "gtceu:lp_steam_solar_boiler"
+					type: "item"
+				}
+				{
+					id: "56785EB48E48282D"
+					item: "gtceu:hp_steam_solar_boiler"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5495A9CDA881A239"]
+			id: "5FA8BEB0775AF0A5"
+			tasks: [
+				{
+					id: "3863AEC157A48E1E"
+					item: "gtceu:lp_steam_liquid_boiler"
+					type: "item"
+				}
+				{
+					id: "3921E8DFE4A38279"
+					item: "gtceu:hp_steam_liquid_boiler"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5FA8BEB0775AF0A5"]
+			icon: "gtceu:creosote_bucket"
+			id: "11B842BF72E106FE"
+			subtitle: "クレオソート油は燃料に最適です！"
+			tasks: [{
+				id: "0701EB14B5BC7340"
+				type: "checkmark"
+			}]
+			title: "fuels"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["089748D677C9809F"]
+			icon: "gtceu:bronze_normal_fluid_pipe"
+			id: "651E2E38CED766C6"
+			rewards: [{
+				id: "4F2757A43FA7D878"
+				item: "kubejs:gt_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "28A9F91E01F89B16"
+					item: { Count: 16, id: "gtceu:bronze_normal_fluid_pipe" }
+					type: "item"
+				}
+				{
+					id: "2AAF3BB6949F7083"
+					title: "理解した"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "5320E10E152D5B53"
+			tasks: [{
+				id: "5AA51A9A36A123CB"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["38575F059D1F2778"]
+			hide_dependency_lines: true
+			id: "5CC58A027B544B60"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "401B3CC8BF974A9E"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 13.0d
 			y: -2.0d
 		}
 	]
