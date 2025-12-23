@@ -87,7 +87,7 @@ recipes:
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: false
-  enchantedTools: false
+  enchantedTools: true
 
   # Whether to enable macerator decomposition recycling
   # Default: true

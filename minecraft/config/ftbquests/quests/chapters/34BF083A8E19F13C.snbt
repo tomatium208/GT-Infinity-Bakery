@@ -1,0 +1,675 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "34BF083A8E19F13C"
+	group: "5096200C381E8783"
+	icon: "gtceu:max_battery"
+	id: "34BF083A8E19F13C"
+	order_index: 2
+	quest_links: [{
+		id: "2D6BE963E2944127"
+		linked_quest: "36A64A55DC2615F0"
+		shape: "rsquare"
+		x: -4.0d
+		y: -3.5d
+	}]
+	quests: [
+		{
+			dependencies: ["36A64A55DC2615F0"]
+			id: "70AF3776CE922E54"
+			shape: "square"
+			tasks: [{
+				id: "6129E3D8CD831F85"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["36A64A55DC2615F0"]
+			id: "4E1B20094A13DFBF"
+			shape: "square"
+			tasks: [{
+				id: "30CEE53BEA701F94"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["36A64A55DC2615F0"]
+			id: "1450C69955E65282"
+			shape: "square"
+			tasks: [{
+				id: "17BB1465EA5A7141"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["70AF3776CE922E54"]
+			id: "6BD545121DAF804F"
+			tasks: [{
+				id: "0224FF9217E6EBF5"
+				item: "gtceu:steam_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1450C69955E65282"]
+			id: "14B9EB4DD8131225"
+			tasks: [{
+				id: "73A2EC95AF47CC2F"
+				item: "gtceu:light_fuel_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3662A71D4A1970A1"]
+			id: "38249AE8703B26FB"
+			shape: "square"
+			tasks: [{
+				id: "6907CB0C7A2A4EE4"
+				item: "gtceu:mv_combustion"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3662A71D4A1970A1"]
+			id: "51F67B084CEE79CF"
+			shape: "square"
+			tasks: [{
+				id: "66CD79A92A55A195"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["183AD5FDE708C392"]
+			id: "360C3B4120D69CD7"
+			shape: "square"
+			tasks: [{
+				id: "3EF88BDB227AE013"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["779C05FAC5A4BEEC"]
+			id: "66453CE44C96F198"
+			tasks: [{
+				id: "2E4AF534931C67FA"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["183AD5FDE708C392"]
+			id: "741847E208DC7792"
+			shape: "square"
+			tasks: [{
+				id: "3C486ED31B7EDB7A"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["36A64A55DC2615F0"]
+			id: "42ECC84628FBAEF0"
+			tasks: [{
+				id: "348A6774861451BD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:batteries/lv)"
+					}
+				}
+				title: "Any #gtceu:batteries/lv"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3662A71D4A1970A1"]
+			id: "203CE87DE14C3EA1"
+			tasks: [{
+				id: "68435A1D3CBEC65C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:batteries/mv)"
+					}
+				}
+				title: "Any #gtceu:batteries/mv"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5BE2DA934AB1B32F"]
+			id: "2EB29FB46F084B92"
+			tasks: [{
+				id: "2677E69B1E2C8F7E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:batteries/hv)"
+					}
+				}
+				title: "Any #gtceu:batteries/hv"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["183AD5FDE708C392"]
+			id: "7A260AA7F0E8EFD4"
+			tasks: [{
+				id: "7D83F9633497711F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:batteries/ev)"
+					}
+				}
+				title: "Any #gtceu:batteries/ev"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["779C05FAC5A4BEEC"]
+			id: "603A1EDD1D7C3A6C"
+			tasks: [{
+				id: "13A5FAA6CEF6FDE6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:batteries/iv)"
+					}
+				}
+				title: "Any #gtceu:batteries/iv"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C62F0E0E51728EF"]
+			id: "688F9989D9B19207"
+			tasks: [{
+				id: "7DB76CD3A60F1345"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:batteries/luv)"
+					}
+				}
+				title: "Any #gtceu:batteries/luv"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3DB4DB10216FE7A2"]
+			id: "66A1AD6F587150AE"
+			tasks: [{
+				id: "49DA2683866E4A02"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:batteries/zpm)"
+					}
+				}
+				title: "Any #gtceu:batteries/zpm"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21F85D6D35EE8C3F"]
+			id: "086BBE5C85D131BA"
+			tasks: [{
+				id: "0CBE9B21E681304F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:batteries/uv)"
+					}
+				}
+				title: "Any #gtceu:batteries/uv"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"04C8649EAF5B9D13"
+				"7A260AA7F0E8EFD4"
+			]
+			id: "5EE37E2A64EF83A9"
+			tasks: [{
+				id: "157B38745D691AE1"
+				item: "gtceu:ev_lapotronic_battery"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"04C8649EAF5B9D13"
+				"603A1EDD1D7C3A6C"
+			]
+			id: "75D0F110EEE9C9BC"
+			tasks: [{
+				id: "642383F0DC9960CE"
+				item: "gtceu:iv_lapotronic_battery"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"40A5CD6523E1A518"
+				"688F9989D9B19207"
+			]
+			id: "4742C78C04859B0D"
+			tasks: [{
+				id: "5D25E690E1E6100B"
+				item: "gtceu:luv_lapotronic_battery"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"40A5CD6523E1A518"
+				"66A1AD6F587150AE"
+			]
+			id: "3513A2D2EA3C5B69"
+			tasks: [{
+				id: "08EADE8D8741A201"
+				item: "gtceu:zpm_lapotronic_battery"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"64321A328A98DDB7"
+				"086BBE5C85D131BA"
+			]
+			id: "430A839A682A75CB"
+			tasks: [{
+				id: "0943945C734F88FE"
+				item: "gtceu:uv_lapotronic_battery"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"64321A328A98DDB7"
+				"4F4B92BE24559367"
+			]
+			id: "01FDA98C47D6B428"
+			tasks: [{
+				id: "1764619DDB032145"
+				item: "gtceu:uhv_ultimate_battery"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6068C8421D1A6361"]
+			id: "4F4B92BE24559367"
+			tasks: [{
+				id: "5BA2A14C244DE8F1"
+				item: "gtceu:max_battery"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			id: "04C8649EAF5B9D13"
+			tasks: [{
+				id: "2BA00B1FF5A24090"
+				item: "gtceu:empty_tier_i_battery"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			id: "40A5CD6523E1A518"
+			tasks: [{
+				id: "34687F87ED239432"
+				item: "gtceu:empty_tier_ii_battery"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			id: "64321A328A98DDB7"
+			tasks: [{
+				id: "26F7090F19DA5F61"
+				item: "gtceu:empty_tier_iii_battery"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0C62F0E0E51728EF"]
+			id: "2A3A7F7EF4AA6FB9"
+			tasks: [{
+				id: "2C750C32266B35C8"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "0C62F0E0E51728EF"
+			shape: "rsquare"
+			tasks: [{
+				id: "7100E6FD72F9D55F"
+				item: "kubejs:marker_luv"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			id: "779C05FAC5A4BEEC"
+			shape: "rsquare"
+			tasks: [{
+				id: "7CB0458023C23D1D"
+				item: "kubejs:marker_iv"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			id: "183AD5FDE708C392"
+			shape: "rsquare"
+			tasks: [{
+				id: "57DA5FB120BB5E29"
+				item: "kubejs:marker_ev"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			id: "5BE2DA934AB1B32F"
+			shape: "rsquare"
+			tasks: [{
+				id: "5919C57C66463D9F"
+				item: "kubejs:marker_hv"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			id: "3662A71D4A1970A1"
+			shape: "rsquare"
+			tasks: [{
+				id: "34DAB068248D3639"
+				item: "kubejs:marker_mv"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2A3A7F7EF4AA6FB9"]
+			id: "02AC3832D40C6484"
+			tasks: [{
+				id: "101347555EF4A9B7"
+				item: "gtceu:helium_plasma_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"38249AE8703B26FB"
+				"14B9EB4DD8131225"
+			]
+			id: "5E1B1BA20B9483A6"
+			tasks: [{
+				id: "3C7644943C1B9100"
+				item: "gtceu:diesel_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5BE2DA934AB1B32F"]
+			id: "6D616E5B4E719769"
+			shape: "square"
+			tasks: [{
+				id: "5F368D4001DBF550"
+				item: "gtceu:hv_gas_turbine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BE2DA934AB1B32F"]
+			id: "7B0A37454A5B5C24"
+			shape: "square"
+			tasks: [{
+				id: "0E4BE33CB454C019"
+				item: "gtceu:hv_combustion"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7B0A37454A5B5C24"
+				"788A3063D8C5A1B6"
+				"5E1B1BA20B9483A6"
+			]
+			id: "0BE2D6E8222A656E"
+			min_required_dependencies: 2
+			tasks: [{
+				id: "075AA417CE902BAA"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B0A37454A5B5C24"]
+			id: "77F0BA6933167362"
+			tasks: [{
+				id: "7C4B8779D66FF5F6"
+				item: "gtceu:gasoline_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["38249AE8703B26FB"]
+			id: "788A3063D8C5A1B6"
+			tasks: [{
+				id: "0E0CA324AA76FFE8"
+				item: "gtceu:bio_diesel_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"360C3B4120D69CD7"
+				"77F0BA6933167362"
+			]
+			id: "1A0E3C9C2E15B669"
+			tasks: [{
+				id: "45201D2F9EE6DBC5"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4E1B20094A13DFBF"]
+			id: "0AF1D55BE8302517"
+			tasks: [{
+				id: "7A27BBD4955825BE"
+				item: "gtceu:methane_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["51F67B084CEE79CF"]
+			id: "71F4C5EC3495B21D"
+			tasks: [{
+				id: "683C8E168DF2AA28"
+				item: "gtceu:benzene_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6D616E5B4E719769"
+				"71F4C5EC3495B21D"
+			]
+			id: "567D471DBCFBAF64"
+			tasks: [{
+				id: "718048B18C7B0E3C"
+				item: "gtceu:nitrobenzene_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2A3A7F7EF4AA6FB9"]
+			id: "77F6C1023F8F9006"
+			tasks: [{
+				id: "7CA313B1F4D5837F"
+				item: "gtceu:argon_plasma_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2A3A7F7EF4AA6FB9"]
+			id: "04EA8CF64EA89FFD"
+			tasks: [{
+				id: "2CE315D13AD8C5F3"
+				item: "gtceu:nickel_plasma_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			id: "3DB4DB10216FE7A2"
+			shape: "rsquare"
+			tasks: [{
+				id: "268BD994FF3350FF"
+				item: "kubejs:marker_zpm"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			id: "21F85D6D35EE8C3F"
+			shape: "rsquare"
+			tasks: [{
+				id: "46C16825D5D7771F"
+				item: "kubejs:marker_uv"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			id: "6068C8421D1A6361"
+			shape: "rsquare"
+			tasks: [{
+				id: "673B4A106A7E37B5"
+				item: "kubejs:marker_uhv"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["183AD5FDE708C392"]
+			id: "41ECBFA89705FDF7"
+			shape: "square"
+			tasks: [{
+				id: "329CBCFD4E37F328"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -0.5d
+		}
+	]
+	title: "ポワッ！"
+}
