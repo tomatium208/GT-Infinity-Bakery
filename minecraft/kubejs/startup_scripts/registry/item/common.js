@@ -33,7 +33,11 @@ StartupEvents.registry("item", event => {
         .create("energy_drink")
         .useAnimation("drink")
         .food(food => {
-            food.hunger(1).saturation(1);
+            food.hunger(1)
+                .saturation(1)
+                .effect("minecraft:speed", 20 * 60 * 1000, 0, 1)
+                .alwaysEdible()
+                .eaten(ctx => ctx.player.give("gtceu:fluid_cell"));
         });
 
     event.create("nubeeee").tooltip(Text.translatable("item.kubejs.nubeeee.tooltip.0"));
@@ -55,12 +59,20 @@ StartupEvents.registry("item", event => {
         food.hunger(3).saturation(0.1);
     });
 
-    event.create("sliced_bread").tag('forge:bread').food(food => {
-        food.hunger(4).saturation(0.75);
-    });
+    event
+        .create("sliced_bread")
+        .tag("forge:bread")
+        .food(food => {
+            food.hunger(4).saturation(0.75);
+        });
     event.create("toast").food(food => {
         food.hunger(6).saturation(0.75);
     });
+
+    event.create("breadboard").food(food => {
+        food.hunger(1).saturation(0.25);
+    });
+
     event.create("burnt_toast");
 
     event.create("ancient_toast");
@@ -124,9 +136,9 @@ StartupEvents.registry("item", event => {
 
     const normal = ["lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv"];
 
-    normal.forEach(v => { });
+    normal.forEach(v => {});
 
     const extended = normal.concat(["uhv", "uev", "uiv", "uxv", "opv", "max"]);
 
-    extended.forEach(v => { });
+    extended.forEach(v => {});
 });

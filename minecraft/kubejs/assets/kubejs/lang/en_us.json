@@ -75,7 +75,7 @@
     "material.gtceu.tomato_sauce": "Tomato Sauce",
     "material.gtceu.fission_fuel": "Fission Fuel",
     "material.gtceu.nuclear_waste": "Nuclear Waste",
-    "material.gtceu.bread": "Bread",
+    "material.gtceu.sliced_bread": "Sliced Bread",
     "material.gtceu.meta_null": "NULL",
     "material.gtceu.valine3g": "Valine3g",
     "material.gtceu.refined_valine3g": "Refined Valine3g",
@@ -111,5 +111,8 @@
     "gtceu.greenhouse_tier.1": "Basic",
     "gtceu.greenhouse_tier.2": "Advanced",
     "gtceu.greenhouse_tier.3": "Advanced II",
-    "gtceu.greenhouse_tier.4": "Ultimate"
+    "gtceu.greenhouse_tier.4": "Ultimate",
+    "item.gtceu.sliced_bread_plate": "Smashed Bread Plate",
+    "item.gtceu.double_sliced_bread_plate": "Double-Smashed Bread Plate",
+    "item.kubejs.breadboard": "\"Bread\" Board"
 }

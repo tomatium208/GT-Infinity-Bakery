@@ -39,15 +39,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         GTMaterialFlags.GENERATE_BOLT_SCREW,
     ];
 
-    event.create("energy_drink").liquid().color(color("#00a108"));
-
     event.create("tomato_sauce").liquid().color(color("#dd0000"));
 
     event.create("fission_fuel").liquid().color(color("#3e573f"));
 
     event.create("nuclear_waste").liquid().color(color("#1d361e"));
 
-    event.create("bread").dust().liquid().color(color("#f0be86"));
+    event.create("sliced_bread").ingot().liquid().color(color("#f0be86")).flags([GTMaterialFlags.GENERATE_PLATE]);
 
     event
         .create("valine3g")
@@ -167,4 +165,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     aminoAcids.forEach(a => {
         event.create(a[0]).iconSet(GTMaterialIconSet.METALLIC).components(a[1]).dust().color(a[2]);
     });
+});
+
+GTCEuStartupEvents.materialModification(event => {
+    tag_ingot("sliced_bread", () => Item.getItem("kubejs:sliced_bread"));
 });

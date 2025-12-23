@@ -416,18 +416,7 @@
 			y: -11.0d
 		}
 		{
-			id: "2D944A2893912EA2"
-			tasks: [{
-				id: "69D312AEAC3F6175"
-				item: "gtceu:lv_chemical_reactor"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -5.0d
-		}
-		{
 			dependencies: [
-				"2D944A2893912EA2"
 				"4517152F9613CB81"
 				"7C7CE78B52DDF6EE"
 			]

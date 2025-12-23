@@ -116,7 +116,7 @@
     "material.gtceu.tomato_sauce": "トマトソース",
     "material.gtceu.fission_fuel": "核分裂燃料",
     "material.gtceu.nuclear_waste": "核廃棄物",
-    "material.gtceu.bread": "パン",
+    "material.gtceu.sliced_bread": "パン",
     "material.gtceu.meta_null": "NULL",
     "material.gtceu.valine3g": "バリン3g",
     "material.gtceu.refined_valine3g": "精製バリン3g",
@@ -137,7 +137,6 @@
     "material.gtceu.tryptophan": "トリプトファン",
     "material.gtceu.threonine": "トレオニン",
     "material.gtceu.histidine": "ヒスチジン",
-    "item.kubejs.marker_luv": "えぐすぎ電圧",
     "gtceu.greenhouse": " 温室",
     "block.gtceu.greenhouse_t1": "基本型温室",
     "block.gtceu.greenhouse_t2": "発展型温室",
@@ -154,5 +153,8 @@
     "gtceu.greenhouse_tier.1": "基本型",
     "gtceu.greenhouse_tier.2": "発展型",
     "gtceu.greenhouse_tier.3": "発展型 II",
-    "gtceu.greenhouse_tier.4": "究極型"
+    "gtceu.greenhouse_tier.4": "究極型",
+    "item.gtceu.sliced_bread_plate": "叩き潰したパン",
+    "item.gtceu.double_sliced_bread_plate": "倍叩き潰したパン",
+    "item.kubejs.breadboard": "\"ブレッド\"ボード"
 }

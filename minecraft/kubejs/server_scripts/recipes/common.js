@@ -8,14 +8,15 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu
         .bakery("kjs/energy_drink")
-        .inputFluids("minecraft:water 1000")
-        .itemInputs("1x #forge:gems/quartz", "1x #forge:slimeballs")
+        .inputFluids("gtceu:carbonated_water 1000")
+        .itemInputs("1x #forge:gems/quartz", "1x #forge:slimeballs", "gtceu:caffeine_dust", "6x gtceu:fluid_cell")
         .itemOutputs("6x kubejs:energy_drink")
         .EUt(VHA.ULV);
 
     event.recipes.gtceu
         .extractor("kjs/energy_drink")
         .itemInputs("kubejs:energy_drink")
+        .itemOutputs("gtceu:fluid_cell")
         .outputFluids("gtceu:energy_drink 144")
         .EUt(VHA.ULV);
 
@@ -143,6 +144,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu
         .canner("kjs/energy_drink_item")
         .inputFluids("gtceu:energy_drink 144")
+        .itemInputs("gtceu:fluid_cell")
         .itemOutputs("1x kubejs:energy_drink")
         .EUt(VHA.ULV);
 

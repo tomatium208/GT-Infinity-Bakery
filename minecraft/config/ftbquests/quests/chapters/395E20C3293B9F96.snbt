@@ -976,6 +976,7 @@
 			dependencies: [
 				"3A6548201F27B140"
 				"2C5C05A26E5655EA"
+				"71F5F7E3FF654F27"
 			]
 			hide_dependency_lines: true
 			id: "0F3551A0C4A26329"
@@ -984,7 +985,7 @@
 				item: "gtceu:resin_circuit_board"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: -2.0d
 		}
 		{
@@ -1096,6 +1097,27 @@
 				type: "item"
 			}]
 			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38A42107D19F74CC"]
+			id: "71F5F7E3FF654F27"
+			tasks: [{
+				id: "21D2B0B358492E3E"
+				item: "kubejs:sliced_bread"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			id: "38A42107D19F74CC"
+			tasks: [{
+				id: "5E80E9B7B643B2EA"
+				item: "gtceu:primitive_bakery"
+				type: "item"
+			}]
+			x: 10.0d
 			y: 0.0d
 		}
 	]

@@ -41,3 +41,84 @@ for (var tier of GTValues.ALL_TIERS) {
 function color(hex) {
     return parseInt(hex.slice(1), 16);
 }
+
+/**
+ *
+ * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material
+ * @param {() => Internal.ItemLike} item
+ * @returns
+ */
+function tag_ingot(material, item) {
+    console.log(`material:ingot:${material} linked to ${item}`);
+
+    TagPrefix.ingot[
+        "setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"
+    ](GTMaterials.get(material), item);
+}
+/**
+ *
+ * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material
+ * @param {() => Internal.ItemLike} item
+ * @returns
+ */
+function tag_block(material, item) {
+    console.log(`material:block:${material} linked to ${item}`);
+
+    TagPrefix.block[
+        "setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"
+    ](GTMaterials.get(material), item);
+}
+/**
+ *
+ * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material
+ * @param {() => Internal.ItemLike} item
+ * @returns
+ */
+function tag_nugget(material, item) {
+    console.log(`material:nugget:${material} linked to ${item}`);
+
+    TagPrefix.nugget[
+        "setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"
+    ](GTMaterials.get(material), item);
+}
+/**
+ *
+ * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material
+ * @param {() => Internal.ItemLike} item
+ * @returns
+ */
+function tag_dust(material, item) {
+    console.log(`material:dust:${material} linked to ${item}`);
+
+    TagPrefix.dust[
+        "setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"
+    ](GTMaterials.get(material), item);
+}
+/**
+ *
+ * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material} material
+ * @param {() => Internal.ItemLike} item
+ * @returns
+ */
+function tag_gem(material, item) {
+    TagPrefix.gem[
+        "setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"
+    ](GTMaterials.get(material), item);
+}
+
+/**
+ * rgbをちょっと暗く
+ * @param {number} color
+ * @param {number} [factor=0.9] 0.9 = 10%暗く
+ *
+ */
+function darkenColor(color, factor) {
+    factor || (factor = 0.9);
+    const clamp = v => Math.max(0, Math.min(255, Math.round(v)));
+
+    const r = clamp(((color >> 16) & 0xff) * factor);
+    const g = clamp(((color >> 8) & 0xff) * factor);
+    const b = clamp((color & 0xff) * factor);
+
+    return (r << 16) | (g << 8) | b;
+}

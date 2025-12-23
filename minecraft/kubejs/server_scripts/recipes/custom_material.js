@@ -1,27 +1,8 @@
 ServerEvents.recipes(event => {
-    // Bread
-
-    event.smelting("kubejs:sliced_bread", "#forge:dusts/bread");
-
-    event.recipes.gtceu
-        .fluid_solidifier("kjs/bread")
-        .notConsumable("gtceu:ingot_casting_mold")
-        .inputFluids("gtceu:bread 144")
-        .itemOutputs("1x kubejs:sliced_bread")
-        .EUt(VHA.ULV);
-
-    event.recipes.gtceu
-        .macerator("kjs/macerate_bread")
-        .itemInputs("1x kubejs:sliced_bread")
-        .itemOutputs("1x gtceu:bread_dust")
-        .EUt(VHA.LV);
-
-    event.recipes.gtceu
-        .extractor("extract_bread")
-        .itemInputs("1x kubejs:sliced_bread")
-        .outputFluids("gtceu:bread 144")
-        .duration(100)
-        .EUt(VHA.LV);
+    // 叩き潰すことしか許さない
+    event.remove({ id: "gtceu:bender/bend_sliced_bread_to_plate" });
+    event.remove({ id: "gtceu:fluid_solidifier/solidify_sliced_bread_to_plate" });
+    event.remove({ id: "gtceu:extruder/extrude_sliced_bread_to_plate" });
 
     // Tomatonium
 
