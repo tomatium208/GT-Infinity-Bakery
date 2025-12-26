@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
-    GTValues.tiersBetween(GTValues.LV, GTValues.UV).forEach(tier => {
-        
+    GTValues.tiersBetween(GTValues.LV, GTValues.OpV).forEach(tier => {
+
         var c = craftingComponent(tier);
         var voltage = c.helpers.voltage;
         // GregTech Machine

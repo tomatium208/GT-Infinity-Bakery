@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     //  .recipes('bakery')
 
     event.create('bakery', 'simple')
-        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
+        .tiers(GTValues.tiersBetween(GTValues.LV, GTValues.OpV))
         .definition((tier, builder) =>
             builder
                 .recipeType('bakery')
@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
 
     event.create('sieve', 'simple')
-        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
+        .tiers(GTValues.tiersBetween(GTValues.LV, GTValues.OpV))
         .definition((tier, builder) =>
             builder
                 .recipeType('sieving')
@@ -45,7 +45,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
 
     event.create('particle_accelerator', 'simple')
-        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
+        .tiers(GTValues.tiersBetween(GTValues.LV, GTValues.OpV))
         .definition((tier, builder) =>
             builder
                 .recipeType('particle_collision')
