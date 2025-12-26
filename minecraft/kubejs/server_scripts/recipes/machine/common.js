@@ -20,12 +20,11 @@ ServerEvents.recipes(event => {
         // GTBakery Machine
 
         event.recipes.gtceu
-            .shaped(`gtceu:${voltage}_bakery`, ["RER", "GGG", "CHC"], {
+            .shaped(`gtceu:${voltage}_bakery`, ["GGG", "GHG", "CPC"], {
                 H: c.hull,
                 C: c.circuit,
-                E: c.emitter,
-                R: c.robot_arm,
                 G: c.glass,
+                P: c.plate
             })
             .addMaterialInfo();
 
