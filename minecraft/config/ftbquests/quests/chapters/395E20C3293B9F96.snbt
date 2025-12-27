@@ -250,7 +250,6 @@
 				"651E2E38CED766C6"
 			]
 			id: "5FF8AE2ACDBE1526"
-			optional: true
 			rewards: [
 				{
 					id: "3F2A69D99C220787"
@@ -597,6 +596,7 @@
 		{
 			dependencies: ["29174E90A864C67C"]
 			id: "7655AF41705F4557"
+			optional: true
 			tasks: [{
 				id: "2AE6D2DB5B711EA0"
 				item: {

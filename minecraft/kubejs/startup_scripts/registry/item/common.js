@@ -2,21 +2,13 @@ StartupEvents.registry("item", event => {
     event.create("gt_coin").displayName("GT Coin");
     event.create("chapter_coin");
 
-    event.create("marker_ulv").texture("kubejs:item/markers/ulv").displayName("ULV");
-    event.create("marker_lv").texture("kubejs:item/markers/lv").displayName("LV");
-    event.create("marker_mv").texture("kubejs:item/markers/mv").displayName("MV");
-    event.create("marker_hv").texture("kubejs:item/markers/hv").displayName("HV");
-    event.create("marker_ev").texture("kubejs:item/markers/ev").displayName("EV");
-    event.create("marker_iv").texture("kubejs:item/markers/iv").displayName("IV");
-    event.create("marker_luv").texture("kubejs:item/markers/luv").displayName("LuV");
-    event.create("marker_zpm").texture("kubejs:item/markers/zpm").displayName("ZPM");
-    event.create("marker_uv").texture("kubejs:item/markers/uv").displayName("UV");
-    event.create("marker_uhv").texture("kubejs:item/markers/uhv").displayName("UHV");
-    event.create("marker_uev").texture("kubejs:item/markers/uev").displayName("UEV");
-    event.create("marker_uiv").texture("kubejs:item/markers/uiv").displayName("UIV");
-    event.create("marker_uxv").texture("kubejs:item/markers/uxv").displayName("UXV");
-    event.create("marker_opv").texture("kubejs:item/markers/opv").displayName("OpV");
-    event.create("marker_max").texture("kubejs:item/markers/max").displayName("MAX");
+    let voltages = [
+        "ulv","lv","mv","hv","ev","iv","luv","zpm","uv","uhv","uev","uiv","uxv","opv","max"
+    ]
+
+    voltages.forEach(v => {
+        event.create(`marker_${v}`).texture(`kubejs:item/markers/${v}`).displayName(v.toUpperCase());
+    })
 
     event.create("computation_system").tooltip(Text.translatable("item.kubejs.computation_system.tooltip.0"));
     event
@@ -141,4 +133,6 @@ StartupEvents.registry("item", event => {
     const extended = normal.concat(["uhv", "uev", "uiv", "uxv", "opv", "max"]);
 
     extended.forEach(v => {});
+
+    event.create("potato_pickaxe","pickaxe").maxDamage(2147483647).tier("diamond")
 });
