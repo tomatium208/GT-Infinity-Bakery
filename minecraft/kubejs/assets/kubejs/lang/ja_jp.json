@@ -156,5 +156,11 @@
     "gtceu.greenhouse_tier.4": "究極型",
     "item.gtceu.sliced_bread_plate": "叩き潰したパン",
     "item.gtceu.double_sliced_bread_plate": "倍叩き潰したパン",
-    "item.kubejs.breadboard": "\"ブレッド\"ボード"
+    "item.kubejs.breadboard": "\"ブレッド\"ボード",
+    "gtceu.multiblock.example_machine.tier": "パイプ等級: %s",
+    "gtceu.example_machine.tier.0": "ブロンズ",
+    "gtceu.example_machine.tier.1": "スチール",
+    "gtceu.example_machine.tier.2": "チタン",
+    "gtceu.example_machine.tier.3": "タングステンスチール",
+    "gtceu.multiblock.pattern.error.pipe_tier": "§cすべてのパイプは同じでなければならない§r"
 }

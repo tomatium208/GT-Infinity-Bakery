@@ -1,79 +1,120 @@
 // priority:1
+
 /**
- *
- * @param {string} key
- * @param {() => Internal.Supplier<Internal.Block>[]} blocks
+ * @typedef {Internal.BlockEntry<Internal.Block> | Internal.Supplier<Internal.Block>} BlockEntryLike
  */
-function createTieredMachineHelper(key, blocks) {
+
+/**
+ * 指定したブロック群にマッチするPredicateを作成とそのヘルパー
+ * @param {string} key
+ * @param {() => BlockEntryLike[]} blocks should be pure function
+ * @param {`gtceu.multiblock.pattern.error.${string}`} errorString
+ */
+function createMatchingPredicate(key, blocks, errorString) {
     function predicate() {
-        return new TraceabilityPredicate(
+        return Predicates.custom(
             blockWorldState => {
                 var blockState = blockWorldState.getBlockState();
-                var index = 0;
                 for (var value of blocks()) {
-                    console.log(value);
-                    if (blockState.is(value.get())) {
-                        var stats = index;
+                    var entryBlock = value.get();
+                    if (blockState.is(entryBlock)) {
+                        var stats = entryBlock;
                         // put number
-                        var currentBlock = blockWorldState.getMatchContext().getOrPut(index, stats);
+                        var currentBlock = blockWorldState.getMatchContext().getOrPut(key, stats);
                         if (currentBlock !== stats) {
-                            blockWorldState.setError(new PatternStringError("gtceu.multiblock.pattern.error.pipes"));
+                            blockWorldState.setError(new PatternStringError(errorString));
                             return false;
                         }
                         return true;
                     }
-
-                    index++;
                 }
                 return false;
             },
             // もしかしたらJavaのArrayじゃないとだめかもね
             () => {
-                return toJavaArray(
+                return convertToJavaArray(
                     blocks().map(entry => {
-                        BlockInfo.fromBlockState(entry.get().defaultBlockState());
+                        return BlockInfo.fromBlockState(entry.get().defaultBlockState());
                     }),
                     BlockInfo
                 );
             }
-        ).addTooltips(Component.translatable("gtceu.multiblock.pattern.error.pipes"));
+        ).addTooltips(Component.translatable(errorString));
     }
     /**
      *
-     * @param {Internal.WorkableElectricMultiblockMachine} that
-     * @returns {number}
+     * @param {Internal.WorkableMultiblockMachine} machine
+     * @returns {Internal.Block}
      */
-    function getTier(that) {
-        return that.getMultiblockState().getMatchContext().get(key) || 0;
+    function getBlock(machine) {
+        return machine.getMultiblockState().getMatchContext().get(key);
     }
 
     return {
         predicate: predicate,
-        getTier: getTier,
+        getBlock: getBlock,
+        blocks: blocks,
     };
 }
 /**
- *
+ * TieredなPredicateを作りやすいようにラップしたcreateMatchingPredicate
+ * @param {string} key
+ * @param {() => BlockEntryLike[]} blocks should be pure function
+ * @param {`gtceu.multiblock.pattern.error.${string}`} errorString
+ */
+function createTieredPredicate(key, blocks, errorString) {
+    const matchingPredicate = createMatchingPredicate(key, blocks, errorString);
+    /**
+     *  @param {Internal.WorkableMultiblockMachine} machine
+     * @returns {number} tier number, 0-based, -1 if not matched
+     */
+    function getTier(machine) {
+        const block = matchingPredicate.getBlock(machine);
+        for (let i = 0; i < blocks().length; i++) {
+            var entry = blocks()[i];
+            if (block === entry.get()) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    return {
+        predicate: matchingPredicate.predicate,
+        getTier: getTier,
+        blocks: blocks,
+    };
+}
+
+// https://discord.com/channels/303440391124942858/1454086705685467146/1454201219814785245
+// The goal of this script is to create an empty array of a desired type.
+// In order to create a List from varargs, but any Collection that has ["toArray(java.lang.Object[])"] will work
+// Now, we **cannot** load java.lang.reflect.Array, since it's blocked by a class filter.
+// But who said we need to use this directly?
+// This is the perfect class to use:
+// - It has an argument that takes in a class,
+// - It has a method that outputs an array of class instances.
+// Source: https://github.com/KubeJS-Mods/Rhino/blob/2001/common/src/main/java/dev/latvian/mods/rhino/util/wrap/ArrayTypeWrapperFactory.java
+var $ArrayTypeWrapperFactory = Java.loadClass("dev.latvian.mods.rhino.util.wrap.ArrayTypeWrapperFactory");
+/**
  * @param {any[]} jsArray
  * @param {Internal.Class} clazz
  * @returns
  */
-function toJavaArray(jsArray, clazz) {
-    var RawJArray = global.toRawClass(JArray);
-    console.log(JArray);
-    JArray.__javaObject__.getDeclaredMethods().forEach(m => {
-        console.log(m.toGenericString());
-    });
-    console.log(RawJArray);
-    console.log("keys", Object.keys(JArray));
-    console.log("anothor raw keys", Object.keys(JArray.__javaObject__));
-    console.log("raw keys", Object.keys(RawJArray));
-    const arr = RawJArray.newInstance(global.toRawClass(clazz), Integer.valueOf(jsArray.length.toFixed(0)));
+function convertToJavaArray(jsArray, clazz) {
+    // Constructor calls:
+    // emptyArray = (T[]) Array.newInstance(target, 0);
+    // And our target is the ItemStack class!
+    const arrayFactory = new $ArrayTypeWrapperFactory(null, clazz, null);
+    // null context and null object, so that `if (o == null)` branch is taken. Then we get an empty array of ItemStack.
+    const seed = arrayFactory.wrap(null, null);
+    console.log(seed);
 
-    console.log(arr);
-    for (let i = 0; i < jsArray.length; i++) {
-        arr[i] = jsArray[i];
-    }
-    console.log(arr);
-    return arr;
+    const list = new ArrayList();
+    jsArray.forEach(v => {
+        list.add(v);
+    });
+    const typedJavaArray = list["toArray(java.lang.Object[])"](seed);
+
+    return typedJavaArray;
 }

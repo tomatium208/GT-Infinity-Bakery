@@ -1,9 +1,10 @@
+.DS_Store
+**/.DS_Store
 /instance.cfg
 
 # 一旦全部無視
 *
 !*/
-
 # Git
 !.gitignore
 !*.gitignore
