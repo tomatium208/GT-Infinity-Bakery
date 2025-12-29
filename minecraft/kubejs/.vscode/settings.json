@@ -1,0 +1,5 @@
+{
+    "workbench.editor.customLabels.patterns": {
+        "**/common.js": "${dirname} .../${dirname(1)}"
+    }
+}
