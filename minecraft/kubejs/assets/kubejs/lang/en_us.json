@@ -114,5 +114,6 @@
     "gtceu.greenhouse_tier.4": "Ultimate",
     "item.gtceu.sliced_bread_plate": "Smashed Bread Plate",
     "item.gtceu.double_sliced_bread_plate": "Double-Smashed Bread Plate",
-    "item.kubejs.breadboard": "\"Bread\" Board"
+    "item.kubejs.breadboard": "\"Bread\" Board",
+    "block.kubejs.yggdrasil_sapling": "Yggdrasil Sapling"
 }
