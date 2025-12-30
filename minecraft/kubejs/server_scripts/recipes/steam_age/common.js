@@ -1,6 +1,4 @@
 ServerEvents.recipes(event => {
-    // ベーカリーでしか焼けない、Gregだもの
-    event.remove({ output: "minecraft:bread" });
     event.recipes.kubejs.shaped("3x kubejs:sliced_bread", [" K ", " B ", "   "], {
         K: "#forge:tools/knives",
         B: "minecraft:bread",

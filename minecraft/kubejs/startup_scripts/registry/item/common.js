@@ -3,14 +3,16 @@ StartupEvents.registry("item", event => {
     event.create("chapter_coin");
 
     let voltages = [
-        "ulv","lv","mv","hv","ev","iv","luv","zpm","uv","uhv","uev","uiv","uxv","opv","max"
+        "ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv", "uxv", "opv", "max"
     ]
 
     voltages.forEach(v => {
         event.create(`marker_${v}`).texture(`kubejs:item/markers/${v}`).displayName(v.toUpperCase());
     })
 
-    event.create("computation_system").tooltip(Text.translatable("item.kubejs.computation_system.tooltip.0"));
+    event
+        .create("computation_system")
+        .tooltip(Text.translatable("item.kubejs.computation_system.tooltip.0"));
     event
         .create("advanced_conputation_system")
         .tooltip(Text.translatable("item.kubejs.advanced_computation_system.tooltip.0"));
@@ -128,11 +130,11 @@ StartupEvents.registry("item", event => {
 
     const normal = ["lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv"];
 
-    normal.forEach(v => {});
+    normal.forEach(v => { });
 
     const extended = normal.concat(["uhv", "uev", "uiv", "uxv", "opv", "max"]);
 
-    extended.forEach(v => {});
+    extended.forEach(v => { });
 
-    event.create("potato_pickaxe","pickaxe").maxDamage(2147483647).tier("diamond")
+    event.create("potato_pickaxe", "pickaxe").maxDamage(2147483647).tier("diamond")
 });

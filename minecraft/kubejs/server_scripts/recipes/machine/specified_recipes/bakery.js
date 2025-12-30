@@ -8,6 +8,9 @@ ServerEvents.recipes(event => {
         E: "gtceu:bronze_pipe_casing",
     });
 
+    // ベーカリーでしか焼けない、Gregだもの
+    event.remove({ output: "minecraft:bread" });
+
     event.recipes.gtceu
         .bakery("kjs/bread")
         .itemInputs("2x #forge:dough")
