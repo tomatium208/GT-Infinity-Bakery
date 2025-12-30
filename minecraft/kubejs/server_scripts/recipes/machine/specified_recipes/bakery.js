@@ -17,7 +17,4 @@ ServerEvents.recipes(event => {
         .itemOutputs("3x minecraft:bread")
         .duration(100)
         .EUt(VHA.ULV);
-    
-    // ふっくら
-    event.remove({ output: "minecraft:cookie"})
 });
