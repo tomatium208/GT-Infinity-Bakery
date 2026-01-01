@@ -9,3 +9,5 @@ var WorkableElectricMultiblockMachine = Java.loadClass(
 var ArrayList = Java.loadClass("java.util.ArrayList");
 var Integer = Java.loadClass("java.lang.Integer");
 var PatternStringError = Java.loadClass("com.gregtechceu.gtceu.api.pattern.error.PatternStringError");
+var ItemBlockRenderTypes = Java.loadClass("net.minecraft.client.renderer.ItemBlockRenderTypes");
+var RenderType = Java.loadClass("net.minecraft.client.renderer.RenderType");
