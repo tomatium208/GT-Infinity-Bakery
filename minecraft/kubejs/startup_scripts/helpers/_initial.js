@@ -33,6 +33,12 @@ for (var tier of GTValues.ALL_TIERS) {
     VHA[upper_voltages[tier]] = GTValues.VHA[tier];
 }
 
+global.block_generate_loot_tables = [];
+/** @param {Special.Block} block */
+function mark_as_generate_loot_table(block) {
+    global.block_generate_loot_tables.push(block);
+}
+
 /**
  * Input a hex color string like "#RRGGBB", returns the integer color value.
  * @param {`#${string}`} hex

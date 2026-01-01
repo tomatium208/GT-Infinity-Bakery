@@ -269,6 +269,7 @@ var YGGDRASIL_OFFSET_Z = -20;
 StartupEvents.registry("block", event => {
     console.log(`[StartupEvents.registry] registering yggdrasil_sapling block`);
     event.createCustom("kubejs:yggdrasil_sapling", () => {
+        mark_as_generate_loot_table("kubejs:yggdrasil_sapling");
         // 明示的な無
         const NullTreeGrower = new JavaAdapter(AbstractMegaTreeGrower, {
             getConfiguredFeature() {
@@ -338,4 +339,10 @@ StartupEvents.registry("item", event => {
     event.createCustom("kubejs:yggdrasil_sapling", () => {
         return new BlockItem(Block.getBlock("kubejs:yggdrasil_sapling"), new ItemProperties());
     });
+});
+
+ClientEvents.init(event => {
+    ItemBlockRenderTypes[
+        "setRenderLayer(net.minecraft.world.level.block.Block,net.minecraft.client.renderer.RenderType)"
+    ](Block.getBlock("kubejs:yggdrasil_sapling"), RenderType.cutout());
 });
