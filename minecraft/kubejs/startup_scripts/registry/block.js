@@ -4,6 +4,7 @@ StartupEvents.registry("block", event => {
     event.create("planter_block").stoneSoundType().notSolid().opaque(false).renderType("translucent");
 
     event.create("yggdrasil_log");
+    event.create("yggdrasil_wood");
     event.create("yggdrasil_leaves").cropSoundType();
 
     // SOLID CASINGS
