@@ -175,7 +175,7 @@ worldgen:
 machines:
   # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
   # Default: true
-  requireGTToolsForBlocks: true
+  requireGTToolsForBlocks: false
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
@@ -192,7 +192,7 @@ machines:
   # Whether machines or boilers damage the terrain when they explode.
   # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
   # Default: true
-  doesExplosionDamagesTerrain: true
+  doesExplosionDamagesTerrain: false
 
   # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
   # Default: false
