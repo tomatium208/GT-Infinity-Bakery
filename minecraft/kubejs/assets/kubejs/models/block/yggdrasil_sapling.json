@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "kubejs:block/yggdrasil_sapling"
-  }
+    "parent": "minecraft:block/cross",
+    "textures": {
+        "cross": "kubejs:block/yggdrasil_sapling"
+    }
 }
