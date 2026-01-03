@@ -6,11 +6,11 @@ ServerEvents.recipes(event => {
 
     event.recipes.minecraft.campfire_cooking("kubejs:breadboard", "gtceu:sliced_bread_plate", 0, 200);
     event.replaceInput(
-        {
-            output: "gtceu:resin_circuit_board",
-            or: { output: "gtceu:resin_printed_circuit_board" },
-        },
-        "gtceu:wood_plate",
+        [
+            { output: "gtceu:resin_circuit_board" },
+            { output: "gtceu:resin_printed_circuit_board" }
+        ],
+        "#forge:plates/wood",
         "kubejs:breadboard"
     );
 });
