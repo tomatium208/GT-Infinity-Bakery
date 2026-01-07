@@ -73,6 +73,11 @@ StartupEvents.registry("block", event => {
         "Greenhouse Machine Casing MK IV"
     );
 
+    casing("dimension_connection_casing", "kubejs:block/casings/eoh/dimension_connection_casing");
+    casing("dimension_creation_casing", "kubejs:block/casings/eoh/dimension_creation_casing");
+    casing("containment_field_generator", "kubejs:block/casings/eoh/containment_field_generator");
+    casing("dimensional_stability_casing", "kubejs:block/casings/eoh/dimensional_stability_casing");
+
     // COIL
 
     event
