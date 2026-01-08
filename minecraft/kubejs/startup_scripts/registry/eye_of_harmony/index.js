@@ -725,4 +725,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
 GTRenderJSEvents.registerModelsForRender(event => {
     event.register("kubejs:obj/space");
+    event.register("kubejs:obj/star");
+    event.register("kubejs:obj/the_nether");
+    event.register("kubejs:obj/overworld");
+    event.register("kubejs:obj/the_end");
 });
