@@ -51,6 +51,7 @@ GTRenderJSEvents.registerDynamicRender(event => {
                 const rad = 2 ** 6;
                 return AABB.of(-rad, -rad, -rad, rad, rad, rad);
             });
+            builder.isBlockEntityRenderer(false);
         }
     );
 });
