@@ -45,7 +45,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("nuclear_waste").liquid().color(color("#1d361e"));
 
-    event.create("sliced_bread").ingot().liquid().color(color("#f0be86")).flags([GTMaterialFlags.GENERATE_PLATE]);
+    event.create("sliced_bread").ingot().liquid().color(color("#ffffff")).flags([GTMaterialFlags.GENERATE_PLATE]);
 
     event
         .create("valine3g")

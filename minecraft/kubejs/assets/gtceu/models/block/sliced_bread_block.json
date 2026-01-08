@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "kubejs:block/material_sets/sliced_bread/block",
+        "particle": "kubejs:block/material_sets/sliced_bread/block"
+    }
+}
