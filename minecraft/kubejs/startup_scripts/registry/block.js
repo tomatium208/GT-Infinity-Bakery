@@ -3,8 +3,15 @@ StartupEvents.registry("block", event => {
 
     event.create("planter_block").soundType(SoundType.METAL).notSolid().opaque(false).renderType("translucent");
 
+    event.create("yggdrasil_log")
+        .woodSoundType()
+        .resistance(3)
+        .hardness(2)
+        .tagBlock("mineable/axe")
+        .tagBlock("forge:needs_netherite_tool")
+        .requiresTool();
     event
-        .create("yggdrasil_log")
+        .create("yggdrasil_wood")
         .woodSoundType()
         .resistance(3)
         .hardness(2)
