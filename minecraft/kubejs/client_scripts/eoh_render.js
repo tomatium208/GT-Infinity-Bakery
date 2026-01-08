@@ -41,12 +41,17 @@ GTRenderJSEvents.registerDynamicRender(event => {
                 RenderSystem.enableDepthTest();
             });
             builder.viewDistance(256);
-            builder.shouldRender(machine => machine.isFormed());
+
+            const shouldRender = machine => machine.isFormed();
+            builder.shouldRender(shouldRender);
+            builder.shouldRenderOffScreen(shouldRender);
+
             builder.renderBoundingBox(() => {
-                const rad = 2 ** 10;
-                // 意味はない でかいだけ
+                // todo ちゃんとやる
+                const rad = 2 ** 6;
                 return AABB.of(-rad, -rad, -rad, rad, rad, rad);
             });
+            builder.isBlockEntityRenderer(false);
         }
     );
 });
