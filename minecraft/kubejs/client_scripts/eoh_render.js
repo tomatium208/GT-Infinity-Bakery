@@ -17,10 +17,11 @@ GTRenderJSEvents.registerDynamicRender(event => {
     event.create(
         "kubejs:eye_of_harmony",
         /**
-         * @param {Internal.RenderBuilder<Internal.WorkableElectricMultiblockMachine>} builder
+         *@param {Internal.RenderBuilder<Internal.WorkableElectricMultiblockMachine,unknown>} builder
          */
         builder => {
             builder.render(ctx => {
+                ctx.binding;
                 const poseStack = ctx.poseStack;
                 const buffer = ctx.buffer;
                 var tick = ctx.machine.getOffsetTimer() + ctx.partialTick;
@@ -29,7 +30,7 @@ GTRenderJSEvents.registerDynamicRender(event => {
                 poseStack.pushPose();
                 var x = 0.5,
                     y = 0.5,
-                    z = 12.5;
+                    z = -15.5;
                 poseStack.translate(x, y, z);
 
                 renderStar(tick, poseStack, buffer);
@@ -42,7 +43,7 @@ GTRenderJSEvents.registerDynamicRender(event => {
             builder.viewDistance(256);
             builder.shouldRender(machine => machine.isFormed());
             builder.renderBoundingBox(() => {
-                const rad = 1024;
+                const rad = 2 ** 10;
                 // 意味はない でかいだけ
                 return AABB.of(-rad, -rad, -rad, rad, rad, rad);
             });
@@ -50,13 +51,13 @@ GTRenderJSEvents.registerDynamicRender(event => {
     );
 });
 /**
- *
+ * @default64
  * @param {Internal.PoseStack} poseStack
  * @param {Internal.VertexConsumer} consumer
  * @param {number} scale
  */
 function renderOuterSpaceShell(poseStack, consumer) {
-    const scale = 0.01 * 12;
+    const scale = 0.01 * 17.5;
     poseStack.pushPose();
     poseStack.scale(scale, scale, scale);
 
