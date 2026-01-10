@@ -2,18 +2,29 @@
  * @typedef {{nbt(): Internal.CompoundTag}} HasNBT
  */
 
-function MasterMulti(holder) {
+function MasterMultiblockMachine(holder) {
+    /** @type {SlaveMultiMachine[]} */
+    var _children = [];
     /** @type {Internal.WorkableElectricMultiblockMachine & HasNBT} */
     const Logic = {
         nbt() {
             return this.holder.persistentData;
         },
-        // 形成時、Predicateで取得した子機のインスタンスにnbtを書き込む
+        ////////////////// 形成時、解体時の子機との紐付け管理 //////////////////
         onStructureFormed() {
             this.super$onStructureFormed();
-            const children = this.getMultiblockState().getMatchContext().getOrDefault("child_positions", []);
-            for (const pos of children) {
-                getMachine(this.level, pos).holder.persistentData.putLong("parent_pos", this.getPos().asLong());
+            console.log("master structure formed");
+            const children = this.getMultiblockState().getMatchContext().getOrDefault("children", []);
+            _children = children;
+            for (const machine of children) {
+                machine.setParent(this);
+            }
+        },
+
+        onUnload() {
+            this.super$onUnload();
+            for (const child of _children) {
+                child.removeParent();
             }
         },
     };
@@ -21,179 +32,231 @@ function MasterMulti(holder) {
 }
 
 /**
- *
- * @param parentMachine
+ * ワイヤレスエネルギー供給を行うMachineTraitを生成する
+ * @param {SlaveMultiMachine} slaveMachine
+ * @param {number} tier
  * @returns
  */
-function WirelessEnergy(slaveLogic) {
-    function getParent() {
-        return slaveLogic.getParent();
+function WirelessEnergyHandlerMachineTrait(slaveMachine, tier) {
+    const tierVoltage = GTValues.V[tier];
+    function _getEnergyStored() {
+        const parent = slaveMachine.getParent();
+        if (parent == null) {
+            return 0;
+        }
+        const energyContainer = parent.getEnergyContainer();
+
+        if (energyContainer == null) {
+            return 0;
+        }
+        return energyContainer.getEnergyStored();
     }
-    function getEnergyStored() {
-        return getParent().energyContainer.energyStored;
-    }
-    function getInputAmperage() {
-        return 2;
-    }
-    function getOutputAmperage() {}
-    /** @type {Internal.IRecipeHandler<EnergyStack>} */
+
+    var _managedFieldHolder = null;
+    var _tickSubscription = null;
+    var listeners = new ArrayList();
+    var lastEnergyOutputPerSec = 0,
+        lastEnergyInputPerSec = 0,
+        energyOutputPerSec = 0,
+        energyInputPerSec = 0;
+
+    /** @type {Internal.NotifiableRecipeHandlerTrait<EnergyStack> & Internal.IEnergyContainer} */
     const Logic = {
-        handleRecipeInner(io, recipe, left, simulate) {
+        //// MachineTrait ////
+        ////////////////// IManaged ////////////////
+        // なんでか知らないけど再実装した方がいいらしい
+        getFieldHolder() {
+            if (_managedFieldHolder == null) {
+                _managedFieldHolder = new ManagedFieldHolder(this.getClass());
+            }
+            return _managedFieldHolder;
+        },
+
+        ////////////////// IRecipeHandlerTrait //////////////////
+        getHandlerIO() {
+            return IO.IN;
+        },
+        addChangedListener(listener) {
+            listeners.add(listener);
+            return () => listeners.remove(listener);
+        },
+        ////////////////// IRecipeHandler //////////////////
+        handleRecipeInner(io, recipe, left, isSimulate) {
             if (io != IO.IN) return left;
-            const it = left.listIterator();
-            while (it.hasNext()) {
-                var stack = it.next();
+            const iter = left.listIterator();
+            while (iter.hasNext()) {
+                var stack = iter.next();
                 if (stack.isEmpty()) {
-                    it.remove();
+                    iter.remove();
                     continue;
                 }
-                var totalEU = stack.totalEU();
-                var availableEU = getEnergyStored();
+                var totalEU = stack.totalEU;
+                var availableEU = this.getEnergyStored();
                 var canTransfer = Math.min(totalEU, availableEU);
-                if (!simulate) {
-                    getParent().energyContainer.removeEnergy(canTransfer);
+                if (!isSimulate) {
+                    var parent = slaveMachine.getParent();
+                    if (parent) {
+                        parent.energyContainer.removeEnergy(canTransfer);
+                    }
                 }
                 totalEU -= canTransfer;
                 if (totalEU <= 0) {
-                    it.remove();
+                    iter.remove();
                 } else {
-                    it.set(new EnergyStack(totalEU));
+                    iter.set(new EnergyStack(totalEU));
                 }
             }
             return left.isEmpty() ? null : left;
         },
         getContents() {
-            var amperage = getInputAmperage();
-            return Collections.singletonList(EnergyContainerList.calculateVoltageAmperage(getEnergyStored(), amperage));
+            var amperage = this.getInputAmperage();
+            return Collections.singletonList(
+                EnergyContainerList.calculateVoltageAmperage(this.getEnergyStored(), amperage)
+            );
         },
         getTotalContentAmount() {
-            return getEnergyStored();
+            return this.getEnergyStored();
         },
         getCapability() {
             return EURecipeCapability.CAP;
         },
-    };
-    return new JavaAdapter(IRecipeHandler, Logic);
-}
+        ///////////////// IEnergyContainer //////////////////
+        onMachineLoad() {
+            this.super$onMachineLoad();
+            this.getMachine().subscribeServerTick(_tickSubscription, () => this.updateTick());
+        },
+        onMachineUnLoad() {
+            this.super$onMachineUnLoad();
+            if (_tickSubscription) {
+                _tickSubscription.unsubscribe();
+                _tickSubscription = null;
+            }
+        },
+        updateTick() {
+            if (this.getMachine().getOffsetTimer() % 20 == 0) {
+                lastEnergyOutputPerSec = energyOutputPerSec;
+                lastEnergyInputPerSec = energyInputPerSec;
+                energyOutputPerSec = 0;
+                energyInputPerSec = 0;
+            }
+        },
 
-function SlaveMulti(holder) {
+        getInputVoltage() {
+            return tierVoltage;
+        },
+        // 仮にこれがシングルブロックだったら1だったけどマルチブロックのエネルギーハッチの代わりなので多分2が正解。
+        getInputAmperage() {
+            return 2;
+        },
+
+        getEnergyCapacity() {
+            // 基本定なエネルギーコンテナのサイズがvoltage * 16 * amp EUだからそれに合わせる
+            return tierVoltage * 16 * this.getInputAmperage();
+        },
+        // キャパ以上のエネルギーを持つはずないよね
+        getEnergyStored() {
+            return Math.min(_getEnergyStored(), this.getEnergyCapacity());
+        },
+
+        getInputPerSec() {
+            return lastEnergyInputPerSec;
+        },
+        getOutputPerSec() {
+            return lastEnergyOutputPerSec;
+        },
+        // 果たしてこれ実装するべきなんだろうか よくわかってないけどまあいいや 実装しとこ
+        changeEnergy(delta) {
+            const parent = slaveMachine.getParent();
+            if (!parent) return 0;
+
+            const energyContainer = parent.getEnergyContainer();
+            if (!energyContainer) return 0;
+
+            const oldEnergy = this.getEnergyStored();
+            const cap = this.getEnergyCapacity();
+
+            // clamp
+            const newEnergy = cap - oldEnergy < delta ? cap : oldEnergy + delta;
+
+            const diff = newEnergy - oldEnergy;
+            if (diff === 0) return 0;
+
+            // 統計
+            if (diff > 0) {
+                energyInputPerSec += diff;
+            } else {
+                energyOutputPerSec -= diff;
+            }
+
+            // 実体反映（唯一の変更点）
+            const changed = energyContainer.changeEnergy(diff);
+
+            this.notifyListeners();
+            return changed;
+        },
+        // マルチブロック機械はエネルギーを自分で受け取ることができない
+        acceptEnergyFromNetwork(direction, voltage, amperage) {
+            return 0;
+        },
+        inputsEnergy(direction) {
+            return false;
+        },
+    };
+    // MachineTrait(MetaMachine machine)
+    /** @type {WirelessEnergyAcceptor} */
+    const adapter = new JavaAdapter(NotifiableRecipeHandlerTrait, IEnergyContainer, Logic, slaveMachine);
+
+    return adapter;
+}
+///////////////////////////////////////////////////////////////////////////////
+// Slave Multiblock Machine
+// parentはonMultiblockFormedでbindされるからステートレス
+// FORCED_POSは親マルチブロックの位置を記憶しておいて
+///////////////////////////////////////////////////////////////////////////////
+/***/
+function SlaveMultiblockMachine(holder) {
     /** @type {Internal.TickableSubscription} */
     var _tickSubscription = null;
-    var _wirelessEnergy = null;
-    /** @type {Internal.WorkableElectricMultiblockMachine & HasNBT & { getLinkState():"not_detected" | "not_active" | "active", getParentPos(): BlockPos | null; getParent(): Internal.WorkableElectricMultiblockMachine | null; forceloadPos(pos: BlockPos);unForceloadPos(pos: BlockPos); }} */
+    /** @type {SlaveMultiMachine} */
     const Logic = {
+        _parent: null,
         nbt() {
             return this.holder.persistentData;
         },
-
-        getParentPos() {
-            if (this.nbt().contains("parent_pos")) {
-                const parentPos = this.nbt().getLong("parent_pos");
-                return BlockPos.of(parentPos);
-            }
-            return null;
+        setParent(parent) {
+            this._parent = parent;
+        },
+        removeParent() {
+            this._parent = null;
         },
         getParent() {
-            const pos = this.getParentPos();
-            if (pos) {
-                return getMachine(this.level, pos);
-            }
-            return null;
+            return this._parent;
         },
         getLinkState() {
             const machine = this.getParent();
             if (!machine) return "not_detected";
             return machine.isActive() ? "active" : "not_active";
         },
-        ////////////////// Forceloading Helper //////////////////
-        _forced: false,
-        forceloadPos(pos) {
-            if (this.isRemote() || this._forced) return;
-            const cp = new ChunkPos(pos);
-            ForgeChunkManager[
-                "forceChunk(net.minecraft.server.level.ServerLevel,java.lang.String,net.minecraft.core.BlockPos,int,int,boolean,boolean)"
-            ](this.level, "kubejs", this.getPos(), cp.x, cp.z, true, true);
-            this._forced = true;
-        },
-        unForceloadPos(pos) {
-            if (this.isRemote() || !this._forced) return;
-            const cp = new ChunkPos(pos);
-            ForgeChunkManager[
-                "forceChunk(net.minecraft.server.level.ServerLevel,java.lang.String,net.minecraft.core.BlockPos,int,int,boolean,boolean)"
-            ](this.level, "kubejs", this.getPos(), cp.x, cp.z, false, true);
-            this._forced = false;
-        },
-        ///////////////// Forceloading Hooks //////////////////
-        onLoad() {
-            this.super$onLoad();
-            const pos = this.getParentPos();
-            if (pos) {
-                this.forceloadPos(pos);
-            }
-        },
-        onUnload() {
-            this.super$onUnload();
-            const pos = this.getParentPos();
-            if (pos) {
-                this.unForceloadPos(pos);
-            }
-        },
-
         onStructureFormed() {
             this.super$onStructureFormed();
             if (this.isRemote()) return;
 
-            var tick = 0;
-            _tickSubscription = this.subscribeServerTick(() => {
-                if (tick % 20 === 0) {
-                    // 親がnbtにあってかつMetaMachineとして発見できる = 親と看做せる
-                    if (this.getParent()) {
-                        // 親を見つけた
-                        this.forceloadPos(this.getParentPos());
-                    } else {
-                        // 親がいなくなった
-                        this.unForceloadPos(this.getParentPos());
-                        this.nbt().remove("parent_pos");
-                        _wirelessEnergy = null;
-                    }
-                }
-                tick++;
-            });
+            _tickSubscription = this.subscribeServerTick(() => this.serverTick());
+        },
+        serverTick() {
+            // currently do nothing
         },
         onStructureInvalid() {
             this.super$onStructureInvalid();
             if (this.isRemote()) return;
-
             _tickSubscription.unsubscribe();
             _tickSubscription = null;
-            _wirelessEnergy = null;
         },
-
-        ///////////////// Wireless Energy //////////////////
-        getWirelessEnergy() {
-            if (_wirelessEnergy == null) {
-                _wirelessEnergy = WirelessEnergy(this);
-            }
-            return _wirelessEnergy;
-        },
-        // ここにアクセスする段階では必ず親がいるはずだったんですが
-        getCapabilitiesFlat(io, cap) {
-            console.log("SlaveMulti getCapabilitiesFlat", io, cap);
-            if (arguments.length === 0) {
-                return this.super$getCapabilitiesFlat();
-            }
-
-            if (cap === EURecipeCapability.CAP && io === IO.IN) {
-                return Collections.singletonList(this.getWirelessEnergy());
-            }
-
-            return this.super$getCapabilitiesFlat(io, cap);
-        },
-
         addDisplayText(textList) {
             this.super$addDisplayText(textList);
             if (this.isFormed()) {
                 textList.add(Component.translatable("gtceu.ms." + this.getLinkState()));
+                textList.add(Component.literal("Usable Energy: " + this.getEnergyContainer().energyStored + " EU"));
             }
         },
 
@@ -208,7 +271,11 @@ function SlaveMulti(holder) {
             return true;
         },
     };
-    return new JavaAdapter(WorkableElectricMultiblockMachine, Logic, holder, []);
+
+    const adapter = new JavaAdapter(WorkableElectricMultiblockMachine, Logic, holder, []);
+    WirelessEnergyHandlerMachineTrait(adapter, GTValues.ZPM);
+    // コンストラクタ呼び出しだけでも大丈夫
+    return adapter;
 }
 
 /**
@@ -234,9 +301,10 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 GTCEuStartupEvents.registry("gtceu:machine", event => {
     event
         .create("ms_master", "multiblock")
-        .machine(holder => MasterMulti(holder))
+        .machine(holder => MasterMultiblockMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType("ms_master")
+        .noRecipeModifier()
         .appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
         .pattern(definition =>
             FactoryBlockPattern.start()
@@ -258,13 +326,16 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                     Predicates.custom(
                         blockWorldState => {
                             var blockState = blockWorldState.getBlockState();
-
                             if (blockState.is(GTBlocks.CASING_STAINLESS_CLEAN.get())) {
                                 return true;
                             }
                             if (blockState.is(Block.getBlock("gtceu:ms_slave"))) {
-                                var child_positions = blockWorldState.getMatchContext().getOrPut("child_positions", []);
-                                child_positions.push(blockWorldState.getPos());
+                                var children = blockWorldState.getMatchContext().getOrPut("children", []);
+                                var machine = MetaMachine.getMachine(
+                                    blockWorldState.getWorld(),
+                                    blockWorldState.getPos()
+                                );
+                                machine && children.push(machine);
                                 return true;
                             }
                             return false;
@@ -288,11 +359,21 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
     event
         .create("ms_slave", "multiblock")
-        .machine(holder => SlaveMulti(holder))
-        .recipeTypes(["assembler", "circuit_assembler"])
+        .machine(holder => SlaveMultiblockMachine(holder))
+        .recipeTypes([
+            "assembler",
+            "circuit_assembler",
+            "bender",
+            "wiremill",
+            "lathe",
+            "mixer",
+            "extruder",
+            "polarizer",
+            "vacuum_freezer",
+        ])
         .recipeModifiers(true, [
             GTRecipeModifiers.PARALLEL_HATCH,
-            GTRecipeModifiers.OC_NON_PERFECT,
+            GTRecipeModifiers.OC_NON_PERFECT_SUBTICK,
             GTRecipeModifiers.BATCH_MODE,
         ])
         .rotationState(RotationState.NON_Y_AXIS)
@@ -323,3 +404,42 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/blast_furnace"
         );
 });
+
+/*
+forceload things
+
+        ////////////////// Forceloading Helper //////////////////
+        _forced: false,
+        forceloadParent() {
+            if (this.isRemote() || this._forced) return;
+            const pos = this.getParentPosForForceload();
+            if (!pos) return;
+            const cp = new ChunkPos();
+            ForgeChunkManager[
+                "forceChunk(net.minecraft.server.level.ServerLevel,java.lang.String,net.minecraft.core.BlockPos,int,int,boolean,boolean)"
+            ](this.level, "kubejs", this.getPos(), cp.x, cp.z, true, true);
+            this._forced = true;
+        },
+        unForceloadParent() {
+            // このメソッドがすでにunload後に呼ばれると死にます。でもthis._forcedがすでにfalseになってるはずなので安全だけど…
+            if (this.isRemote() || !this._forced) return;
+
+            const pos = this.getParentPosForForceload();
+            if (!pos) return;
+            const cp = new ChunkPos(pos);
+            ForgeChunkManager[
+                "forceChunk(net.minecraft.server.level.ServerLevel,java.lang.String,net.minecraft.core.BlockPos,int,int,boolean,boolean)"
+            ](this.level, "kubejs", this.getPos(), cp.x, cp.z, false, true);
+            this._forced = false;
+        },
+
+        ///////////////// Forceloading Hooks //////////////////
+        onLoad() {
+            this.super$onLoad();
+        },
+        onUnload() {
+            this.super$onUnload();
+        },
+
+
+*/
