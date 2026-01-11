@@ -168,5 +168,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 });
 
 GTCEuStartupEvents.materialModification(event => {
+    tag_ingot("valine3g", () => Item.getItem("kubejs:valine3g"));
     tag_ingot("sliced_bread", () => Item.getItem("kubejs:sliced_bread"));
 });

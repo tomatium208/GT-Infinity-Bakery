@@ -30,7 +30,12 @@ StartupEvents.registry("item", event => {
                 .eaten(ctx => ctx.player.give("gtceu:fluid_cell"));
         });
 
-    event.create("nubeeee").tooltip(Text.translatable("item.kubejs.nubeeee.tooltip.0"));
+    //event.create("nubeeee").tooltip(Text.translatable("item.kubejs.nubeeee.tooltip.0"));
+    event
+        .create("valine3g")
+        .food(food => {
+            food.hunger(1);
+        });
     event.create("tasty_valine3g");
     event.create("frozen_valine3g");
 
@@ -126,11 +131,11 @@ StartupEvents.registry("item", event => {
 
     const normal = ["lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv"];
 
-    normal.forEach(v => {});
+    normal.forEach(v => { });
 
     const extended = normal.concat(["uhv", "uev", "uiv", "uxv", "opv", "max"]);
 
-    extended.forEach(v => {});
+    extended.forEach(v => { });
 
     event.create("potato_pickaxe", "pickaxe").maxDamage(2147483647).tier("diamond");
 
@@ -141,4 +146,6 @@ StartupEvents.registry("item", event => {
             .fastToEat()
             .eaten(c => c.player.kill());
     });
+
+    event.create("null");
 });

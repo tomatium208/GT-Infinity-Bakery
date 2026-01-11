@@ -80,6 +80,24 @@ StartupEvents.registry("block", event => {
         "Greenhouse Machine Casing MK IV"
     );
 
+    // TEST CASINGS
+
+    function testCasing(name) {
+        return event
+            .create(name)
+            .soundType(SoundType.METAL)
+            .textureAll(`kubejs:block/casings/unused/${name}`)
+            .resistance(6)
+            .hardness(5)
+            .tagBlock("gtceu:mineable/pickaxe_or_wrench")
+            .requiresTool(true);
+    }
+
+    testCasing("red")
+    testCasing("blue")
+    testCasing("dark")
+    testCasing("light")
+
     // COIL
 
     event
