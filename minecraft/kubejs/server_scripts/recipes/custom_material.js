@@ -52,14 +52,10 @@ ServerEvents.recipes(event => {
 
     // Wrought Iron
 
-    event.remove({ output: "gtceu:smelting/wrought_iron_nugget" });
+    event.remove({ id: "gtceu:smelting/wrought_iron_nugget" });
 
-    event.recipes.gtceu
-        .compressor("kjs/wrought_iron")
-        .itemInputs("2x #forge:dusts/iron")
-        .itemOutputs("1x gtceu:wrought_iron_dust")
-        .EUt(VHA.LV)
-        .duration(200);
+    event.recipes.minecraft
+        .campfire_cooking("gtceu:wrought_iron_ingot","#forge:ingots/iron", 0, 200)
 
     // Steel
 

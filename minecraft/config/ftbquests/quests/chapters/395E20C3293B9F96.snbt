@@ -85,7 +85,7 @@
 							"ftbfiltersystem:filter": "item_tag(forge:tools/hammers)"
 						}
 					}
-					title: "任意のハンマー"
+					title: "Any #forge:tools/hammer"
 					type: "item"
 				}
 				{
@@ -173,6 +173,7 @@
 					type: "item"
 				}
 			]
+			title: "必須ツール"
 			x: 0.0d
 			y: -1.0d
 		}

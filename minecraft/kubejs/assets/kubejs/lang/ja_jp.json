@@ -168,5 +168,6 @@
     "gtceu.example_machine.tier.2": "チタン",
     "gtceu.example_machine.tier.3": "タングステンスチール",
     "gtceu.multiblock.pattern.error.pipe_tier": "§cすべてのパイプは同じでなければならない§r",
-    "block.kubejs.yggdrasil_sapling": "世界樹の苗木"
+    "block.kubejs.yggdrasil_sapling": "世界樹の苗木",
+    "item.kubejs.valine3g": "バリン3g"
 }
