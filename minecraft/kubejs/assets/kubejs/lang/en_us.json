@@ -115,5 +115,8 @@
     "item.gtceu.sliced_bread_plate": "Smashed Bread Plate",
     "item.gtceu.double_sliced_bread_plate": "Double-Smashed Bread Plate",
     "item.kubejs.breadboard": "\"Bread\" Board",
-    "block.kubejs.yggdrasil_sapling": "Yggdrasil Sapling"
+    "block.kubejs.yggdrasil_sapling": "Yggdrasil Sapling",
+    "gtceu.ms.not_detected": "§cMaster machine not detected.§r",
+    "gtceu.ms.not_active": "§cThe master machine is not active.§r",
+    "gtceu.ms.active": "§aConnecting perfectly.§r"
 }

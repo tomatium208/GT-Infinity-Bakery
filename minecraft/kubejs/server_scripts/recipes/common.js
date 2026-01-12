@@ -218,4 +218,5 @@ ServerEvents.recipes(event => {
     });
 
     event.recipes.gtceu.ms_master("kjs/run").inputFluids("minecraft:water 1").duration(100).EUt(30);
+    event.recipes.gtceu.dimensional_dial("kjs/run").inputFluids("minecraft:water 1").duration(100).EUt(30);
 });

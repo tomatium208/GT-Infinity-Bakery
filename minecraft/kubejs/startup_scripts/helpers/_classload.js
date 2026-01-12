@@ -29,6 +29,9 @@ var NotifiableRecipeHandlerTrait = Java.loadClass(
     "com.gregtechceu.gtceu.api.machine.trait.NotifiableRecipeHandlerTrait"
 );
 var IEnergyContainer = Java.loadClass("com.gregtechceu.gtceu.api.capability.IEnergyContainer");
+var GTUtil = Java.loadClass("com.gregtechceu.gtceu.utils.GTUtil");
+var IMachineBlockEntity = Java.loadClass("com.gregtechceu.gtceu.api.machine.IMachineBlockEntity");
+var BlockEntity = Java.loadClass("net.minecraft.world.level.block.entity.BlockEntity");
 /**
  * @template T
  * @param {T} base

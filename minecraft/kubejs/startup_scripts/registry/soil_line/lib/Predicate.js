@@ -1,4 +1,4 @@
-// priority:1
+// priority:9000
 
 /**
  * @typedef {Internal.BlockEntry<Internal.Block> | Internal.Supplier<Internal.Block>} BlockEntryLike

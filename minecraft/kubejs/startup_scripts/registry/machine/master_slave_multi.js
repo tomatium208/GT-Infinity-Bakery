@@ -1,3 +1,4 @@
+// priority:100
 /**
  * @typedef {{nbt(): Internal.CompoundTag}} HasNBT
  */
@@ -13,7 +14,6 @@ function MasterMultiblockMachine(holder) {
         ////////////////// 形成時、解体時の子機との紐付け管理 //////////////////
         onStructureFormed() {
             this.super$onStructureFormed();
-            console.log("master structure formed");
             const children = this.getMultiblockState().getMatchContext().getOrDefault("children", []);
             _children = children;
             for (const machine of children) {
@@ -38,7 +38,7 @@ function MasterMultiblockMachine(holder) {
  * @returns
  */
 function WirelessEnergyHandlerMachineTrait(slaveMachine, tier) {
-    const tierVoltage = GTValues.V[tier];
+    var tierVoltage = GTValues.V[tier];
     function _getEnergyStored() {
         const parent = slaveMachine.getParent();
         if (parent == null) {
@@ -214,7 +214,7 @@ function WirelessEnergyHandlerMachineTrait(slaveMachine, tier) {
 // FORCED_POSは親マルチブロックの位置を記憶しておいて
 ///////////////////////////////////////////////////////////////////////////////
 /***/
-function SlaveMultiblockMachine(holder) {
+function SlaveMultiblockMachine(holder, tier) {
     /** @type {Internal.TickableSubscription} */
     var _tickSubscription = null;
     /** @type {SlaveMultiMachine} */
@@ -256,7 +256,6 @@ function SlaveMultiblockMachine(holder) {
             this.super$addDisplayText(textList);
             if (this.isFormed()) {
                 textList.add(Component.translatable("gtceu.ms." + this.getLinkState()));
-                textList.add(Component.literal("Usable Energy: " + this.getEnergyContainer().energyStored + " EU"));
             }
         },
 
@@ -273,7 +272,7 @@ function SlaveMultiblockMachine(holder) {
     };
 
     const adapter = new JavaAdapter(WorkableElectricMultiblockMachine, Logic, holder, []);
-    WirelessEnergyHandlerMachineTrait(adapter, GTValues.ZPM);
+    WirelessEnergyHandlerMachineTrait(adapter, tier);
     // コンストラクタ呼び出しだけでも大丈夫
     return adapter;
 }
@@ -359,7 +358,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
     event
         .create("ms_slave", "multiblock")
-        .machine(holder => SlaveMultiblockMachine(holder))
+        .machine(holder => SlaveMultiblockMachine(holder, GTValues.LuV))
         .recipeTypes([
             "assembler",
             "circuit_assembler",
@@ -443,3 +442,29 @@ forceload things
 
 
 */
+// 傷口に絆創膏、失敗
+// JadeEvents.onCommonRegistration(event => {
+//     event.blockDataProvider("kubejs:voltage_fix", BlockEntity).setCallback((tag, accessor) => {
+//         if (accessor.getBlockEntity() instanceof IMachineBlockEntity === false) return;
+//         const machine = /** @type {IMachineBlockEntity} */ (accessor.getBlockEntity()).getMetaMachine();
+//         const CAP_ID = "gtceu:recipe_logic_provider";
+//         const capData = tag.getCompound(CAP_ID);
+//         console.log(capData);
+//         for (const direction of ["null", "down", "up", "north", "south", "west", "east"]) {
+//             if (!capData.contains(direction)) continue;
+//             var dirTag = capData.getCompound(direction);
+//             console.log(dirTag);
+//             var recipeTag = dirTag.getCompound("Recipe");
+//             console.log(recipeTag);
+//             recipeTag.putLong("voltage", 128);
+//             dirTag.put("Recipe", recipeTag);
+//         }
+//         tag.put(CAP_ID, capData);
+
+//         // if (!tag.contains("Recipe")) return;
+//         // const recipetag = tag.getCompound("Recipe");
+//         // if ("getTierForJade" in machine) {
+//         //     recipetag.putLong("voltage", GTValues.V[machine.getTierForJade()]);
+//         // }
+//     });
+// });
