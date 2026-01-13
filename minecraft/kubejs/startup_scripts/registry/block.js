@@ -3,7 +3,8 @@ StartupEvents.registry("block", event => {
 
     event.create("planter_block").soundType(SoundType.METAL).notSolid().opaque(false).renderType("translucent");
 
-    event.create("yggdrasil_log")
+    event
+        .create("yggdrasil_log")
         .woodSoundType()
         .resistance(3)
         .hardness(2)
@@ -80,6 +81,11 @@ StartupEvents.registry("block", event => {
         "Greenhouse Machine Casing MK IV"
     );
 
+    casing("dimension_connection_casing", "kubejs:block/casings/eoh/dimension_connection_casing");
+    casing("dimension_creation_casing", "kubejs:block/casings/eoh/dimension_creation_casing");
+    casing("containment_field_generator", "kubejs:block/casings/eoh/containment_field_generator");
+    casing("dimensional_stability_casing", "kubejs:block/casings/eoh/dimensional_stability_casing");
+
     // TEST CASINGS
 
     function testCasing(name) {
@@ -93,10 +99,10 @@ StartupEvents.registry("block", event => {
             .requiresTool(true);
     }
 
-    testCasing("red")
-    testCasing("blue")
-    testCasing("dark")
-    testCasing("light")
+    testCasing("red");
+    testCasing("blue");
+    testCasing("dark");
+    testCasing("light");
 
     // COIL
 

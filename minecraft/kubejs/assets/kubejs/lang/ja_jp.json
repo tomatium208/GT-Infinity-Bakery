@@ -169,5 +169,8 @@
     "gtceu.example_machine.tier.3": "タングステンスチール",
     "gtceu.multiblock.pattern.error.pipe_tier": "§cすべてのパイプは同じでなければならない§r",
     "block.kubejs.yggdrasil_sapling": "世界樹の苗木",
-    "item.kubejs.valine3g": "バリン3g"
+    "item.kubejs.valine3g": "バリン3g",
+    "gtceu.ms.not_detected": "§c親を発見できません§r",
+    "gtceu.ms.not_active": "§c親がアクティブではありません§r",
+    "gtceu.ms.active": "§a完璧に接続中§r"
 }

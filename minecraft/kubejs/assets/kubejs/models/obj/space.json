@@ -1,0 +1,10 @@
+{
+  "loader": "forge:obj",
+  "flip_v": true,
+  "model": "kubejs:models/obj/space.obj",
+  "textures": {
+    "texture0": "kubejs:block/obj/space_layer",
+    "particle": "kubejs:block/obj/space_layer"
+  },
+  "automatic_culling": false
+}

@@ -83,16 +83,12 @@ function ExampleMachineRecipeModifier() {
         }
         var tierDiff = tier - recipeTier;
         // 必要ティアよりティアが1高いごとに4倍の並列処理を許可
-        var freeParallelAmount = 4 ** tierDiff;
-        if (freeParallelAmount > 1) {
-            /** @type {number} */
-            var parallelAmount = ParallelLogic.getParallelAmount(machine, recipe, freeParallelAmount);
+        var speedBonus = 2 ** tierDiff;
+        if (speedBonus > 1) {
+            const durationMultiplier = 1 / speedBonus;
             // 並列処理に必要なものセット
-            return ModifierFunction.builder()
-                .modifyAllContents(ContentModifier.multiplier(parallelAmount))
-                .eutMultiplier(parallelAmount)
-                .parallels(parallelAmount)
-                .build();
+            recipe.duration;
+            return ModifierFunction.builder().durationMultiplier(durationMultiplier).build();
         }
         return ModifierFunction.IDENTITY;
     };
