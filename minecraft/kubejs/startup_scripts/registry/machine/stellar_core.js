@@ -111,7 +111,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             )
             .where('C', Predicates.blocks("kubejs:multi_dimensional_machine_casing"))
             .where('D', Predicates.blocks("kubejs:dimensional_rift"))
-            .where('E', Predicates.blocks("gtceu:cupronickel_coil_block"))
+            .where('E', Predicates.heatingCoils())
             .build()
         )
         .workableCasingModel(
