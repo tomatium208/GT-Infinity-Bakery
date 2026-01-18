@@ -48,6 +48,16 @@ ServerEvents.recipes(event => {
             .addMaterialInfo();
     });
 
+    event.remove({ output: "farmersdelight:stove" })
+
+    event.shaped("farmersdelight:stove", ["STS", "BWB", "BCB"], {
+        S: "#forge:plates/steel",
+        T: "minecraft:iron_trapdoor",
+        W: "#forge:tools/wrenches",
+        B: "#forge:storage_blocks/brick",
+        C: "minecraft:campfire"
+    });
+
     event.remove({ output: "farmersdelight:cooking_pot" })
 
     event.shaped("farmersdelight:cooking_pot", ["BSB", "IHI", "III"], {
@@ -55,16 +65,6 @@ ServerEvents.recipes(event => {
         S: "minecraft:wooden_shovel",
         I: "#forge:plates/steel",
         H: "#forge:tools/hammers"
-    });
-
-    event.remove({ output: "farmersdelight:stove" })
-
-    event.shaped("farmersdelight:stove", ["STS", "SWS", "BCB"], {
-        S: "#forge:plates/steel",
-        T: "minecraft:iron_trapdoor",
-        W: "#forge:tools/wrenches",
-        B: "#forge:storage_blocks/brick",
-        C: "minecraft:campfire"
     });
 
     event.remove({ output: "farmersdelight:skillet" })

@@ -86,7 +86,7 @@ StartupEvents.registry("block", event => {
         return event
             .create(name)
             .soundType(SoundType.METAL)
-            .textureAll(`kubejs:block/casings/unused/${name}`)
+            .textureAll(`kubejs:block/casings/.unused/${name}`)
             .resistance(6)
             .hardness(5)
             .tagBlock("gtceu:mineable/pickaxe_or_wrench")
