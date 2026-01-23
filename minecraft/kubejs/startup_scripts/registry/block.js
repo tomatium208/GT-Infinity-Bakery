@@ -21,7 +21,7 @@ StartupEvents.registry("block", event => {
         .requiresTool();
     event.create("yggdrasil_leaves").grassSoundType().resistance(0.2).hardness(0.2).notSolid().requiresTool();
 
-    // SOLID CASINGS
+    // CASINGS
 
     function casing(name, path) {
         return event
@@ -33,6 +33,9 @@ StartupEvents.registry("block", event => {
             .tagBlock("gtceu:mineable/pickaxe_or_wrench")
             .requiresTool(true);
     }
+
+    // 仮実装
+    casing("volcanus_casing", "kubejs:block/casings/volcanus/solid")
 
     casing("multi_dimensional_machine_casing", "kubejs:block/casings/solid/multi_dimensional");
 
@@ -119,6 +122,7 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .tagBlock("gtceu:mineable/pickaxe_or_wrench");
 
+    /*
     event
         .create("tomatonium_coil_block", "gtceu:coil")
         .coilMaterial(() => GTMaterials.get("tomatonium"))
@@ -144,6 +148,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .requiresTool(true)
         .tagBlock("gtceu:mineable/pickaxe_or_wrench");
+    */
 });
 
 /* COILS
