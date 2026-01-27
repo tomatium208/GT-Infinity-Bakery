@@ -1,5 +1,3 @@
-// Materialだよ
-
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("crude_caffeine_extract").liquid().color(color("#6f4e37"));
 

@@ -1,5 +1,3 @@
-// Elementだよ
-
 GTCEuStartupEvents.registry("gtceu:element", event => {
     event.create("valine3g").protons(14).neutrons(9).symbol("Vl");
     // should be not minus :(
@@ -10,15 +8,11 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
     event.create("meow").protons(3).neutrons(3).symbol(":3");
 });
 
-// IconSetだよ
-
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("nyaonium").parent(GTMaterialIconSet.RUBY);
     event.create("prismatic").parent(GTMaterialIconSet.METALLIC);
     event.create("tomatonium").parent(GTMaterialIconSet.DULL);
 });
-
-// Materialだよ
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
     const allMaterialFlag = [
@@ -46,6 +40,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("nuclear_waste").liquid().color(color("#1d361e"));
 
     event.create("sliced_bread").ingot().liquid().color(color("#ffffff")).flags([GTMaterialFlags.GENERATE_PLATE]);
+
+    event.create("sliced_cake").ingot().liquid().color(color("#ff0000")).secondaryColor(color("#fcffde")).flags(GTMaterialFlags.GENERATE_DENSE)
 
     event
         .create("valine3g")
@@ -168,6 +164,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 });
 
 GTCEuStartupEvents.materialModification(event => {
+    
+    // tag_ingot(<String Material>, () => Item.getItem(<String Item>));
+
     tag_ingot("valine3g", () => Item.getItem("kubejs:valine3g"));
     tag_ingot("sliced_bread", () => Item.getItem("kubejs:sliced_bread"));
+    tag_ingot("sliced_cake", () => Item.getItem("farmersdelight:cake_slice"));
+    tag_ingot("meta_null", () => Item.getItem("kubejs:null"));
+
+
 });
