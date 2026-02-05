@@ -10,7 +10,7 @@ recipes:
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
   # Default: true
-  harderRods: true
+  harderRods: false
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
@@ -27,7 +27,7 @@ recipes:
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
-  hardIronRecipes: true
+  hardIronRecipes: false
 
   # Whether to make Redstone related recipes harder.
   # Default: false
@@ -51,7 +51,7 @@ recipes:
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: true
-  hardAdvancedIronRecipes: true
+  hardAdvancedIronRecipes: false
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false
