@@ -352,7 +352,6 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "石炭が溶けていく..."
 			tasks: [{
 				count: 16L
 				id: "77B4828447CE83C9"

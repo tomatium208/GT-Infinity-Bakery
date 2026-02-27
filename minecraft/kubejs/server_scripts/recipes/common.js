@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu
         .bakery("kjs/energy_drink")
         .inputFluids("gtceu:carbonated_water 1000")
-        .itemInputs("1x #forge:gems/quartz", "1x #forge:slimeballs", "gtceu:caffeine_dust", "6x gtceu:fluid_cell")
+        .itemInputs("1x #forge:tiny_dusts/emerald", "gtceu:caffeine_dust", "6x gtceu:fluid_cell")
         .itemOutputs("6x kubejs:energy_drink")
         .EUt(VHA.ULV);
 

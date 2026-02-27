@@ -166,25 +166,6 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["16A360A07D1B66A4"]
-			hide_dependency_lines: true
-			id: "10B60FE2C1EA646A"
-			tasks: [
-				{
-					id: "765294F5338B73EB"
-					item: "kubejs:particle_shard"
-					type: "item"
-				}
-				{
-					id: "6A25BB7E634055B3"
-					item: "kubejs:particle_star"
-					type: "item"
-				}
-			]
-			x: 5.0d
-			y: -9.0d
-		}
-		{
 			dependencies: ["32A6675B53369CA3"]
 			id: "505D85370D779003"
 			rewards: [{
@@ -217,7 +198,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["10B60FE2C1EA646A"]
 			id: "65D346D482A440BF"
 			rewards: [{
 				id: "13C518558C113B88"
