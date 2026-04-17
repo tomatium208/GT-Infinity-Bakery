@@ -36,7 +36,7 @@
 				type: "checkmark"
 			}]
 			title: "Hello, World!"
-			x: -6.0d
+			x: -5.0d
 			y: -3.0d
 		}
 		{
@@ -62,7 +62,7 @@
 				type: "checkmark"
 			}]
 			title: "【令和最新版】電動探知機がなんと無料！今すぐ購人！"
-			x: -6.0d
+			x: -5.0d
 			y: -1.5d
 		}
 		{
@@ -224,7 +224,7 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -496,7 +496,7 @@
 				type: "checkmark"
 			}]
 			title: "クエストの形について"
-			x: -7.5d
+			x: -6.5d
 			y: -3.0d
 		}
 		{
@@ -511,11 +511,12 @@
 				type: "item"
 			}]
 			tasks: [{
+				count: 4L
 				id: "31300F30F43173D2"
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: -2.5d
 		}
 		{
@@ -527,7 +528,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 4L
+				count: 16L
 				id: "2F16ECCF788120D8"
 				item: {
 					Count: 1
@@ -539,7 +540,7 @@
 				title: "任意の板材"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: -5.0d
 		}
 		{
@@ -555,7 +556,7 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: -5.0d
 		}
 		{
@@ -590,8 +591,8 @@
 					type: "custom"
 				}
 			]
-			x: -6.0d
-			y: 0.0d
+			x: -5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["29174E90A864C67C"]
@@ -625,7 +626,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: -1.0d
 		}
 		{

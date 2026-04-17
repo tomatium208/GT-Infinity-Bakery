@@ -355,25 +355,6 @@
 			y: -2.0d
 		}
 		{
-			icon: "gtceu:pyrolyse_oven"
-			id: "132CD04F9EFD01B3"
-			rewards: [{
-				count: 3
-				id: "03375A045B987495"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "3719FF18734426B4"
-				item: "gtceu:pyrolyse_oven"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 1.0d
-		}
-		{
 			id: "454105ABDB8D6617"
 			tasks: [{
 				id: "15C4C707310B6662"
@@ -696,7 +677,7 @@
 				}
 			]
 			title: "ドラムを抱えて油田を探す"
-			x: -3.5d
+			x: -2.5d
 			y: 9.0d
 		}
 		{

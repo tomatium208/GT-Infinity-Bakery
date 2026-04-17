@@ -40,6 +40,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("nuclear_waste").liquid().color(color("#1d361e"));
 
     event.create("sliced_bread").ingot().liquid().color(color("#ffffff")).flags([GTMaterialFlags.GENERATE_PLATE]);
+    event.create("rusk").ingot().liquid().color(color("#d4a073")).flags([GTMaterialFlags.GENERATE_PLATE]).iconSet(GTMaterialIconSet.SHINY)
 
     event.create("sliced_cake").ingot().liquid().color(color("#ff0000")).secondaryColor(color("#fcffde")).flags(GTMaterialFlags.GENERATE_DENSE)
 
@@ -169,6 +170,7 @@ GTCEuStartupEvents.materialModification(event => {
 
     tag_ingot("valine3g", () => Item.getItem("kubejs:valine3g"));
     tag_ingot("sliced_bread", () => Item.getItem("kubejs:sliced_bread"));
+    tag_ingot("rusk", () => Item.getItem("kubejs:rusk"));
     tag_ingot("sliced_cake", () => Item.getItem("farmersdelight:cake_slice"));
     tag_ingot("meta_null", () => Item.getItem("kubejs:null"));
 

@@ -8,6 +8,7 @@
 	images: [
 		{
 			height: 2.0d
+			hover: ["低電圧時代"]
 			image: "kubejs:item/markers/lv"
 			rotation: 0.0d
 			width: 2.0d
@@ -41,75 +42,6 @@
 		}
 	]
 	quests: [
-		{
-			dependencies: [
-				"5E672DFCDC797CC9"
-				"6FCFE8B31C7F0588"
-				"2F60180B77851068"
-			]
-			icon: "gtceu:primitive_bakery"
-			id: "6376FDAD6AA88D74"
-			rewards: [{
-				count: 3
-				id: "112598F91A1080F3"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "蒸気機械なのにLV以降でしか作れないでお馴染み(お馴染みじゃない)"
-			tasks: [{
-				id: "4B04BAC50D51A0C9"
-				item: "gtceu:primitive_bakery"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 10.0d
-		}
-		{
-			hide_dependency_lines: true
-			id: "341A0C11FE6481B5"
-			tasks: [{
-				id: "5190C8BE5281B5B7"
-				item: "gtceu:lv_cutter"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 11.5d
-		}
-		{
-			dependencies: ["341A0C11FE6481B5"]
-			id: "5E672DFCDC797CC9"
-			rewards: [{
-				id: "5C0CACBB70233F95"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				count: 8L
-				id: "01BB2C3C540CB838"
-				item: { Count: 4, id: "kubejs:sliced_bread" }
-				type: "item"
-			}]
-			x: -6.0d
-			y: 11.5d
-		}
-		{
-			dependencies: ["6376FDAD6AA88D74"]
-			id: "586D2138C4B6A6BC"
-			rewards: [{
-				id: "11BFF28EC1EB518D"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6E80D5EA542997EB"
-				item: { Count: 4, id: "kubejs:energy_drink" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: 9.0d
-		}
 		{
 			dependencies: [
 				"65D346D482A440BF"
@@ -183,21 +115,10 @@
 			y: -10.5d
 		}
 		{
-			id: "6FCFE8B31C7F0588"
-			rewards: [{
-				id: "5BFD6BC85274D3C6"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1F7AFDDA4AE5EC09"
-				item: "gtceu:lv_emitter"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 8.0d
-		}
-		{
+			dependencies: [
+				"0F7FC9AAE4A78EC0"
+				"262A973A7D25F01B"
+			]
 			id: "65D346D482A440BF"
 			rewards: [{
 				id: "13C518558C113B88"
@@ -211,21 +132,6 @@
 			}]
 			x: 5.0d
 			y: -8.0d
-		}
-		{
-			id: "2F60180B77851068"
-			rewards: [{
-				id: "023A008D5CA40C5E"
-				item: "kubejs:gt_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "46A274253CF890E4"
-				item: "gtceu:steam_machine_casing"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -609,6 +515,19 @@
 		{
 			dependencies: ["1D344551D940B574"]
 			id: "7C4F8AEA3EA3072E"
+			rewards: [
+				{
+					count: 3
+					id: "0EC3F5EF663C4268"
+					item: "kubejs:gt_coin"
+					type: "item"
+				}
+				{
+					id: "2B5343A356321E5C"
+					item: "kubejs:chapter_coin"
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
@@ -689,6 +608,42 @@
 				type: "item"
 			}]
 			x: -4.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["71F5D9D275EA0B5B"]
+			id: "0F7FC9AAE4A78EC0"
+			tasks: [{
+				id: "387E8E56F4D014B7"
+				item: "gtceu:lv_laser_engraver"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["36A64A55DC2615F0"]
+			hide_dependency_lines: true
+			id: "71F5D9D275EA0B5B"
+			tasks: [{
+				id: "11418F96A1DD051B"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["16A360A07D1B66A4"]
+			hide_dependency_lines: true
+			id: "262A973A7D25F01B"
+			tasks: [{
+				count: 4L
+				id: "7C6D11FD2C85A6D9"
+				item: "kubejs:rusk"
+				type: "item"
+			}]
+			x: 5.0d
 			y: -9.0d
 		}
 	]

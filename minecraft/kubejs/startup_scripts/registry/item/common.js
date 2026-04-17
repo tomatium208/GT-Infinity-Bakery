@@ -63,8 +63,14 @@ StartupEvents.registry("item", event => {
     event.create("toast").food(food => {
         food.hunger(6).saturation(0.75);
     });
+    event.create("rusk").food(food => {
+        food.hunger(4).saturation(2);
+    });
 
     event.create("breadboard").food(food => {
+        food.hunger(1).saturation(0.25);
+    });
+    event.create("ruskboard").food(food => {
         food.hunger(1).saturation(0.25);
     });
 
@@ -86,6 +92,13 @@ StartupEvents.registry("item", event => {
 
     event.create("fission_sandwich").food(food => {
         food.hunger(1).saturation(1).alwaysEdible().effect("minecraft:wither", 24000, 9, 1);
+    });
+
+    event.create("conductive_pasta_wire").food(food => {
+        food.hunger(1).saturation(1).fastToEat()
+    });
+    event.create("conductive_pasta_cable").food(food => {
+        food.hunger(2).saturation(3).fastToEat()
     });
 
     // Circuits

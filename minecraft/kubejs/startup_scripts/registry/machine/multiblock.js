@@ -15,6 +15,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(15, 1, 3, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.SUS_RECORD)
+    
+    event.create("compound")
+        .category('bakery')
+        .setEUIO('in')
+        .setMaxIOSize(2, 1, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.FURNACE)
 
 })
 
@@ -166,6 +173,32 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where('_', Predicates.any()) // 空白許容
             .build()
         )
+        .workableCasingModel(
+            "kubejs:block/casings/nouf/general",
+            "gtceu:block/multiblock/power_substation",
+
+        );
+
+    event.create('compound_fabricator', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType('compound')
+        .appearanceBlock(() => Block.getBlock('gtceu:mv_machine_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('AAABBBBBBAAA', 'ACDCEFFECDCA', 'ACCCCFFCCCCA', 'FFFFFFFFFFFF', 'ACCCCFFCCCCA', 'ACDCEFFECDCA', 'AAABBBBBBAAA', ' A        A ')
+            .aisle('AAAAAAAAAAAA', 'A          A', 'E          E', 'F          F', 'E          E', 'A          A', 'AAAAAAAAAAAA', ' A        A ')
+            .aisle('AAAAAAAAAAAA', 'A          G', 'E          E', 'F          F', 'E          E', 'A          A', 'AAAAAAAAAAAA', ' A        A ')
+            .aisle('AAAAAAAAAAAA', 'A          A', 'E          E', 'F          F', 'E          E', 'A          A', 'AAAAAAAAAAAA', ' A        A ')
+            .aisle('AAABBBBBBAAA', 'ACDCEFFECDCA', 'ACCCCFFCCCCA', 'FFFFFFFFFFFF', 'ACCCCFFCCCCA', 'ACDCEFFECDCA', 'AAABBBBBBAAA', ' A        A ')
+            .where('A', Predicates.blocks('gtceu:mv_machine_casing'))
+            .where('B', Predicates.blocks('gtceu:bronze_firebox_casing'), {})
+            .where('C', Predicates.blocks('gtceu:industrial_steam_casing'))
+            .where('D', Predicates.blocks('gtceu:tempered_glass'))
+            .where('E', Predicates.blocks('gtceu:steel_firebox_casing'), {})
+            .where('F', Predicates.blocks('gtceu:cupronickel_coil_block'), {})
+            .where('G', Predicates.blocks('farmersdelight:tomato_crate'))
+            .controller('A')
+            .build())
+        .buildAndRegister()
         .workableCasingModel(
             "kubejs:block/casings/nouf/general",
             "gtceu:block/multiblock/power_substation",
